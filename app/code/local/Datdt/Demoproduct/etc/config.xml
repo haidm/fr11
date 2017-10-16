@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Datdt_Demoproduct>
+            <version>0.1.0</version>
+        </Datdt_Demoproduct>
+    </modules>
+    <frontend>
+        <routers>
+            <Demoproduct>
+                <use>standard</use>
+                <args>
+                    <module>Datdt_Demoproduct</module>
+                    <frontName>demoproduct</frontName>
+                </args>
+            </Demoproduct>
+        </routers>
+        <layout>
+            <updates>
+                <Demoproduct>
+                    <file>demoproduct.xml</file>
+                </Demoproduct>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <demoproduct>
+                <class>Datdt_Demoproduct_Block</class>
+            </demoproduct>
+        </blocks>
+    </global>
+</config>

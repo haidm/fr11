@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Datdt_Student>
+            <version>0.1.0</version>
+        </Datdt_Student>
+    </modules>
+    <frontend>
+        <routers>
+            <student>
+                <use>standard</use>
+                <args>
+                    <module>Datdt_Student</module>
+                    <frontName>student</frontName>
+                </args>
+            </student>
+        </routers>
+        <layout>
+            <updates>
+                <student>
+                    <file>student.xml</file>
+                </student>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <student>
+                <class>Datdt_Student_Block</class>
+            </student>
+        </blocks>
+    </global>
+</config>
