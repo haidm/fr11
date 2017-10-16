@@ -7,35 +7,26 @@ class Tungtt_DemoProduct_IndexController extends Mage_Core_Controller_Front_Acti
      */
     public function indexAction()
     {
-        echo "Trang Danh sach sinh vien:http://mageosc.local/student/index/index";
-        echo "http://mageosc.local/student/index/insert";
-        echo "http://mageosc.local/student/index/update";
-        echo "http://mageosc.local/student/index/delete";
+        $collection = Mage::getModel('catalog/product')->getCollection()->addAttributeToSelect('*');
+// we iterate through the list of products to get attribute values
+        foreach ($collection as $product) {
+            echo $product->getName(); //get name
+            echo ' => ';
+            echo '$ '.$product->getPrice(); //get price
+            echo '<br />';
 
-
-
+        }
+        foreach ($product->getCategoryIds() as $category_id) {
+            $category = Mage::getModel('catalog/category')->load($category_id);
+            echo $category->getName();
+            echo $category->getParentCategory()->getName(); // get parent of category
+        }
     }
-    /**
-     * http://mageosc.local/student/index/insert
-     */
 
-    public function insertAction()
+    public function categoryAction()
     {
-        echo "Trang Them sinh vien";
-    }
-    /**
-     * http://mageosc.local/student/index/update
-     */
-
-    public function updateAction()
-    {
-        echo "Trang Sua sinh vien";
-    }
-    /**
-     * http://mageosc.local/student/index/delete
-     */
-    public function deleteAction()
-    {
-        echo "Trang Xoa sinh vien";
+        $category = Mage::getModel('catalog/category')->load(1);
+        $productCate = Mage::getResourceModel('catalog/product_collection')
+            ->addCategoryFilter($category);
     }
 }
