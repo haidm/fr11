@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Hienth_Sinhvien>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Hienth_Sinhvien>
+    </modules>
+</config>

@@ -1,0 +1,21 @@
+
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Hienth_Sinhvien>
+            <version>0.1</version>
+        </Hienth_Sinhvien>
+    </modules>
+    <frontend>
+        <routers>
+            <Sinhvien>
+                <use>standard</use>
+                <args>
+                    <module>Hienth_Sinhvien</module>
+                    <frontName>sinhvien</frontName>
+                </args>
+            </Sinhvien>
+        </routers>
+    </frontend>
+</config>
