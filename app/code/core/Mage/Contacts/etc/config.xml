@@ -76,16 +76,6 @@
             </email>
         </template>
 
-        <events>
-            <catalog_controller_product_view>
-                <observers>
-                    <duongdd_observer>
-                        <class>Mage_Contacts_Model_Observer</class>
-                        <method>editData</method>
-                    </duongdd_observer>
-                </observers>
-            </catalog_controller_product_view>
-        </events>
     </global>
 
     <adminhtml>
