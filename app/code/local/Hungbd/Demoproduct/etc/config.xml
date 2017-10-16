@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hungbd_Demoproduct>
+            <version>0.1.0</version>
+        </Hungbd_Demoproduct>
+    </modules>
+    <frontend>
+        <routers>
+            <Demoproduct>
+                <use>standard</use>
+                <args>
+                    <module>Hungbd_Demoproduct</module>
+                    <frontName>demoproduct</frontName>
+                </args>
+            </Demoproduct>
+        </routers>
+    </frontend>
+    <global>
+        <event>
+            <catalog_controller_category_init_before>
+                <observers>
+                    <Hungbd_Demoproduct_Model_observer>
+                        <type>Observer</type>
+                        <methob>hookToShowProductBefore</methob>
+                    </Hungbd_Demoproduct_Model_observer>
+                </observers>
+            </catalog_controller_category_init_before>
+        </event>
+    </global>
+</config>

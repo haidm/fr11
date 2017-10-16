@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hungbd_Sinhvien>
+            <version>0.1.0</version>
+        </Hungbd_Sinhvien>
+    </modules>
+    <frontend>
+        <routers>
+            <Sinhvien>
+                <use>standard</use>
+                <args>
+                    <module>Hungbd_Sinhvien</module>
+                    <frontName>sinhvien</frontName>
+                </args>
+            </Sinhvien>
+        </routers>
+    </frontend>
+</config>

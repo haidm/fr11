@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Hungbd_Sinhvien>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Hungbd_Sinhvien>
+    </modules>
+</config>

@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Hungbd_Demoproduct>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Hungbd_Demoproduct>
+    </modules>
+</config>
