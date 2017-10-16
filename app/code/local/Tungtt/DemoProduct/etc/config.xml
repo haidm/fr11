@@ -1,0 +1,18 @@
+<config>
+    <modules>
+        <Tungtt_DemoProduct>
+            <version>0.1.0</version>
+        </Tungtt_DemoProduct>
+    </modules>
+    <frontend>
+        <routers>
+            <DemoProduct>
+                <use>standard</use>
+                <args>
+                    <module>Tungtt_DemoProduct</module>
+                    <frontName>demoproduct</frontName>
+                </args>
+            </DemoProduct>
+        </routers>
+    </frontend>
+</config>

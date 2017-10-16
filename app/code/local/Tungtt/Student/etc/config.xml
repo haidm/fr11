@@ -1,0 +1,18 @@
+<config>
+    <modules>
+        <Tungtt_Student>
+            <version>0.1.0</version>
+        </Tungtt_Student>
+    </modules>
+    <frontend>
+        <routers>
+            <Student>
+                <use>standard</use>
+                <args>
+                    <module>Tungtt_Student</module>
+                    <frontName>student</frontName>
+                </args>
+            </Student>
+        </routers>
+    </frontend>
+</config>
