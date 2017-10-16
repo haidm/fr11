@@ -59,9 +59,20 @@ class Mage_Contacts_IndexController extends Mage_Core_Controller_Front_Action
         $this->renderLayout();
     }
 
+    public function testAction()
+    {
+        $request  = $this->getRequest()->getPost('productid');
+        echo "<pre>";
+        var_dump($request);
+    }
+
     public function postAction()
     {
         $post = $this->getRequest()->getPost();
+
+        Mage::dispatchEvent('duongdd_post_data', array('postdata' => $post));
+
+        var_dump($post);die;
         if ( $post ) {
             $translate = Mage::getSingleton('core/translate');
             /* @var $translate Mage_Core_Model_Translate */
