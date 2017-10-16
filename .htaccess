@@ -247,3 +247,14 @@
         Deny from all
 
     </Files>
+
+
+SetEnvIf Host www\.ebook\.local MAGE_RUN_CODE=ebook
+SetEnvIf Host www\.ebook\.local MAGE_RUN_TYPE=website
+SetEnvIf Host ^ebook\.local MAGE_RUN_CODE=ebook
+SetEnvIf Host ^ebook\.local MAGE_RUN_TYPE=website
+
+SetEnvIf Host www\.computer\.local MAGE_RUN_CODE=computer
+SetEnvIf Host www\.computer\.local MAGE_RUN_TYPE=website
+SetEnvIf Host ^computer\.local MAGE_RUN_CODE=computer
+SetEnvIf Host ^computer\.local MAGE_RUN_TYPE=website

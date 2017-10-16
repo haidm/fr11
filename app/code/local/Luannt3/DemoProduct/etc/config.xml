@@ -1,0 +1,18 @@
+<config>
+    <modules>
+        <Luannt3_DemoProduct>
+            <version>0.1.0</version>
+        </Luannt3_DemoProduct>
+    </modules>
+    <frontend>
+        <routers>
+            <DemoProduct>
+                <use>standard</use>
+                <args>
+                    <module>Luannt3_DemoProduct</module>
+                    <frontName>demoproduct</frontName>
+                </args>
+            </DemoProduct>
+        </routers>
+    </frontend>
+</config>
