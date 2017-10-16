@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Dangnd_DemoProduct>
+            <version>0.1</version>
+        </Dangnd_DemoProduct>
+    </modules>
+    <frontend>
+        <routers>
+            <DemoProduct>
+                <use>standard</use>
+                <args>
+                    <module>Dangnd_DemoProduct</module>
+                    <frontName>prd</frontName>
+                </args>
+            </DemoProduct>
+        </routers>
+    </frontend>
+    <global>
+        <models>
+            <cvnstore_incvatattribute>
+                <class>Dangnd_DemoProduct_Modal_Observer</class>
+            </cvnstore_incvatattribute>
+        </models>
+        <events>
+            <catalog_product_save_before>
+                <observers>
+                    <dangnd_demoproduct>
+                        <class>dangnd_demoproduct/observer</class>
+                        <method>changeAttribute</method>
+                        <type>singleton</type>
+                    </dangnd_demoproduct>
+                </observers>
+            </catalog_product_save_before>
+        </events>
+    </global>
+</config>

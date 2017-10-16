@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Dangnd_DemoProduct>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Dangnd_DemoProduct>
+    </modules>
+</config>
