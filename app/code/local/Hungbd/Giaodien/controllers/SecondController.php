@@ -1,12 +1,11 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: hungbui
- * Date: 16/10/2017
- * Time: 14:47
+ * Date: 17/10/2017
+ * Time: 20:10
  */
-class Hungbd_Giaodien_IndexController extends Mage_Core_Controller_Front_Action
+class Hungbd_Giaodien_SecondController extends Mage_Core_Controller_Front_Action
 {
     public function indexAction()
     {
@@ -14,17 +13,17 @@ class Hungbd_Giaodien_IndexController extends Mage_Core_Controller_Front_Action
         $layoutObj = $this->getLayout();
         $aBlock = $headerBlock = $layoutObj
             ->createBlock('myblock/ablock')
-            ->setText('this is block a');
+            ->setTemplate('Mytemplate/ablock.phtml');
 //        var_dump($aBlock);
-//        $bBlock = $headerBlock = $layoutObj
-//            ->createBlock('myblock/bblock')
-//            ->setTemplate('Mytemplate/bblock.phtml');
-//        $cBlock = $headerBlock = $layoutObj
-//            ->createBlock('myblock/cblock')
-//            ->setTemplate('Mytemplate/cblock.phtml');
-//        $dBlock = $headerBlock = $layoutObj
-//            ->createBlock('myblock/dblock')
-//            ->setTemplate('Mytemplate/dblock.phtml');
+        $bBlock = $headerBlock = $layoutObj
+            ->createBlock('myblock/bblock')
+            ->setTemplate('Mytemplate/bblock.phtml');
+        $cBlock = $headerBlock = $layoutObj
+            ->createBlock('myblock/cblock')
+            ->setTemplate('Mytemplate/cblock.phtml');
+        $dBlock = $headerBlock = $layoutObj
+            ->createBlock('myblock/dblock')
+            ->setTemplate('Mytemplate/dblock.phtml');
         $headerBlock = $layoutObj
             ->createBlock('myblock/header')
             ->setTemplate('Mytemplate/header.phtml');
@@ -46,12 +45,12 @@ class Hungbd_Giaodien_IndexController extends Mage_Core_Controller_Front_Action
             ->setTemplate('Mytemplate/footer.phtml');
         $wrapeBlock = $layoutObj
             ->createBlock('myblock/wraper')
-            ->setTemplate('Mytemplate/hello.phtml')
-            ->setChild('c1_header',$headerBlock)
-            ->setChild('c1_left',$leftBlock)
-            ->setChild('c1_right',$rightBlock)
-            ->setChild('c1_content',$contentBlock)
-            ->setChild('c1_footer',$footerBlock);
+            ->setTemplate('Mytemplate/second.phtml')
+            ->setChild('c2_header',$headerBlock)
+            ->setChild('c2_left',$leftBlock)
+            ->setChild('c2_right',$rightBlock)
+            ->setChild('c2_content',$contentBlock)
+            ->setChild('c2_footer',$footerBlock);
         echo $wrapeBlock->toHtml();
 
     }
