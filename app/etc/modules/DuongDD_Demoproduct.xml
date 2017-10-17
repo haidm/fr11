@@ -1,8 +1,0 @@
-<config>
-  <modules>
-    <DuongDD_DemoProduct>
-      <active>true</active>
-      <codePool>local</codePool>
-    </DuongDD_DemoProduct>
-  </modules>
-</config>
