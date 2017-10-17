@@ -4,10 +4,9 @@ class DuongDD_Demoproduct_Model_Observer
     public function changeListPrice(Varien_Event_Observer $observer)
     {
         $collection = $observer->getEvent()->getCollection();
-
         /** @var Mage_Catalog_Model_Product $item */
         foreach ($collection as $item) {
-            $item->setFinalPrice(20);
+            $item->setFinalPrice(200);
         }
 
         return $this;

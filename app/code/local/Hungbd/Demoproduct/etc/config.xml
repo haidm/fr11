@@ -16,21 +16,4 @@
             </Demoproduct>
         </routers>
     </frontend>
-    <global>
-        <models>
-            <Demoproduct>
-                <class>Hungbd_Demoproduct_Model</class>
-            </Demoproduct>
-        </models>
-        <event>
-            <catalog_product_collection_load_after>
-                <observers>
-                    <changeListPrice>
-                        <class>demoproduct/observer</class>
-                        <method>changeListPrice</method>
-                    </changeListPrice>
-                </observers>
-            </catalog_product_collection_load_after>
-        </event>
-    </global>
 </config>

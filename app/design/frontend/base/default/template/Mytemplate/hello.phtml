@@ -1,0 +1,44 @@
+<html>
+<head>
+    <style>
+        .header{
+            width: 100%;
+            height: 200px;
+            clear: both;
+            background-color: red;
+        }
+        .left{
+            width: 20%;
+            float: left;
+            height: 200px;
+            background-color: blue;
+        }
+        .content{
+            width: 60%;
+            height: 200px;
+            float: left;
+            background-color: pink;
+        }
+        .right{
+            width: 20%;
+            height: 200px;
+            float: left;
+            background-color: green;
+        }
+        .footer{
+            width: 100%;
+            height: 200px;
+            clear: both;
+            background-color: red;
+        }
+    </style>
+</head>
+    <body>
+        <div class="header"><?php echo $this->getChildHtml('c1_header'); ?></div>
+        <div class="left"><?php echo $this->getChildHtml('c1_left'); ?></div>
+        <div class="content"><?php echo $this->getChildHtml('c1_content'); ?></div>
+        <div class="right"><?php echo $this->getChildHtml('c1_right'); ?></div>
+        <div class="footer"><?php echo $this->getChildHtml('c1_footer'); ?></div>
+    </body>
+</html>
+
