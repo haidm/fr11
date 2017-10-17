@@ -17,15 +17,20 @@
         </routers>
     </frontend>
     <global>
+        <models>
+            <Demoproduct>
+                <class>Hungbd_Demoproduct_Model</class>
+            </Demoproduct>
+        </models>
         <event>
-            <catalog_controller_category_init_before>
+            <catalog_product_collection_load_after>
                 <observers>
-                    <Hungbd_Demoproduct_Model_observer>
-                        <type>Observer</type>
-                        <methob>hookToShowProductBefore</methob>
-                    </Hungbd_Demoproduct_Model_observer>
+                    <changeListPrice>
+                        <class>demoproduct/observer</class>
+                        <method>changeListPrice</method>
+                    </changeListPrice>
                 </observers>
-            </catalog_controller_category_init_before>
+            </catalog_product_collection_load_after>
         </event>
     </global>
 </config>

@@ -5,13 +5,14 @@
  * Date: 16/10/2017
  * Time: 17:49
  */
-public function hookToShowProductBefore($observer)
+public function changeListPrice(Varien_Event_Observer $observer)
 {
-    //Hooking to our own event
-    $product = $observer->getEvent()->getProduct();
-    // do something with product
-//    Mage::log("Product ".$request['product']." will be added to cart.");
-    $product->getPrice() = 20;
+    $colection = $observer->getEvent()->getCollection();
+    /** @var Mage_Catalog_Model_Product $item */
+    foreach ($colection as $item) {
+        $item->setFinalPrice(20);
+    }
     return $this;
 }
+
 ?>
