@@ -1,0 +1,20 @@
+
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <NhatBQ_Student>
+            <version>0.1.0</version>
+        </NhatBQ_Student>
+    </modules>
+    <frontend>
+        <routers>
+            <nhatbq_student>
+                <use>standard</use>
+                <args>
+                    <module>NhatBQ_Student</module>
+                    <frontName>nhatxxx</frontName>
+                </args>
+            </nhatbq_student>
+        </routers>
+    </frontend>
+</config>

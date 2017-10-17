@@ -1,0 +1,20 @@
+
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SM_Student>
+            <version>1.6.0.0.2</version>
+        </SM_Student>
+    </modules>
+    <frontend>
+        <routers>
+            <student>
+                <use>standard</use>
+                <args>
+                    <module>SM_Student</module>
+                    <frontName>student</frontName>
+                </args>
+            </student>
+        </routers>
+    </frontend>
+</config>

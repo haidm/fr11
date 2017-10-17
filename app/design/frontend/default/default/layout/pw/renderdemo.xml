@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <renderdemo_index_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/3columns.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="renderdemo/renderdemo" name="renderdemo" template="nhatbq/renderdemo/renderdemo.phtml"/>
+        </reference>
+        <!--change number of column to 3-->
+
+    </renderdemo_index_index>
+</layout>

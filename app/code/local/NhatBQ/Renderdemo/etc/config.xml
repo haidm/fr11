@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <NhatBQ_Renderdemo>
+            <version>1.0.1</version>
+        </NhatBQ_Renderdemo>
+    </modules>
+    <global>
+        <models/>
+        <blocks>
+            <renderdemo>
+                <class>NhatBQ_Renderdemo_Block</class>
+            </renderdemo>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <renderdemo>
+                <use>standard</use>
+                <args>
+                    <module>NhatBQ_Renderdemo</module>
+                    <frontName>renderdemo</frontName>
+                </args>
+            </Renderdemo>
+        </routers>
+        <layout>
+            <updates>
+                <Renderdemo>
+                    <file>nhatbq/renderdemo.xml</file>
+                </renderdemo>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <renderdemo>
+            <product>
+            </product>
+        </renderdemo>
+    </default>
+</config>

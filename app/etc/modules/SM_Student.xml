@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+<modules>
+    <SM_Student>
+        <active>true</active>
+        <codePool>local</codePool>
+    </SM_Student>
+</modules>
+</config>
+

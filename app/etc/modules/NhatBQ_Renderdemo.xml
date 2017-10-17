@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <NhatBQ_Renderdemo>
+            <active>true</active>
+            <codePool>local</codePool>
+        </NhatBQ_Renderdemo>
+    </modules>
+</config>
