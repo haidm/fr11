@@ -20,14 +20,11 @@
  * @license     http://www.magestore.com/license-agreement.html
  */
 -->
-<layout version="0.1.0">
-    <default>
-        <!-- update layout for all frontend page -->
-    </default>
-    <demoproduct_index_index>
-    	
-        <reference name="content">
-            <block type="demoproduct/demoproduct" name="demoproduct" template="demoproduct/demoproduct.phtml" />
-        </reference>
-    </demoproduct_index_index>
-</layout>
+<config>
+    <modules>
+        <Datdt_Demoproduct>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Datdt_Demoproduct>
+    </modules>
+</config>

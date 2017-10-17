@@ -24,10 +24,9 @@
     <default>
         <!-- update layout for all frontend page -->
     </default>
-    <demoproduct_index_index>
-    	
+    <assignment4_index_index>
         <reference name="content">
-            <block type="demoproduct/demoproduct" name="demoproduct" template="demoproduct/demoproduct.phtml" />
+            <block type="assignment4/assignment4" name="assignment4" template="assignment4/assignment4.phtml" />
         </reference>
-    </demoproduct_index_index>
+    </assignment4_index_index>
 </layout>
