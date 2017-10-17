@@ -6,20 +6,36 @@
  * Time: 17:26
  */
 
-class Dangnd_DemoProduct_Modal_Observer
+class Dangnd_DemoProduct_Model_Observer
 {
-    public function changeAttribute(Varien_Event_Observer $observer)
+    public function changeListPrice(Varien_Event_Observer $observer)
     {
+        $collection = $observer->getEvent()->getCollection();
+        /** @var Mage_Catalog_Model_Product $item */
+        foreach ($collection as $item) {
+            $item->setFinalPrice(20);
+        }
+        return $this;
+    }
+    public function changeViewPrice(Varien_Event_Observer $observer)
+    {
+        /** @var Mage_Catalog_Model_Product $product */
         $product = $observer->getEvent()->getProduct();
-
-        if(count($product) > 1) {
-            foreach ($product as $key => $item) {
-                $product[$key]->setPriceIncvat(20);
-            }
-        }
-        else {
-            $price = $product->getPrice();
-            $product->setPriceIncvat($price + $price/25);
-        }
+        $price = $product->getFinalPrice();
+        $price += $price/20;
+        $product->setFinalPrice($price);
+        return $this;
+    }
+    public function changeCartPrice(Varien_Event_Observer $observer)
+    {
+        /** @var Mage_Sales_Model_Quote_Item $quoteItem */
+        $quoteItem = $observer->getEvent()->getQuoteItem();
+        $product = $observer->getEvent()->getProduct();
+        $price = $product->getFinalPrice();
+        $price += ($price*5)/100;
+        $price += ($price*5)/100;
+        $quoteItem->setCustomPrice($price);
+        $quoteItem->setOriginalCustomPrice($price);
+        return $this;
     }
 }
