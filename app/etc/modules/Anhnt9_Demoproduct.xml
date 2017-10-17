@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Anhnt9_Demoproduct>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Anhnt9_Demoproduct>
+    </modules>
+</config>
