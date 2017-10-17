@@ -1,0 +1,26 @@
+<config>
+    <modules>
+        <Tungtt_DemoGiaodien>
+            <version>0.1.0</version>
+        </Tungtt_DemoGiaodien>
+    </modules>
+    <frontend>
+        <routers>
+
+            <DemoGiaodien>
+                <use>standard</use>
+                <args>
+                    <module>Tungtt_DemoGiaodien</module>
+                    <frontName>demogiaodien</frontName>
+                </args>
+            </DemoGiaodien>
+        </routers>
+    </frontend>
+    <global>
+        <blocks>
+            <myblock>
+                <class>Tungtt_DemoGiaodien_Block</class>
+            </myblock>
+        </blocks>
+    </global>
+</config>

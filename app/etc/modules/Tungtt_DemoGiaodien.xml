@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<config>
+
+    <modules>
+
+        <Tungtt_DemoGiaodien>
+
+            <active>true</active>
+
+            <codePool>local</codePool>
+
+        </Tungtt_DemoGiaodien>
+
+    </modules>
+
+</config>
