@@ -1,0 +1,25 @@
+<config>
+    <modules>
+        <Luannt3_Assignment4>
+            <version>0.1.0</version>
+        </Luannt3_Assignment4>
+    </modules>
+    <frontend>
+        <routers>
+            <Ass>
+                <use>standard</use>
+                <args>
+                    <module>Luannt3_Assignment4</module>
+                    <frontName>ass</frontName>
+                </args>
+            </Ass>
+        </routers>
+    </frontend>
+    <global>
+        <blocks>
+            <myblock>
+                <class>Luannt3_Assignment4_Block</class>
+            </myblock>
+        </blocks>
+    </global>
+</config>

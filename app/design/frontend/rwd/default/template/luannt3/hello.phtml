@@ -1,0 +1,20 @@
+<html>
+    <header>
+        <title>Hello</title>
+    </header>
+    <body>
+    <div >
+        <?php echo $this->getChildHtml('header')?>
+    </div>
+
+    <div style="width: 100%;float: left;">
+        <?php echo $this->getChildHtml('left')?>
+        <?php echo $this->getChildHtml('content')?>
+        <?php echo $this->getChildHtml('right')?>
+    </div>
+    <div>
+        <?php echo $this->getChildHtml('footer')?>
+    </div>
+
+    </body>
+</html>
