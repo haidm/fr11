@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello world title</title>
+	<style type="text/css">
+		.header{border: 1px solid red;padding:10px;text-align: center;margin-bottom:5px;}
+		.main{border: 1px solid red;padding:10px;text-align: center;margin-bottom:5px;}
+		.footer{border: 1px solid red;padding:10px;text-align: center;margin-bottom:5px;}
+		.logo{border: 1px solid black;padding:10px;text-align: center;float:left;}
+		.mainl{border: 1px solid green;float:left;margin-right: 20px;padding:20px;}
+		.mainc{border: 1px solid green;float:left;margin-right: 20px;padding:20px;}
+		.mainr{border: 1px solid green;float:left;padding:20px;}
+		.mainb{clear: both;}
+		.logol{clear: both;}
+	</style>
+</head>
+<body>
+	<div class="header"><?php echo $this->getChildHtml('block_header'); ?>
+		<div class="logo">logo</div>
+		<div class="logol"></div>
+	</div>
+ 	<div class="main">
+ 		<div class="mainl"><?php echo $this->getChildHtml('block_mainl'); ?></div>
+ 		<div class="mainc"><?php echo $this->getChildHtml('block_mainc'); ?></div>
+ 		<div class="mainr"><?php echo $this->getChildHtml('block_mainr'); ?></div>
+ 		<div class="mainb"></div>
+ 	</div>
+ 	<div class="footer"><?php echo $this->getChildHtml('block_footer'); ?></div>
+ </body>
+</html>

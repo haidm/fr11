@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+	<sinhvien_IndexComtroller_indexAction>
+		<reference name="content">
+			<block type="sinhvien/sinhvien" name="sinhvien" template="sinhvien/sinhvien.phtml">
+			</block>
+		</reference>
+	</sinhvien_IndexComtroller_indexAction>
+</layout>
