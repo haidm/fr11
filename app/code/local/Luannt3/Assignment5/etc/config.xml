@@ -1,0 +1,25 @@
+<config>
+<modules>
+    <Luannt3_Assignment5>
+        <version>0.1.0</version>
+    </Luannt3_Assignment5>
+</modules>
+<frontend>
+    <routers>
+        <Assignment5>
+            <use>standard</use>
+            <args>
+                <module>Luannt3_Assignment5</module>
+                <frontName>ass5</frontName>
+            </args>
+        </Assignment5>
+    </routers>
+    <layout>
+        <updates>
+            <Luannt3_Assignment5>
+                <file>luannt3_assignment5.xml</file>
+            </Luannt3_Assignment5>
+        </updates>
+    </layout>
+</frontend>
+</config>

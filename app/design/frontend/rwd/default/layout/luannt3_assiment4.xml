@@ -1,7 +1,0 @@
-<layout version="0.1.0">
-    <assiment4_index_index>
-        <reference name="content">
-            <block type="luannt3_assiment4" name="afficher_monblock" template="luannt3_assiment4/afficher.phtml"/>
-        </reference>
-    </assiment4_index_index>
-</layout>
