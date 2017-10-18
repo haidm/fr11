@@ -7,7 +7,7 @@ class Basetut_Helloworld_IndexController extends Mage_Core_Controller_Front_Acti
      */
     public function indexAction()
     {
-        echo "ahhhhhhhhhhhh";die;
+//        echo "ahhhhhhhhhhhh";die;
         // $this->loadLayout();
         // $this->renderLayout();
         // echo "hienzzzzz";
@@ -18,17 +18,18 @@ class Basetut_Helloworld_IndexController extends Mage_Core_Controller_Front_Acti
 
         $layoutObject = $this->getLayout();
         $childBlock = $layoutObject->createBlock('wrapBlock/Childblock')->setTemplate('helloworld/header.phtml');
-        // $childBlock1 = $layoutObject->createBlock('wrapBlock/Childblock1')->setTemplate('helloworld/header.phtml');
+        $childBlock1 = $layoutObject->createBlock('wrapBlock/Childblock1')->setTemplate('helloworld/logo.phtml');
         $childBlock2 = $layoutObject->createBlock('wrapBlock/Childblock2')->setTemplate('helloworld/mainleft.phtml');
         $childBlock3 = $layoutObject->createBlock('wrapBlock/Childblock3')->setTemplate('helloworld/maincontenta.phtml');
         $childBlock4 = $layoutObject->createBlock('wrapBlock/Childblock4')->setTemplate('helloworld/mainright.phtml');
         $childBlock5 = $layoutObject->createBlock('wrapBlock/Childblock5')->setTemplate('helloworld/footer.phtml');
         $block = $layoutObject->createBlock('wrapBlock/helloworld')->setTemplate('helloworld/helloworld.phtml')
-        ->setChild('block_header',$childBlock)
-        ->setChild('block_mainl',$childBlock2)
-        ->setChild('block_mainc',$childBlock3)
-        ->setChild('block_mainr',$childBlock4)
-        ->setChild('block_footer',$childBlock5);
+        ->setChild('header',$childBlock)
+            ->setChild('logo',$childBlock1)
+        ->setChild('mainleftc',$childBlock2)
+        ->setChild('maincontent',$childBlock3)
+        ->setChild('mainrightd',$childBlock4)
+        ->setChild('footer',$childBlock5);
         echo $block->toHtml();
     }
 }
