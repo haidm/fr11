@@ -3,38 +3,36 @@
 <head>
 	<title>hello world title</title>
 	<style type="text/css">
-		.header{border: 1px solid red;padding:10px;text-align: center;margin-bottom:5px;}
-		.main{border: 1px solid red;padding:10px;text-align: center;margin-bottom:5px;}
-		.footer{border: 1px solid red;padding:10px;text-align: center;margin-bottom:5px;}
-		.logo{border: 1px solid black;padding:10px;text-align: center;float:left;}
-		.mainl{border: 1px solid green;float:left;margin-right: 10px;padding:10px;width:30%;height:400px;}
-		.mainc{border: 1px solid green;float:left;margin-right: 10px;padding:10px;width:30%;height:400px;}
-		.mainr{border: 1px solid green;float:left;padding:10px;width:30%;height:400px;}
+		.header{border: 2px solid red;padding:10px;text-align: center;margin-bottom:5px;}
+		.main{border: 2px solid red;padding:10px;text-align: center;margin-bottom:5px;}
+		.footer{border: 2px solid red;padding:10px;text-align: center;margin-bottom:5px;}
+		.logo{border: 2px solid black;padding:10px;text-align: center;float:left;}
+		.mainl{border: 2px solid red;float:left;margin:10px 30px 10px 0;padding:10px;width:30%;height:400px;text-align: center;}
+		.mainc{border: 2px solid red;float:left;margin:10px 30px 10px 0;padding:10px;width:30%;height:400px;text-align: center;}
+		.mainr{border: 2px solid red;float:left;padding:10px;width:30%;height:400px;margin-top:10px;text-align: center;}
 		.mainb{clear: both;}
 		.logo{width:30%;text-align:center;}
 		.logol{clear: both;}
-		.A,.B,.C,.D{border: 1px solid yellow;padding:10px;text-align: center;}
-		.A,.B{width:30%;}
+		.A,.B,.C,.D{border: 2px solid yellow;padding:10px;text-align: center;}
+		.A,.B{width:30%;margin-bottom:10px;}
 	</style>
 </head>
 <body>
-	<div class="header"><?php echo $this->getChildHtml('block_header'); ?>
-		<div class="logo">logo</div>
+	<div class="header"><?php echo $this->getChildHtml('header'); ?>
 		<div class="logol"></div>
 	</div>
- 	<div class="main">
- 		<div class="mainl"><?php echo $this->getChildHtml('block_mainl'); ?>
- 			<div class="C">C</div>
+<!-- 	<div class="main">-->
+ 		<div class="mainl">
+ 			<div class="C"><?php echo $this->getChildHtml('mainleftc'); ?></div>LEFT
  		</div>
- 		<div class="mainc"><?php echo $this->getChildHtml('block_mainc'); ?>
- 			<div class="A">A</div>
- 			<div class="B">B</div>
- 		</div>
- 		<div class="mainr"><?php echo $this->getChildHtml('block_mainr'); ?>
- 			<div class="D">D</div>
+ 		<div class="mainc">
+            <?php echo $this->getChildHtml('maincontent'); ?>
+            Content</div>
+ 		<div class="mainr">
+ 			<div class="D"><?php echo $this->getChildHtml('mainrightd'); ?></div>Right
  		</div>
  		<div class="mainb"></div>
- 	</div>
- 	<div class="footer"><?php echo $this->getChildHtml('block_footer'); ?></div>
+<!-- 	</div>-->
+ 	<div class="footer"><?php echo $this->getChildHtml('footer'); ?></div>
  </body>
 </html>

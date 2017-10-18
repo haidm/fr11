@@ -1,0 +1,21 @@
+<layout version="0.1.0">
+    <Layout_index_index>
+        <block type="core/template" name="container" output="toHtml" template="helloworld/helloworld.phtml">
+            <block type="core/template" name="header" as="header" template="helloworld/header.phtml">
+                <block type="core/template" name="logo" as="logo" template="helloworld/logo.phtml"/>
+                <block type="core/template" name="banner" as="banner" template="helloworld/banner.phtml"/>
+            </block>
+            <block type="core/text_list" name="mainleft" as="mainleftc">
+                <block type="core/template" name="mainleftc"  template="helloworld/mainleft.phtml" />
+            </block>
+            <block type="core/text_list" name="maincontent" as="maincontent" >
+                <block type="core/template" name="maincontenta" as="maincontenta" template="helloworld/maincontenta.phtml" />
+                <block type="core/template" name="maincontentb" as="maincontentb" template="helloworld/maincontentb.phtml" />
+            </block>
+            <block type="core/text_list" name="mainright" as="mainrightd" >
+                <block type="core/template" name="mainrightd"  template="helloworld/mainright.phtml" />
+            </block>
+            <block type="core/template" name="footer" as="footer" template="helloworld/footer.phtml"/>
+        </block>
+    </Layout_index_index>
+</layout>

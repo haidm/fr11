@@ -7,6 +7,7 @@ class Basetut_Helloworld_IndexController extends Mage_Core_Controller_Front_Acti
      */
     public function indexAction()
     {
+        echo "ahhhhhhhhhhhh";die;
         // $this->loadLayout();
         // $this->renderLayout();
         // echo "hienzzzzz";
@@ -19,7 +20,7 @@ class Basetut_Helloworld_IndexController extends Mage_Core_Controller_Front_Acti
         $childBlock = $layoutObject->createBlock('wrapBlock/Childblock')->setTemplate('helloworld/header.phtml');
         // $childBlock1 = $layoutObject->createBlock('wrapBlock/Childblock1')->setTemplate('helloworld/header.phtml');
         $childBlock2 = $layoutObject->createBlock('wrapBlock/Childblock2')->setTemplate('helloworld/mainleft.phtml');
-        $childBlock3 = $layoutObject->createBlock('wrapBlock/Childblock3')->setTemplate('helloworld/maincontent.phtml');
+        $childBlock3 = $layoutObject->createBlock('wrapBlock/Childblock3')->setTemplate('helloworld/maincontenta.phtml');
         $childBlock4 = $layoutObject->createBlock('wrapBlock/Childblock4')->setTemplate('helloworld/mainright.phtml');
         $childBlock5 = $layoutObject->createBlock('wrapBlock/Childblock5')->setTemplate('helloworld/footer.phtml');
         $block = $layoutObject->createBlock('wrapBlock/helloworld')->setTemplate('helloworld/helloworld.phtml')
