@@ -2,8 +2,8 @@
     <sections>
         <general>
             <groups>
-                <test translate="label">
-                    <label>Test Option</label>
+                <banner translate="label">
+                    <label>Banner Option</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>0</sort_order>
                     <show_in_default>1</show_in_default>
@@ -11,7 +11,7 @@
                     <show_in_store>1</show_in_store>
                     <fields>
                         <enable translate="label">
-                            <label>choose image</label>
+                            <label>Upload Image</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>2</sort_order>
                             <show_in_default>1</show_in_default>
@@ -20,7 +20,7 @@
                             <can_be_empty>1</can_be_empty>
                         </enable>
                     </fields>
-                </test>
+                </banner>
             </groups>
         </general>
     </sections>

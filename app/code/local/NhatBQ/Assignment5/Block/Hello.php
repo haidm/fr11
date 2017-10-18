@@ -4,7 +4,7 @@ class NhatBQ_Assignment5_Block_Hello extends Mage_Core_Block_Template
 
     public function _construct()
     {
-        $this->setTemplate('mytemplate/file.phtml');
+        $this->setTemplate('mylayout/file.phtml');
     }
 
 

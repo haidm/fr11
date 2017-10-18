@@ -5,25 +5,43 @@
             <version>0.1.0</version>
         </NhatBQ_Assignment5>
     </modules>
+
+    <global>
+        <helpers>
+            <nhatbq_assignment5>
+                <class>NhatBQ_Assignmen5_Helper</class>
+            </nhatbq_assignment5>
+        </helpers>
+        <resources>
+            <nhatbq_assignment5_setup>
+                <setup>
+                    <module>assignment5.xml</module>
+                </setup>
+            </nhatbq_assignment5_setup>
+        </resources>
+        <blocks>
+            <demomodule>
+                <class>NhatBQ_Assignment5_Block</class>
+            </demomodule>
+        </blocks>
+    </global>
+
     <frontend>
         <routers>
-            <assignment>
+            <Assignment5>
                 <use>standard</use>
                 <args>
                     <module>NhatBQ_Assignment5</module>
                     <frontName>ass5</frontName>
                 </args>
-            </assignment>
+            </Assignment5>
         </routers>
         <layout>
             <updates>
                 <assignment5>
-                    <file>
-                        nhatbq.xml
-                    </file>
+                    <file>assignment5.xml</file>
                 </assignment5>
             </updates>
-
         </layout>
     </frontend>
 </config>
