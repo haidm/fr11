@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hungbd_Assign5>
+            <version>0.1.0</version>
+        </Hungbd_Assign5>
+    </modules>
+    <frontend>
+        <routers>
+            <Assign5>
+                <use>standard</use>
+                <args>
+                    <module>Hungbd_Assign5</module>
+                    <frontName>asign5</frontName>
+                </args>
+            </Assign5>
+        </routers>
+        <layout>
+            <updates>
+                <mylayout>
+                    <file>mymodule.xml</file>
+                </mylayout>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <myblock>
+                <class>Hungbd_Assign5_Block</class>
+            </myblock>
+        </blocks>
+    </global>
+</config>

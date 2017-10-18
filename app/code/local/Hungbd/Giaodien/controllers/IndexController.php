@@ -14,7 +14,7 @@ class Hungbd_Giaodien_IndexController extends Mage_Core_Controller_Front_Action
         $layoutObj = $this->getLayout();
         $aBlock = $headerBlock = $layoutObj
             ->createBlock('myblock/ablock')
-            ->setText('this is block a');
+            ->setTemplate('Mytemplate/a.phtml');
 //        var_dump($aBlock);
 //        $bBlock = $headerBlock = $layoutObj
 //            ->createBlock('myblock/bblock')

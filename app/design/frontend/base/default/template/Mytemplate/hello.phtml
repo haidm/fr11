@@ -5,37 +5,84 @@
             width: 100%;
             height: 200px;
             clear: both;
-            background-color: red;
+            border: 1px black solid;
+        }
+        .header img{
+            width: 112%;
+            height: 190px;
+
         }
         .left{
-            width: 20%;
+            width: 19%;
             float: left;
-            height: 200px;
-            background-color: blue;
+            height: 400px;
+            float: left;
+            border: 1px black solid;
         }
         .content{
             width: 60%;
-            height: 200px;
+            height: 400px;
             float: left;
-            background-color: pink;
+            border: 1px black solid;
         }
         .right{
-            width: 20%;
-            height: 200px;
+            width: 20.40%;
+            height: 400px;
             float: left;
-            background-color: green;
+            border: 1px black solid;
         }
         .footer{
             width: 100%;
             height: 200px;
+            color: #000;
             clear: both;
-            background-color: red;
+            border: 1px black solid;
+        }
+        .logo{
+            width: 20%;
+            height: 160px;
+            margin-left: 10px;
+            margin-top: 10px;
+            float: left;
+            border: 1px black solid;
+        }
+        .a{
+            width: 30%;
+            height: 160px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border: 1px black solid;
+        }
+        .b{
+            width: 30%;
+            height: 160px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border: 1px black solid;
+        }
+        .c{
+            width: 90%;
+            height: 160px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border: 1px black solid;
+        }
+        .d{
+            width: 90%;
+            height: 160px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border: 1px black solid;
+        }
+        .banner{
+            width: 70%;
+            float: left;
         }
     </style>
 </head>
     <body>
         <div class="header"><?php echo $this->getChildHtml('c1_header'); ?></div>
-        <div class="left"><?php echo $this->getChildHtml('c1_left'); ?></div>
+        <div class="left"><?php echo $this->getChildHtml('c1_left');?></div>
         <div class="content"><?php echo $this->getChildHtml('c1_content'); ?></div>
         <div class="right"><?php echo $this->getChildHtml('c1_right'); ?></div>
         <div class="footer"><?php echo $this->getChildHtml('c1_footer'); ?></div>

@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<layout>
+    <assign5_layout_handle>
+        <block type="core/template"
+               name="wraper"
+               template="Mytemplate/hello.phtml"
+               output="toHtml">
+
+            <block type="core/template"
+                   name="header"
+                   template="Mytemplate/header.phtml"
+                   as="c1_header">
+                <block type="core/template"
+                       name="logo"
+                       template="Mytemplate/logo.phtml"
+                       as="c1_logo">
+
+                </block>
+                <block type="core/template"
+                       name="banner"
+                       template="Mytemplate/banner.phtml"
+                       as="c1_banner">
+
+                </block>
+
+            </block>
+            <block type="core/text_list"
+                   name="left"
+                   as="c1_left">
+                <block type="core/template"
+                       name="c"
+                       template="Mytemplate/c.phtml"
+                       as="c1_c" >
+
+                </block>
+            </block>
+            <block type="core/text_list"
+                   name="right"
+                   as="c1_right">
+                <block type="core/template"
+                       name="d"
+                       template="Mytemplate/d.phtml"
+                       as="c1_d" >
+                </block>
+
+            </block>
+            <block type="core/text_list"
+                   name="content"
+                   as="c1_content">
+                <block type="core/template"
+                       name="a"
+                       template="Mytemplate/a.phtml"
+                       as="c1_a" >
+
+                </block>
+                <block type="core/template"
+                       name="b"
+                       template="Mytemplate/b.phtml"
+                       as="c1_b" >
+
+                </block>
+            </block>
+            <block type="core/template"
+                   name="footer"
+                   template="Mytemplate/footer.phtml"
+                   as="c1_footer">
+
+            </block>
+        </block>
+    </assign5_layout_handle>
+</layout>
