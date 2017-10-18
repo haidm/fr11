@@ -1,0 +1,42 @@
+<style>
+    * {
+        text-align: center;
+        border: 1px solid black;
+        padding: 10px;
+    }
+    body {
+        border: none;
+    }
+    .header, .footer {
+        height: 100px;
+        display: block;
+        clear: both
+    }
+    .left, .content, .right {
+        float: left;
+    }
+    .left, .right {
+        width: 21%;
+    }
+    .content {
+        width: 50%;
+    }
+    .blocka, .blockb, .blockc, .blockd, .logo {
+        width: 40px;
+    }
+
+</style>
+<?php echo $this->getChildHtml('header') ?>
+<div class="left">
+    <?php echo $this->getChildHtml('left') ?>
+    LEFT
+</div>
+<div class="content">
+    <?php echo $this->getChildHtml('content') ?>
+    CONTENT
+</div>
+<div class="right">
+    <?php echo $this->getChildHtml('right') ?>
+    RIGHT
+</div>
+<?php echo $this->getChildHtml('footer') ?>

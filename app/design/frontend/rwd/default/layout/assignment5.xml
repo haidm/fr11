@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <assignment5_layout_handle>
+        <block type="core/template" name="mainblock" template="assignment5/mainblock.phtml" output="toHtml">
+            <block type="core/text_list" name="header" as="header" output="toHtml">
+                <block type="core/template" name="logo" as="logo" template="assignment5/logo.phtml"/>
+            </block>
+            <block type="core/text_list" name="left" as="left" >
+                <block type="core/template" name="blockc" as="blockc"  template="assignment5/blockc.phtml"/>
+            </block>
+            <block type="core/text_list" name="content" as="content">
+                <block type="core/template" name="blocka" as="blocka"  template="assignment5/blocka.phtml"/>
+                <block type="core/template" name="blockb" as="blockb" template="assignment5/blockb.phtml"/>
+            </block>
+            <block type="core/text_list" name="right" as="right">
+                <block type="core/template" name="blockd" as="blockd" template="assignment5/blockd.phtml"/>
+            </block>
+            <block type="core/template" name="footer" as="footer" template="assignment5/footer.phtml"></block>
+        </block>
+    </assignment5_layout_handle>
+</layout>
