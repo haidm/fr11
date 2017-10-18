@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <demoproduct_index_index>
+        <reference name="content">
+            <block type="core/template" name="parent" template="mytemplate/demo.phtml" output="toHtml">
+                    <block type="core/template" name="header" template="mytemplate/header.phtml">
+                        <block type="core/template" name="logo" template="mytemplate/logo.phtml"/>
+                    </block>
+                <block type="core/text_list" name="left" template="mytemplate/left.phtml">
+                    <block type="core/template" name="blockc" template="mytemplate/c.phtml"/>
+                </block>
+                <block type="core/text_list" name="content" template="mytemplate/content.phtml">
+                    <block type="core/template" name="blocka" template="mytemplate/a.phtml"/>
+                    <block type="core/template" name="blockb" template="mytemplate/b.phtml"/>
+                </block>
+                <block type="core/text_list" name="right" template="mytemplate/right.phtml">
+                    <block type="core/template" name="blockd" template="mytemplate/d.phtml"/>
+                </block>
+                <block type="core/template" name="footer" template="mytemplate/footer.phtml"/>
+            </block>
+        </reference>
+    </demoproduct_index_index>
+</layout>

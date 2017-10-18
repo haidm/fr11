@@ -1,106 +1,46 @@
-<html>
-<head>
-    <style>
-        .header{
-            width: 100%;
-            height: 200px;
-            clear: both;
-            border: 1px solid grey;
-            box-sizing: border-box;
-        }
-        .left{
-            position: relative;
-            width: 20%;
-            float: left;
-            height: 500px;
-            border: 1px solid grey;
-            box-sizing: border-box;
-        }
-        .content{
-            position: relative;
-            width: 60%;
-            height: 500px;
-            float: left;
-            border: 1px solid grey;
-            box-sizing: border-box;
-        }
-        .right{
-            position: relative;
-            width: 20%;
-            height: 500px;
-            float: left;
-            border: 1px solid grey;
-            box-sizing: border-box;
-        }
-        .footer{
-            width: 100%;
-            height: 200px;
-            clear: both;
-            border: 1px solid grey;
-            box-sizing: border-box;
-        }
-        p{
-            text-align: center;
-            margin-top: 80px;
-            font-size: 24px;
-        }
-        .logo{
-            font-size: 18px;
-            height: 160px;
-            width: 500px;
-            margin-left: 20px;
-            margin-top:-114px;
-            text-align: center;
-            border:1px solid grey ;
-        }
-        .logo span{
-            margin-top: 50px;
-        }
-        .c{
-            position: absolute;
-            top: 10px;
-            left: 9%;
-            text-align: center;
-            border: 1px solid grey;
-            height: 100px;
-            width: 220px;
-        }
-        .a{
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            text-align: center;
-            border: 1px solid grey;
-            height: 100px;
-            width: 220px;
-        }
-        .b{
-            position: absolute;
-            left: 10px;
-            text-align: center;
-            border: 1px solid grey;
-            height: 100px;
-            width: 220px;
-        }
-        .d{
-            position: absolute;
-            top:10px;
-            left: 15px;
-            text-align: center;
-            border: 1px solid grey;
-            height: 100px;
-            width: 230px;
-        }
-        span{
-            margin-top: 50px;
-        }
-    </style>
-</head>
-<body>
-<div class="header"><?php echo $this->getChildHtml('header'); ?></div>
-<div class="left"><?php echo $this->getChildHtml('left'); ?></div>
-<div class="content"><?php echo $this->getChildHtml('content'); ?></div>
-<div class="right"><?php echo $this->getChildHtml('right'); ?></div>
-<div class="footer"><?php echo $this->getChildHtml('footer'); ?></div>
-</body>
-</html>
+<style>
+    *{
+        text-align: center;
+        border: 1px solid black;
+        padding: 10px;
+    }
+    body {
+        border: none;
+    }
+    .header, .footer {
+        height: 100px;
+        display: block;
+        clear: both
+    }
+    .left, .content, .right {
+        float: left;
+    }
+    .left, .right {
+        width: 289px;
+        height:98px;
+    }
+    .content {
+        width: 50%;
+    }
+    .blocka, .blockb, .blockc, .blockd, .logo {
+        width: 40px;
+    }
+    .header{
+        background-image: url("<?php echo Mage::getStoreConfig('general/banner/enable') ?>");
+    }
+
+</style>
+<?php echo $this->getChildHtml('header') ?>
+    <div class="left">
+        <?php echo $this->getChildHtml('left') ?>
+        LEFT
+    </div>
+    <div class="content">
+        <?php echo $this->getChildHtml('content') ?>
+        CONTENT
+    </div>
+    <div class="right">
+        <?php echo $this->getChildHtml('right') ?>
+        RIGHT
+    </div>
+<?php echo $this->getChildHtml('footer') ?>

@@ -15,6 +15,13 @@
                 </args>
             </demoproduct>
         </routers>
+        <layout>
+            <updates>
+                <demoproduct_index_index>
+                    <file>demoproduct.xml</file>
+                </demoproduct_index_index>
+            </updates>
+        </layout>
     </frontend>
     <global>
         <blocks>
