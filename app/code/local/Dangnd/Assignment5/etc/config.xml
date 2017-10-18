@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Dangnd_Assignment5>
+            <version>0.1</version>
+        </Dangnd_Assignment5>
+    </modules>
+    <frontend>
+        <routers>
+            <Assignment5>
+                <use>standard</use>
+                <args>
+                    <module>Dangnd_Assignment5</module>
+                    <frontName>asm5</frontName>
+                </args>
+            </Assignment5>
+        </routers>
+        <layout>
+            <updates>
+                <assignment5>
+                    <file>assignment5.xml</file>
+                </assignment5>
+            </updates>
+        </layout>
+    </frontend>
+</config>

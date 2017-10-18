@@ -1,0 +1,25 @@
+<layout version="0.1.0">
+    <asm5_layout_handle>
+        <block type="core/template" name="asm5_simple" output="toHtml" template="assignment5/simple.phtml">
+            <block type="core/template" name="asm5_header" as="asm5_header" template="assignment5/header.phtml" >
+                <block type="core/template" name="asm5_logo" as="asm5_logo" template="assignment5/logo.phtml" />
+                <block type="core/template" name="banner" as="banner" template="assignment5/banner.phtml" />
+            </block>
+
+            <block type="core/text_list" name="asm5_left" as='asm5_left'>
+                <block type="core/template" name="asm5_c" as='asm5_c' template="assignment5/c.phtml" />
+            </block>
+
+            <block type="core/text_list" name="asm5_content" as='asm5_content' >
+                <block type="core/template" name="asm5_a" as="asm5_a" template="assignment5/a.phtml" />
+                <block type="core/template" name="asm5_b" as="asm5_b" template="assignment5/b.phtml" />
+            </block>
+
+            <block type="core/text_list" name="asm5_right" as="asm5_right" >
+                <block type="core/template" name="asm5_d" as="asm5_d" template="assignment5/d.phtml" />
+            </block>
+
+            <block type="core/template" name="asm5_footer" as="asm5_footer" template="assignment5/footer.phtml" />
+        </block>
+    </asm5_layout_handle>
+</layout>
