@@ -5,21 +5,42 @@
             <version>0.1.0</version>
         </Datdt_Assignment5>
     </modules>
+
+    <global>
+        <helpers>
+            <datdt_assignment5>
+                <class>Datdt_Assignment5_Helper</class>
+            </datdt_assignment5>
+        </helpers>
+        <resources>
+            <datdt_assignment5_setup>
+                <setup>
+                    <module>Datdt_Assignment5.xml</module>
+                </setup>
+            </datdt_assignment5_setup>
+        </resources>
+        <blocks>
+            <demomodule>
+                <class>Datdt_Assignment5_Block</class>
+            </demomodule>
+        </blocks>
+    </global>
+
     <frontend>
         <routers>
             <Assignment5>
                 <use>standard</use>
                 <args>
                     <module>Datdt_Assignment5</module>
-                    <frontName>assignment5</frontName>
+                    <frontName>demoass5</frontName>
                 </args>
             </Assignment5>
         </routers>
         <layout>
             <updates>
-                <Datdt_Assignment5>
+                <demoass5>
                     <file>assignment5.xml</file>
-                </Datdt_Assignment5>
+                </demoass5>
             </updates>
         </layout>
     </frontend>

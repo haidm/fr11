@@ -17,51 +17,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<style>
-    .header, .footer {
-        height: auto;
-        border: 1px solid black;
-
-    }
-    .logo {
-        width: 100px;
-        height: 50px;
-        border: 1px solid black;
-    }
-    .left, .content, .right {
-        border: 1px solid black;
-        height: 450px;
-    }
-
-    .blocka, .blockb, .blockc, .blockd {
-        width: 100px;
-        height: 80px;
-        border: 1px solid black;
-    }
-
-</style>
 <body>
 <div class="container">
-    <?php echo $this->getChildHtml('header'); ?>
-</div>
-<div class="container">
-    <div class="col-md-3 text-center left">
+    <nav class="nav nav-pills nav-justified">
+        <ul>
+            <li><a href="" title="">Logo</a></li>
+            <li><a href="" title="">
+                    <?php echo $this->getChildHtml('headers'); ?>
+
+                </a></li>
+        </ul>
+    </nav>
+    <div class="col-md-3 text-center">
         Left Bar
         <?php echo $this->getChildHtml('left'); ?>
     </div>
-    <div class="col-md-6 text-center content">
+    <div class="col-md-6 text-center">
 
         Content
         <?php echo $this->getChildHtml('content'); ?>
 
     </div>
-    <div class="col-md-3 text-center right">
+    <div class="col-md-3 text-center">
         Right Bar
         <?php echo $this->getChildHtml('right'); ?>
     </div>
 </div>
-<div class="container clearfix text-center ">
-<?php echo $this->getChildHtml('footer'); ?>
+<div class="container clearfix text-center">
+    Footer <?php echo $this->getChildHtml('footers'); ?>
 </div>
 </body>
 </html>
