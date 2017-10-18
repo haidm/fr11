@@ -9,7 +9,7 @@ class NhatBQ_Renderdemo_IndexController extends Mage_Core_Controller_Front_Actio
         $childBlock = $layoutObject->createBlock('wrapBlock/Childblock')->setTemplate('helloworld/header.phtml');
         $childBlock1 = $layoutObject->createBlock('wrapBlock/Childblock1')->setTemplate('helloworld/header.phtml');
         $childBlock2 = $layoutObject->createBlock('wrapBlock/Childblock2')->setTemplate('helloworld/mainleft.phtml');
-        $childBlock3 =
+
 
     }
 }

@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>My assignment 5</title>
+    <style>
+        body {
+            padding: 10px;
+        }
+        header, section, footer {
+            width : 100%;
+        }
+        header, footer {
+            text-align : center;
+            height : 150px;
+            border : 4px #170eff solid;
+        }
+        section {
+            margin : 15px 0;
+            height : 300px;
+            text-align: center;
+        }
+        section > div {
+            float : left;
+        }
+        #logo {
+            border : 1px black solid;
+            font-size : 1.4em;
+            padding: 30px 44px;
+            margin-top : 20px;
+            margin-left : 20px;
+            text-align : center;
+            width : 20%;
+        }
+        #left, #right {
+            width : 15%;
+            border : 4px #170eff solid;
+            height :inherit;
+        }
+        #content {
+            width : 67%;
+            border : 4px #170eff solid;
+            height: inherit;
+            margin : 0 2.8px;
+        }
+        .txt-box {
+            border: 1px #fff649 solid;
+            padding: 20px 55px;
+            width: 70px;
+            text-align: center;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <?php echo $this->getChildHtml('header');
+
+    ?>
+</header>
+
+<section>
+    <div id='left'>
+        <?php echo $this->getChildHtml('left') ?>
+        LEFT
+    </div>
+
+    <div id='content'>
+        <?php echo $this->getChildHtml('content') ?>
+        CONTENT
+    </div>
+
+    <div id='right'>
+        <?php echo $this->getChildHtml('right') ?>
+        RIGHT
+    </div>
+</section>
+
+<footer>
+    <?php echo $this->getChildHtml('footer') ?>
+</footer>
+</body>
+</html>

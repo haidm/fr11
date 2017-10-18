@@ -1,5 +1,5 @@
 <?php
-class NhatBQ_Renderdemo_Block_Childblock extends (){
+class NhatBQ_Renderdemo_Block_Childblock  {
 
 }
 ?>

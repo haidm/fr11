@@ -1,0 +1,27 @@
+<layout version="0.1.0">
+    <nhatbq_layout_handle>
+        <block type="core/template" name="hello" template="nhatbq/hello.phtml" output="toHtml">
+            <block type="core/text_list" name="header" as="header" output="toHtml">
+                <block type="core/template" name="logo" as="logo" template="nhatbq/logo.phtml"/>
+            </block>
+            <block type="core/text_list" name="left" as="left" >
+                <block type="core/template" name="c" as="c"  template="nhatbq/c.phtml"/>
+            </block>
+            <block type="core/text_list" name="content" as="content">
+                <block type="core/template" name="a" as="a"  template="nhatbq/a.phtml"/>
+                <block type="core/template" name="b" as="b" template="nhatbq/b.phtml"/>
+            </block>
+            <block type="core/text_list" name="right" as="right">
+                <block type="core/template" name="d" as="d" template="nhatbq/d.phtml"/>
+            </block>
+            <block type="core/template" name="footer" as="footer" template="nhatbq/footer.phtml"></block>
+        </block>
+    </nhatbq_layout_handle>
+</layout>
+<layout>
+<updates>
+    <NhatBQ_Assignment5>
+        <file>nhatbq.xml</file>
+    </NhatBQ_Assignment5>
+</updates>
+</layout>

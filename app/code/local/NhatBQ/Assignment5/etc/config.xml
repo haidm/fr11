@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <NhatBQ_Assignment5>
+            <version>0.1.0</version>
+        </NhatBQ_Assignment5>
+    </modules>
+    <frontend>
+        <routers>
+            <assignment>
+                <use>standard</use>
+                <args>
+                    <module>NhatBQ_Assignment5</module>
+                    <frontName>ass5</frontName>
+                </args>
+            </assignment>
+        </routers>
+        <layout>
+            <updates>
+                <assignment5>
+                    <file>
+                        nhatbq.xml
+                    </file>
+                </assignment5>
+            </updates>
+
+        </layout>
+    </frontend>
+</config>
