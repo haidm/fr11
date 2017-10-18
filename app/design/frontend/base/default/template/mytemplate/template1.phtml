@@ -1,2 +1,111 @@
-sdgjknl
-<?php  echo $this->getMyname()?>
+<html>
+<head>
+    <link href="../../css/stylecss.css" rel="stylesheet" type="text/css">
+    <style>
+        #h1{
+            background-color: green;
+            width: 100%;
+            height: 150px;
+            text-align: center;
+
+        }
+        #h2{
+
+            width: 10%;
+            height: 100%;
+            text-align: center;
+        }
+        #h3{
+            background-color:yellow;
+            width: 30%;
+            height: 400px;
+
+            text-align: center;
+            FLOAT: left;
+        }
+        #h4{
+            background-color:orange;
+            width: 100%;
+            height: 50px;
+
+            text-align: right;
+            FLOAT: left
+        }#h5{
+             background-color:#0A246A;
+                     width: 40%;
+                     height: 400px;
+
+                     text-align: center;
+                     FLOAT: left
+         }
+        #h6{
+            background-color:#1E7EC8;
+            width: 40%;
+            height: 50px;
+
+            text-align: center;
+            FLOAT: left
+        }#h7{
+                     background-color:#91BE3F;
+                     width: 40%;
+                     height: 50px;
+
+                     text-align: center;
+                     clear: left;
+         }
+        #h8{
+            background-color:red;
+            width: 30%;
+            height: 400px;
+            text-align: center;
+            FLOAT: left;
+        }
+        #h9{
+              background-color:#91BE3F;
+              width: 100%;
+              height: 50px;
+              text-align: center;
+
+          }
+
+        #h10{
+            background-color:#2f2f2f;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            float: left;
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="h1">
+    <div id="h2"><img src="<?php Mage::getStoreConfig('general/test/enable');?>">
+        <?php echo $this->getChildHtml('logo');?></div>
+    <?php echo $this->getChildHtml('header'); ?>
+</div>
+<div id="h3">
+    <div id="h4"><?php echo $this->getChildHtml('c');?> <label>C</label></div>
+    <?php echo $this->getChildHtml('left');?>
+</div>
+<div id="h5">
+    <div id="h6">
+        <?php echo $this->getChildHtml('a');?><label>A</label>
+    </div>
+    <div id="h7">
+   <?php echo $this->getChildHtml('b');?><label>B</label>
+    </div>
+    <?php echo $this->getChildHtml('content');?>
+</div>
+<div id="h8">
+    <div id="h9">
+        <?php echo $this->getChildHtml('d');?><label>D</label>
+    </div>
+    <?php echo $this->getChildHtml('right');?>
+</div>
+<div id="h10">
+<?php echo $this->getChildHtml('footer');?>
+</div>
+</body>
+</html>

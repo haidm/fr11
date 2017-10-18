@@ -3,7 +3,7 @@
     <link href="../../css/stylecss.css" rel="stylesheet" type="text/css">
     <style>
         #h1{
-            background-color: green;
+
             width: 100%;
             height: 150px;
             text-align: center;
@@ -80,31 +80,31 @@
 </head>
 <body>
 
-<div id="h1">
-    <div id="h2"><?php echo $this->getChildHtml('logo');?></div>
-    <?php echo $this->getChildHtml('header'); ?>
+<div id="h1"> <?php echo $this->getChildHtml('header');?>"
+    <div id="h2">
+        <?php echo $this->getChildHtml('logo');?></div>
 </div>
 <div id="h3">
-    <div id="h4"><?php echo $this->getChildHtml('a');?></div>
+    <div id="h4"><?php echo $this->getChildHtml('c');?><label>C</label></div>
     <?php echo $this->getChildHtml('left');?>
 </div>
 <div id="h5">
     <div id="h6">
-        <?php echo $this->getChildHtml('b');?>
+        <?php echo $this->getChildHtml('a');?><label>A</label>
     </div>
     <div id="h7">
-   <?php echo $this->getChildHtml('c');?>
+   <?php echo $this->getChildHtml('b');?><label>B</label>
     </div>
     <?php echo $this->getChildHtml('content');?>
 </div>
 <div id="h8">
     <div id="h9">
-        <?php echo $this->getChildHtml('d');?>
+        <?php echo $this->getChildHtml('d');?><label>D</label>
     </div>
     <?php echo $this->getChildHtml('right');?>
 </div>
 <div id="h10">
-<?php echo $this->getChildHtml('foot');?>
+<?php echo $this->getChildHtml('footer');?>
 </div>
 </body>
 </html>

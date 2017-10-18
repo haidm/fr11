@@ -27,54 +27,18 @@
     </modules>
     <frontend>
         <routers>
-            <Demoproduct>
+            <demoblock>
                 <use>standard</use>
                 <args>
-                    <module>Training_Demoproduct</module>
-                    <frontName>demoproduct</frontName>
+                    <module>Block_Demo</module>
+                    <frontName>demoblock</frontName>
                 </args>
-            </Demoproduct>
+            </demoblock>
         </routers>
-
     </frontend>
-    <global>
-        <resources>
-            <demoproduct_setup>
-                <setup>
-                    <module>Training_Demoproduct</module>
-                </setup>
-            </demoproduct_setup>
-        </resources>
-        <models>
-            <demoproduct>
-                <class>Baont_Demoproduct_Model</class>
-            </demoproduct>
-        </models>
-        <events>
-            <catalog_product_collection_load_after>
-                <observers>
-                    <changelistprice>
-                        <class>demoproduct/observer</class>
-                        <method>changeListPrice</method>
-                    </changelistprice>
-                </observers>
-            </catalog_product_collection_load_after>
-            <catalog_controller_product_view>
-                <observers>
-                    <changeviewprice>
-                        <class>demoproduct/observer</class>
-                        <method>changeViewPrice</method>
-                    </changeviewprice>
-                </observers>
-            </catalog_controller_product_view>
-            <checkout_cart_product_add_after>
-                <observers>
-                    <changecartprice>
-                        <class>demoproduct/observer</class>
-                        <method>changeCartPrice</method>
-                    </changecartprice>
-                </observers>
-            </checkout_cart_product_add_after>
-        </events>
-    </global>
+  <global>
+      <blocks>
+          <myblock><class>Block_Demo_Block</class></myblock>
+      </blocks>
+  </global>
 </config>

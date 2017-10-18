@@ -13,7 +13,7 @@
             <block type="core/template" name="b" as="b" template="training/b.phtml" />
     </block>
     <block type="core/template" name="right" as="right" template="training/right.phtml">
-        <block type="core/template" name="d" as="d" template="training/d.phtml" />
+        <block type="core/text_list" name="d" as="d" template="training/d.phtml" />
     </block>
         <block type="core/template" name="footer" as="footer" template="training/footer.phtml" />
     </block>

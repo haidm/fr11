@@ -21,19 +21,19 @@
 -->
 <config>
     <modules>
-        <Sinhvien>
+        <Baont_Sinhvien>
             <version>1.6.0.0</version>
-        </Sinhvien>
+        </Baont_Sinhvien>
     </modules>
     <frontend>
         <routers>
-            <sinhvien>
+            <Sinhvien>
                 <use>standard</use>
                 <args>
-                    <module>Sinhvien</module>
+                    <module>Baont_Sinhvien</module>
                     <frontName>sinhvien</frontName>
                 </args>
-            </sinhvien>
+            </Sinhvien>
         </routers>
 
     </frontend>

@@ -21,20 +21,26 @@
 -->
 <config>
     <modules>
-        <Baont_Sinhvien>
+        <Assignment5_Demo>
             <version>1.6.0.0</version>
-        </Baont_Sinhvien>
+        </Assignment5_Demo>
     </modules>
     <frontend>
         <routers>
-            <Sinhvien>
+            <mymodule>
                 <use>standard</use>
                 <args>
-                    <module>Baont_Sinhvien</module>
-                    <frontName>sinhvien</frontName>
+                    <module>Assignment5_Demo</module>
+                    <frontName>assignment5</frontName>
                 </args>
-            </Sinhvien>
+            </mymodule>
         </routers>
-
+        <layout>
+            <updates>
+                <mymodule>
+                    <file>mymodule.xml</file>
+                </mymodule>
+            </updates>
+        </layout>
     </frontend>
 </config>
