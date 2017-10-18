@@ -1,2 +1,5 @@
-<?php echo $this->getChildHtml('blockA') ?>
-<?php echo $this->getChildHtml('blockB') ?>
+<?php
+    echo "Day la content";
+//    echo $this->getChildHtml('blockB') ;
+//    echo $this->getChildHtml('blockA');
+//?>

@@ -21,30 +21,30 @@
 <div class="container">
     <nav class="nav nav-pills nav-justified">
         <ul>
-            <li><a href="" title="">Logo <?php echo $this->getChildHtml('logo') ?></a></li>
+            <li><a href="" title="">Logo</a></li>
             <li><a href="" title="">
-                    <?php
-                        echo "Header " . $this->getMyName();
-                    ?>
-                    <?php echo $this->getChildHtml('headers') ?>
+                    <?php echo $this->getChildHtml('headers'); ?>
 
                 </a></li>
         </ul>
     </nav>
     <div class="col-md-3 text-center">
-        Left Bar <?php echo $this->getChildHtml('lefts') ?>
+        Left Bar
+        <?php echo $this->getChildHtml('left'); ?>
     </div>
     <div class="col-md-6 text-center">
 
-        Content   <?php echo $this->getChildHtml('contents') ?>
+        Content
+        <?php echo $this->getChildHtml('content'); ?>
 
     </div>
     <div class="col-md-3 text-center">
-        Right Bar <?php echo $this->getChildHtml('rights') ?>
+        Right Bar
+        <?php echo $this->getChildHtml('right'); ?>
     </div>
 </div>
 <div class="container clearfix text-center">
-    Footer <?php echo $this->getChildHtml('footers') ?>
+    Footer <?php echo $this->getChildHtml('footers'); ?>
 </div>
 </body>
 </html>
