@@ -75,6 +75,7 @@
                 </contacts_email_email_template>
             </email>
         </template>
+
     </global>
 
     <adminhtml>
