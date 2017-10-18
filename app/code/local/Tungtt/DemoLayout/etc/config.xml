@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tungtt_DemoLayout>
+            <version>0.1.0</version>
+        </Tungtt_DemoLayout>
+    </modules>
+
+    <global>
+        <helpers>
+            <tungtt_demolayout>
+                <class>Tungtt_DemoLayout_Helper</class>
+            </tungtt_demolayout>
+        </helpers>
+        <resources>
+            <tungtt_demolayout_setup>
+                <setup>
+                    <module>Tungtt_DemoLayout.xml</module>
+                </setup>
+            </tungtt_demolayout_setup>
+        </resources>
+        <blocks>
+            <demomodule>
+                <class>Tungtt_DemoLayout_Block</class>
+            </demomodule>
+        </blocks>
+    </global>
+
+    <frontend>
+        <routers>
+            <DemoLayout>
+                <use>standard</use>
+                <args>
+                    <module>Tungtt_DemoLayout</module>
+                    <frontName>demolayout</frontName>
+                </args>
+            </DemoLayout>
+        </routers>
+        <layout>
+            <updates>
+                <demolayout>
+                    <file>demolayout.xml</file>
+                </demolayout>
+            </updates>
+        </layout>
+    </frontend>
+</config>

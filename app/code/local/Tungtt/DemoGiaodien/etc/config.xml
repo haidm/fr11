@@ -4,6 +4,31 @@
             <version>0.1.0</version>
         </Tungtt_DemoGiaodien>
     </modules>
+
+    <global>
+        <blocks>
+
+            <helpers>
+                <tungtt_demolayout>
+                    <class>Tungtt_DemoGiaodien_Helper</class>
+                </tungtt_demolayout>
+            </helpers>
+
+            <resources>
+                <tungtt_demolayout_setup>
+                    <setup>
+                        <module>TestVendor_Demomodule</module>
+                    </setup>
+                </tungtt_demolayout_setup>
+            </resources>
+
+            <myblock>
+                <class>Tungtt_DemoGiaodien_Block</class>
+            </myblock>
+        </blocks>
+
+    </global>
+
     <frontend>
         <routers>
 
@@ -16,11 +41,4 @@
             </DemoGiaodien>
         </routers>
     </frontend>
-    <global>
-        <blocks>
-            <myblock>
-                <class>Tungtt_DemoGiaodien_Block</class>
-            </myblock>
-        </blocks>
-    </global>
 </config>
