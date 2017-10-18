@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+<myhandler>
+    <block type="core/template" name="parent" template="training/template1.phtml" output="toHtml">
+      <block type="core/template" name="header" as="header" template="training/header.phtml" >
+        <block type="core/template" name="logo" as="logo" template="training/logo.phtml" />
+    </block>
+    <block type="core/template" name="left" as="left" template="training/left.phtml" >
+        <block type="core/template" name="c" as="c" template="training/c.phtml" />
+    </block>
+    <block type="core/template" name="content" as="content" template="training/content.phtml" >
+        <block type="core/template" name="a" as="a" template="training/a.phtml" />
+            <block type="core/template" name="b" as="b" template="training/b.phtml" />
+    </block>
+    <block type="core/template" name="right" as="right" template="training/right.phtml">
+        <block type="core/template" name="d" as="d" template="training/d.phtml" />
+    </block>
+        <block type="core/template" name="footer" as="footer" template="training/footer.phtml" />
+    </block>
+</myhandler>
+
+</layout>
