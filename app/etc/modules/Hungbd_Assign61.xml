@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Hungbd_Assign61>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Hungbd_Assign61>
+    </modules>
+</config>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<layout>
+    <assign61_layout_handle>
+        <block type="core/template"
+               name="wraper"
+               template="assign61/form.phtml"
+               output="toHtml">
+        </block>
+    </assign61_layout_handle>
+    <assign61_list_handle>
+        <block type="core/template"
+               name="list"
+               template="assign61/listsv.phtml"
+               output="toHtml">
+        </block>
+    </assign61_list_handle>
+    <assign61_update_handle>
+        <block type="core/template"
+               name="update"
+               template="assign61/updateform.phtml"
+               output="toHtml">
+        </block>
+    </assign61_update_handle>
+</layout>

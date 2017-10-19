@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hungbd_Assign63>
+            <version>0.1.0</version>
+        </Hungbd_Assign63>
+    </modules>
+    <frontend>
+        <routers>
+            <Assign63x>
+                <use>standard</use>
+                <args>
+                    <module>Hungbd_Assign63</module>
+                    <frontName>asign63</frontName>
+                </args>
+            </Assign63x>
+        </routers>
+    </frontend>
+    <global>
+        <resources>
+            <Hungbd_Assign63_setup>
+                <setup>
+                    <module>Hungbd_Assign63</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </Hungbd_Assign63_setup>
+        </resources>
+    </global>
+</config>
