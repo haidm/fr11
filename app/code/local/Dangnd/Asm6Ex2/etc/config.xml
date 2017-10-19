@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dangnd_Asm6Ex2>
+            <version>0.1.0</version>
+        </Dangnd_Asm6Ex2>
+    </modules>
+    <frontend>
+        <routers>
+            <Dangnd_Asm6Ex2>
+                <use>standard</use>
+                <args>
+                    <module>Dangnd_Asm6Ex2</module>
+                    <frontName>asm62</frontName>
+                </args>
+            </Dangnd_Asm6Ex2>
+        </routers>
+    </frontend>
+    <global>
+        <resources>
+            <asm6ex2_setup>
+                <setup>
+                    <module>Dangnd_Asm6Ex2</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </asm6ex2_setup>
+        </resources>
+    </global>
+</config>

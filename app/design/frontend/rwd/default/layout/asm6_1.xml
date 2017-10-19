@@ -1,0 +1,13 @@
+<layout version="0.1.0">
+    <asm61_layout_index>
+        <block type="core/template" name="simple" as="simple" output="toHtml" template="asm6_1/simple.phtml"/>
+    </asm61_layout_index>
+
+    <asm61_layout_add>
+        <block type="core/template" name="add" as="add" output="toHtml" template="asm6_1/add.phtml"/>
+    </asm61_layout_add>
+
+    <asm61_layout_update>
+        <block type="core/template" name="update" as="update" output="toHtml" template="asm6_1/update.phtml"/>
+    </asm61_layout_update>
+</layout>

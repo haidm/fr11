@@ -1,0 +1,99 @@
+<?php $list = $this->getData('list'); ?>
+
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Assignment 6 - 1</title>
+    <style>
+        .container {
+            width       : 60%;
+            margin-left : 20%;
+            margin-top  : 50px;
+        }
+
+        h1 {
+            text-align : center;
+            color      : blue;
+        }
+
+        table {
+            border-collapse : collapse;
+            width           : 100%;
+            margin-top      : 30px
+        }
+
+        th, td {
+            text-align : left;
+            padding    : 8px;
+        }
+
+        tr:nth-child(even) { background-color : #f2f2f2 }
+
+        th {
+            background-color : #4CAF50;
+            color            : white;
+        }
+
+        #btn-add {
+            padding          : 15px 30px;
+            background-color : #3446ff;
+            color            : #fff;
+            margin           : 20px 0;
+        }
+
+        .btn{
+            text-decoration  : none;
+            border-radius    : 10px;
+            font-weight      : bold;
+        }
+
+        .btn-act {
+            padding          : 5px;
+            border           : 1px darkgrey solid;
+            border-radius    : 10px;
+            background-color : #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>List Student</h1>
+        <div>
+            <a href='http://computer.local/asm61/index/add' class='btn' id='btn-add'>Thêm</a>
+        </div>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>E-mail</th>
+                <th>Addreess</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <?php
+            if (empty($list['items'])) {
+                echo '<td colspan="6">Empty!!</td>';
+            } else {
+                foreach ($list['items'] as $key => $item) { ?>
+                    <tr>
+                        <td><?= $item['name'] ?></td>
+                        <td><?= $item['email'] ?></td>
+                        <td><?= $item['address'] ?></td>
+                        <td><?= $item['phone'] ?></td>
+                        <td>
+                            <a href='<?= Mage::getUrl('asm61/index/update/').'id/'.$item['id'] ?>' class='btn btn-act'>Sửa</a>
+                            <a href='<?= Mage::getUrl('asm61/index/delete/').'id/'.$item['id'] ?>' class='btn btn-act'>Xóa</a>
+                        </td>
+                    </tr>
+                <?php }
+            }
+            ?>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
