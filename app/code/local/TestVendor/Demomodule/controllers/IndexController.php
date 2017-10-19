@@ -10,7 +10,11 @@ class TestVendor_Demomodule_IndexController extends Mage_Core_Controller_Front_A
 
     public function indexAction()
     {
-        $this->loadLayout();
-        $this->renderLayout();
+        $order = Mage::getModel('mymodel/order')
+            ->getCollection()
+            ->addFieldToFilter('name', array('like' => '%DT%'));
+        foreach ($order as $item) {
+            echo $item->getName() . "<br />";
+        }
     }
 }
