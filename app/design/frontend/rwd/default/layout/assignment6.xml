@@ -1,0 +1,13 @@
+<layout version="0.1.0">
+    <assignment6_layout_index>
+        <block type="core/template" name="show" as="show" output="toHtml" template="assignment6/simple.phtml"/>
+    </assignment6_layout_index>
+
+    <assignment6_layout_add>
+        <block type="core/template" name="add" as="add" output="toHtml" template="assignment6/add.phtml"/>
+    </assignment6_layout_add>
+
+    <assignment6_layout_update>
+        <block type="core/template" name="update" as="update" output="toHtml" template="assignment6/update.phtml"/>
+    </assignment6_layout_update>
+</layout>
