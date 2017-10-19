@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Ass6_Sinhvien>
+            <version>0.1.0</version>
+        </Ass6_Sinhvien>
+    </modules>
+    <frontend>
+        <routers>
+            <sinhvientest>
+                <use>standard</use>
+                <args>
+                    <module>Ass6_Sinhvien</module>
+                    <frontName>sinhvientest</frontName>
+                </args>
+            </sinhvientest>
+        </routers>
+    </frontend>
+    <global>
+        <models>
+            <Ass6_Sinhvien>
+                <class>Ass6_Sinhvien_Model</class>
+                <resourceModel>ass6_sinhvien_resource</resourceModel>
+            </Ass6_Sinhvien>
+            <ass6_sinhvien_resource>
+                <class>Ass6_Sinhvien_Model_Resource</class>
+                <entities>
+                    <student2>
+                        <table>ass6_sinhvien_student2</table>
+                    </student2>
+                    <teststudent>
+                        <table>ass6_sinhvien_teststudent</table>
+                    </teststudent>
+                </entities>
+            </ass6_sinhvien_resource>
+        </models>
+        <resources>
+            <ass6_sinhvien_setup>
+                <setup>
+                    <module>Ass6_Sinhvien</module>
+                </setup>
+            </ass6_sinhvien_setup>
+        </resources>
+    </global>
+</config>

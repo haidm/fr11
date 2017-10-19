@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sinh Viên</title>
+    <style>
+        h3{text-align: center;}
+        .form{border:2px solid greenyellow;padding:50px;margin:auto;width:500px;}
+        tr{margin:10px;}
+        input{padding:5px;border:1px solid #ccc;border-radius: 5px;background-color: #ffd0ba;}
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h3>Student</h3>
+        <form action="sinhvientest/index/add" method="post">
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" placeholder="First Name" name="fn" size="30"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" placeholder="Last Name" name="ln" size="30"/></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" placeholder="Address" name="address" size="30"/></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="number" placeholder="Phone" name="phone" size="30"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="Save"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

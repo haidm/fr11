@@ -1,0 +1,9 @@
+<?xml version="1.0"  ?>
+<config>
+    <modules>
+        <Ass6_Sinhvien>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Ass6_Sinhvien>
+    </modules>
+</config>
