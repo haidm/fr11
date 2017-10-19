@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <general>
+            <groups>
+                <country>
+                    <fields>
+                        <testfield translate="label,comment">
+                            <label>Banner image</label>
+                            <comment><![CDATA[this is a new field!]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </testfield>
+                    </fields>
+                </country>
+            </groups>
+        </general>
+    </sections>
+</config>
