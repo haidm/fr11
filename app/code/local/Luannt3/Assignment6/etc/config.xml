@@ -1,0 +1,49 @@
+<config>
+<modules>
+    <Luannt3_Assignment6>
+        <version>0.1.0</version>
+    </Luannt3_Assignment6>
+</modules>
+<frontend>
+    <routers>
+        <Assignment6>
+            <use>standard</use>
+            <args>
+                <module>Luannt3_Assignment6</module>
+                <frontName>ass6</frontName>
+            </args>
+        </Assignment6>
+    </routers>
+    <layout>
+        <updates>
+            <Luannt3_Assignment6>
+                <file>luannt3_assignment6.xml</file>
+            </Luannt3_Assignment6>
+        </updates>
+    </layout>
+</frontend>
+    <global>
+        <models>
+            <assignment6>
+                <class>Luannt3_Assignment6_Model</class>
+                <resourceModel>assignment6_resource</resourceModel>
+            </assignment6>
+            <assignment6_resource>
+                <class>Luannt3_Assignment6_Model_Resource</class>
+                <entities>
+                    <student>
+                        <table>student</table>
+                    </student>
+                </entities>
+            </assignment6_resource>
+
+        </models>
+        <resources>
+            <luannt3_assignment6_setup>
+                <setup>
+                    <module>Luannt3_Assignment6</module>
+                </setup>
+            </luannt3_assignment6_setup>
+        </resources>
+    </global>
+</config>
