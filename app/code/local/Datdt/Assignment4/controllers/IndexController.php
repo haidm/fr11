@@ -2,25 +2,51 @@
 
 class Datdt_Assignment4_IndexController extends Mage_Core_Controller_Front_Action
 {
-    /**
-     * index action
-     */
     public function indexAction()
     {
-        
-          $layoutObj = $this->getLayout();
 
-          $blockaBlock =$layoutObj->createBlock('myblock/blocka','blocka')->setTemplate('Datdt/blocka.phtml');
+        // echo "ahihi";
+        $layoutObject = $this->getLayout();
 
-          $blockbBlock =$layoutObj->createBlock('myblock/blockb','blockb')->setTemplate('Datdt/blockb.phtml');
+        $logo = $layoutObject->createBlock('core/template', 'logo')
+            ->setTemplate('assignment4/logo.phtml');
 
-          $blockcBlock =$layoutObj->createBlock('myblock/blockc','blockc')->setTemplate('Datdt/blockc.phtml');
+        $blocka = $layoutObject->createBlock('core/template', 'blocka')
+            ->setTemplate('assignment4/blocka.phtml');
 
-          $blockdBlock =$layoutObj->createBlock('myblock/blockd','blockd')->setTemplate('Datdt/blockd.phtml');
+        $blockb = $layoutObject->createBlock('core/template', 'blockb')
+            ->setTemplate('assignment4/blockb.phtml');
 
-          $blockeBlock =$layoutObj->createBlock('myblock/blocke','blocke')->setTemplate('Datdt/blocke.phtml');
+        $blockc = $layoutObject->createBlock('core/template', 'blockc')
+            ->setTemplate('assignment4/blockc.phtml');
 
-          $block = $layoutObj->createBlock('myblock/assignment4')->setTemplate('Datdt/assignment4.phtml')->setChild(blocka,$blockaBlock)->setChild(blockb,$blockbBlock)->setChild(blockc,$blockcBlock)->setChild(blockd,$blockdBlock)->setChild(blocke,$blockeBlock);
+        $blockd = $layoutObject->createBlock('core/template', 'blockd')
+            ->setTemplate('assignment4/blockd.phtml');
+
+        $header = $layoutObject->createBlock('core/template', 'header')
+            ->setTemplate('assignment4/header.phtml')
+            ->append($logo, 'logo');
+
+        $left = $layoutObject->createBlock('core/text_list', 'left')
+        ->append($blockc, 'blockc');
+
+        $content = $layoutObject->createBlock('core/text_list', 'content')
+            ->append($blocka, 'blocka')
+            ->append($blockb, 'blockb');
+
+        $right = $layoutObject->createBlock('core/text_list', 'right')
+            ->append($blockd, 'blockd');
+
+        $footer = $layoutObject->createBlock('core/template', 'footer')
+            ->setTemplate('assignment4/footer.phtml');
+
+        $block = $layoutObject->createBlock('core/template', 'mainblock')
+            ->setTemplate('assignment4/mainblock.phtml')
+            ->append($header, 'header')
+            ->append($left, 'left')
+            ->append($content, 'content')
+            ->append($right, 'right')
+            ->append($footer, 'footer');
 
         echo $block->toHtml();
     }

@@ -6,6 +6,4 @@ class Datdt_Assignment5_Block_Hello extends Mage_Core_Block_Template
     {
         $this->setTemplate('mylayout/file.phtml');
     }
-
-
 }
