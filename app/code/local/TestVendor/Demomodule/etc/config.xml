@@ -23,16 +23,37 @@
                 <class>TestVendor_Demomodule_Block</class>
             </demomodule>
         </blocks>
+        <models>
+            <mymodel>
+                <class>TestVendor_Demomodule_Model</class>
+                <resourceModel>mymodel_resource</resourceModel>
+            </mymodel>
+            <mymodel_resource>
+                <class>TestVendor_Demomodule_Model_Resource</class>
+                <entities>
+                    <order2>
+                        <table>duongdd_order</table>
+                    </order2>
+                </entities>
+            </mymodel_resource>
+        </models>
     </global>
     <frontend>
         <routers>
-            <testmodule>
+            <testroute>
                 <use>standard</use>
                 <args>
                     <frontName>testmodule</frontName>
                     <module>TestVendor_Demomodule</module>
                 </args>
-            </testmodule>
+            </testroute>
         </routers>
+        <layout>
+            <updates>
+                <testvendor_demomodule>
+                    <file>demomodule.xml</file>
+                </testvendor_demomodule>
+            </updates>
+        </layout>
     </frontend>
 </config>
