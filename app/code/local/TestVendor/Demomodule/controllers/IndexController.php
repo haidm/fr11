@@ -17,16 +17,16 @@ class TestVendor_Demomodule_IndexController extends Mage_Core_Controller_Front_A
             ->setTemplate('mytemplate/logo.phtml');
 
         $blocka = $layoutObject->createBlock('core/template', 'blocka')
-            ->setTemplate('mytemplate/blocka.phtml');
+            ->setTemplate('mytemplate/editsinhvien.phtml');
 
         $blockb = $layoutObject->createBlock('core/template', 'blockb')
-            ->setTemplate('mytemplate/blockb.phtml');
+            ->setTemplate('mytemplate/addsinhvien.phtml');
 
         $blockc = $layoutObject->createBlock('core/template', 'blockc')
             ->setTemplate('mytemplate/blockc.phtml');
 
         $blockd = $layoutObject->createBlock('core/template', 'blockd')
-            ->setTemplate('mytemplate/blockd.phtml');
+            ->setTemplate('mytemplate/listsinhvien.phtml');
 
         //Create parent block
         $header = $layoutObject->createBlock('core/template', 'header')
@@ -49,7 +49,7 @@ class TestVendor_Demomodule_IndexController extends Mage_Core_Controller_Front_A
 
         //Create main block
         $block = $layoutObject->createBlock('core/template', 'mainblock')
-            ->setTemplate('mytemplate/mainblock.phtml')
+            ->setTemplate('mytemplate/mainlist.phtml')
             ->append($header, 'header')
             ->append($left, 'left')
             ->append($content, 'content')

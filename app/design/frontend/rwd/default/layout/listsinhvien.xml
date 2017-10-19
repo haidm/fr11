@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+    <tungtt_listsinhvien_handle>
+        <block type="core/template" name="mainlist"
+               template="mysinhvien/mainlist.phtml"
+               output="toHtml">
+                <block type="core/template"
+                name="list" as="list"
+                template="mysinhvien/listsinhvien.phtml" >
+                </block>
+        </block>
+    </tungtt_listsinhvien_handle>
+</layout>

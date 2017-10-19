@@ -12,16 +12,16 @@ class Tungtt_DemoGiaodien_IndexController extends Mage_Core_Controller_Front_Act
         $layoutObject = $this->getLayout();
 //        $blockA = $layoutObject
 //            ->createBlock('myblock/blocka', 'block_a')
-//            ->setTemplate('mymodule/blocka.phtml');
+//            ->setTemplate('mymodule/editsinhvien.phtml');
 //        $blockB = $contentBlock = $layoutObject
 //            ->createBlock('myblock/blockb', 'block_b')
-//            ->setTemplate('mymodule/blockb.phtml');
+//            ->setTemplate('mymodule/addsinhvien.phtml');
 //        $blockC = $layoutObject
 //            ->createBlock('myblock/blockc')
 //            ->setTemplate('mymodule/blockc.phtml');
 //        $blockD = $rightBlock = $layoutObject
 //            ->createBlock('myblock/blockd', 'block_d')
-//            ->setTemplate('mymodule/blockd.phtml');
+//            ->setTemplate('mymodule/listsinhvien.phtml');
 //
         $headerBlock = $layoutObject
             ->createBlock('myblock/header')

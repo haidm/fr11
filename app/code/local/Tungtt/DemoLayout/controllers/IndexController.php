@@ -22,16 +22,16 @@ class Tungtt_DemoLayout_IndexController extends Mage_Core_Controller_Front_Actio
 //            ->setTemplate('mylayout/banner.phtml');
 //
 //        $blocka = $layoutObject->createBlock('core/template', 'blocka')
-//            ->setTemplate('mylayout/blocka.phtml');
+//            ->setTemplate('mylayout/editsinhvien.phtml');
 //
 //        $blockb = $layoutObject->createBlock('core/template', 'blockb')
-//            ->setTemplate('mylayout/blockb.phtml');
+//            ->setTemplate('mylayout/addsinhvien.phtml');
 //
 //        $blockc = $layoutObject->createBlock('core/template', 'blockc')
 //            ->setTemplate('mylayout/blockc.phtml');
 //
 //        $blockd = $layoutObject->createBlock('core/template', 'blockd')
-//            ->setTemplate('mylayout/blockd.phtml');
+//            ->setTemplate('mylayout/listsinhvien.phtml');
 //
 //        //Create parent block
 //        $header = $layoutObject->createBlock('core/template', 'header')
@@ -55,7 +55,7 @@ class Tungtt_DemoLayout_IndexController extends Mage_Core_Controller_Front_Actio
 //
 //        //Create main block
 //        $block = $layoutObject->createBlock('core/template', 'mainblock')
-//            ->setTemplate('mylayout/mainblock.phtml')
+//            ->setTemplate('mylayout/mainlist.phtml')
 //            ->append($header, 'header')
 //            ->append($left, 'left')
 //            ->append($content, 'content')
