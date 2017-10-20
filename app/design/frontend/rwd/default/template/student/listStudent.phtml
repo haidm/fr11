@@ -1,0 +1,39 @@
+<style>
+    table, th, td {
+        text-align: center;
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+</style>
+<body>
+<form action="<?= Mage::getUrl('student-sm6/index/add') ?>" method="post">
+<table width="300">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Phone</td>
+        <td>Address</td>
+        <td colspan="2">Action</td>
+    </tr>
+    <?php
+    $data = $this->$list_student;
+        foreach ($data['items'] as $value){
+    ?>
+    <tr>
+        <td><?php echo $value['id'] ?></td>
+        <td><?php echo $value['name'] ?></td>
+        <td><?php echo $value['email'] ?></td>
+        <td><?php echo $value['phone'] ?></td>
+        <td><?php echo $value['address'] ?></td>
+        <td><a href="<?= Mage::getUrl('student-sm6/index/update/').'id/'.$value['id'] ?>">Sửa</a></td>
+        <td><a href="<?= Mage::getUrl('student-sm6/index/delete/').'id/'.$value['id'] ?>">Xóa</a></td>
+    </tr>
+    <?php } ?>
+    <tr>
+        <td colspan="7"><input type="submit" name="save" value="Create"/></td>
+    </tr>
+</table>
+</form>
+</body>

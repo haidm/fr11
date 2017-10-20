@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <assignment6_index_index>
+        <reference name="content">
+            <block type="core/template" name="student" template="student/listStudent.phtml" output="toHtml" />
+        </reference>
+    </assignment6_index_index>
+    <assignment6_index_add>
+        <reference name="content">
+            <block type="core/template" name="add_student" template="student/add.phtml" output="toHtml" />
+        </reference>
+    </assignment6_index_add>
+    <assignment6_index_update>
+        <reference name="content">
+            <block type="core/template" name="update_student" template="student/edit.phtml" output="toHtml" />
+        </reference>
+    </assignment6_index_update>
+</layout>

@@ -1,0 +1,16 @@
+<form method="post" action="<?= Mage::getUrl('student-sm6/index/postAdd') ?>">
+    <label>Username</label><br/>
+    <input type="text" name="name"/><br/>
+    <label>Email</label><br/>
+    <input type="email" name="email"/><br/>
+    <label>Phone</label><br/>
+    <input type="text" name="phone"/><br/>
+    <label>Address</label><br/>
+    <input type="text" name="address"/><br/>
+    <?php if ($this->$error){ ?>
+        <label style="color: red"><?php echo ($this->$error['error']); ?></label><br/>
+    <?php } ?>
+
+    <input type="reset" value="Reset"/>
+    <input type="submit" value="Save" name="save"/>
+</form>
