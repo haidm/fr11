@@ -1,54 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <layout>
     <datdt_assignment5_handle>
-        <block type="core/template" name="mainblock"
-               template="mylayout/mainblock.phtml"
-               output="toHtml">
+        <block type="core/template" name="mainblock" template="mylayout/mainblock.phtml" output="toHtml">
 
-                <block type="core/template"
-                name="header" as="header"
-                template="mylayout/header.phtml" >
-                    <block type="core/template"
-                    name="logo" as="logo"
-                    template="mylayout/logo.phtml" />
-                    <block type="core/template"
-                   name="banner" as="banner"
-                   template="mylayout/banner.phtml" />
-                </block>
-            <block type="core/text_list"
-                name="left"
-                as="left" >
-                <block type="core/template"
-               name="blockc"
-               template="mylayout/blockc.phtml"
-               as="blockc" />
+        <block type="core/template" name="header" as="header" template="mylayout/header.phtml" >
+
+         <block type="core/template" name="banner" as="banner" template="mylayout/banner.phtml" />
+         </block>
+
+         <block type="core/text_list" name="left" as="left" >
+
+         <block type="core/template" name="blockc" template="mylayout/blockc.phtml" as="blockc" />
 
         </block>
-        <block type="core/text_list"
-           name="right"
-           as="right" >
-            <block type="core/template"
-               name="blockd"
-               template="mylayout/blockd.phtml"
-               as="blockd" />
-        </block>
-        <block type="core/text_list"
-           name="content"
-           as="content" >
-            <block type="core/template"
-               name="blocka"
-               template="mylayout/blocka.phtml"
-               as="blocka" />
+        <block type="core/text_list" name="right" as="right" >
 
-            <block type="core/template"
-               name="blockb"
-               template="mylayout/blockb.phtml"
-               as="blockb" />
+         <block type="core/template" name="blockd" template="mylayout/blockd.phtml" as="blockd" />
         </block>
-        <block type="core/template"
-           name="footer"
-           template="mylayout/footer.phtml"
-           as="footer">
+        <block type="core/text_list" name="content" as="content" >
+            <block type="core/template" name="blocka" template="mylayout/blocka.phtml" as="blocka" />
+
+            <block type="core/template" name="blockb" template="mylayout/blockb.phtml" as="blockb" />
+        </block>
+        <block type="core/template" name="footer" template="mylayout/footer.phtml" as="footer">
         </block>
       </block>
     </datdt_assignment5_handle>

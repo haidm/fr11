@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Datdt_Assignment7>
+            <version>0.1.0</version>
+        </Datdt_Assignment7>
+    </modules>
+    <global>
+        <helpers>
+            <datdt_assignment7>
+                <class>Datdt_Assignment7_Helper</class>
+            </datdt_assignment7>
+        </helpers>
+        <resources>
+            <datdt_assignment7_setup>
+                <setup>
+                    <module>Datdt_Assignment7</module>
+                </setup>
+            </datdt_assignment7_setup>
+        </resources>
+        <blocks>
+            <assignment7>
+                <class>Datdt_Assignment7_Block</class>
+            </assignment7>
+        </blocks>
+        <models>
+            <mymodel>
+                <class>Datdt_Assignment7_Model</class>
+                <resourceModel>mymodel_resource</resourceModel>
+            </mymodel>
+            <mymodel_resource>
+                <class>Datdt_Assignment7_Model_Resource</class>
+                <entities>
+                    <order2>
+                        <table>datdt_order</table>
+                    </order2>
+                </entities>
+            </mymodel_resource>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+             <Assignment7>
+                <use>standard</use>
+                <args>
+                    <frontName>ass7</frontName>
+                    <module>Datdt_Assignment7</module>
+                </args>
+             </Assignment7>
+        </routers>
+    </frontend>
+
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Datdt_Assignment7 after="Mage_Adminhtml">Datdt_Assignment7_Adminhtml</Datdt_Assignment7>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

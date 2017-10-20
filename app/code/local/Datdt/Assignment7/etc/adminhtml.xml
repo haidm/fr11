@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <catalog>
+            <children>
+                <testmenu translate="title" module="datdt_assignment7">
+                    <title>Test Menu</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/test</action>
+                </testmenu>
+            </children>
+        </catalog>
+        <testmenu translate="title" module="datdt_assignment7">
+            <title>Mega Menu</title>
+            <sort_order>0</sort_order>
+            <action>adminhtml/test</action>
+            <children>
+                <testmenu translate="title" module="datdt_assignment7">
+                    <title>children1</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/test</action>
+                </testmenu>
+            </children>
+
+        </testmenu>
+
+        <test translate="title" module="datdt_assignment7">
+            <title>Mega Item</title>
+            <sort_order>0</sort_order>
+            <action>adminhtml/test</action>
+            <children>
+                <test translate="title" module="datdt_assignment7">
+                    <title>children1</title>
+                    <sort_order>0</sort_order>
+                    <action></action>
+                </test>
+            </children>
+
+            <children>
+                <test translate="title" module="datdt_assignment7">
+                    <title>children2</title>
+                    <sort_order>2</sort_order>
+                    <action></action>
+                </test>
+            </children>
+
+        </test>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <testmenu translate="title" module="datdt_assignment7">
+                                <title>Test Menu</title>
+                            </testmenu>
+                        </children>
+                    </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

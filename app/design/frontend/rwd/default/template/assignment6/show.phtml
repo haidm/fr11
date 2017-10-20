@@ -1,0 +1,50 @@
+<?php $list = $this->getData('list'); ?>
+
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Assignment 6 </title>
+
+</head>
+
+<body>
+<div class="container">
+    <h1>List Student</h1>
+    <div>
+        <a href='http://computer.local/assignment6/index/add' class='btn' id='btn-add'>Thêm</a>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Addreess</th>
+            <th>Phone</th>
+            <th></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <?php
+        if (empty($list['items'])) {
+            echo '<td colspan="6">khong co du lieu</td>';
+        } else {
+            foreach ($list['items'] as $key => $item) { ?>
+                <tr>
+                    <td><?= $item['name'] ?></td>
+                    <td><?= $item['email'] ?></td>
+                    <td><?= $item['address'] ?></td>
+                    <td><?= $item['phone'] ?></td>
+                    <td>
+                        <a href='<?= Mage::getUrl('assignment6/index/update/').'id/'.$item['id'] ?>' class='btn btn-act'>Sửa</a>
+                        <a href='<?= Mage::getUrl('assignment6/index/delete/').'id/'.$item['id'] ?>' class='btn btn-act'>Xóa</a>
+                    </td>
+                </tr>
+            <?php }
+        }
+        ?>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
