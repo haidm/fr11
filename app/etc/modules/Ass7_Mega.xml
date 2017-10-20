@@ -1,0 +1,9 @@
+<?xml version="1.0"  ?>
+<config>
+    <modules>
+        <Ass7_Mega>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Ass7_Mega>
+    </modules>
+</config>

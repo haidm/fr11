@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1980bb4b-846c-4fca-aa38-881f342b4183" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/etc/modules/Day6_Student.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Ass7/Mega/Block/Adminhtml/Menu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Ass7/Mega/Block/Adminhtml/Menu/Grid.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Ass7/Mega/Helper/Data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Ass7/Mega/Model/Menu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Ass7/Mega/Model/Resource/Menu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Ass7/Mega/Model/Resource/Menu/Collection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Ass7/Mega/controllers/Adminhtml/AdminController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Ass7/Mega/controllers/IndexController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Ass7/Mega/etc/adminhtml.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/Ass7/Mega/etc/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/etc/modules/Ass7_Mega.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/code/local/DuongDD/Demoproduct/Model/Observer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/code/local/DuongDD/Demoproduct/etc/config.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Block/Blocksv.php" afterPath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Block/Blocksv.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Resource/Student.php" afterPath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Resource/Student.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Resource/Student/Collection.php" afterPath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Resource/Student/Collection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Student.php" afterPath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Student.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/etc/config.xml" afterPath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/etc/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/sql/ass6_sinhvien_setup/install-0.1.0.php" afterPath="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/sql/ass6_sinhvien_setup/install-0.1.0.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,7 +46,68 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/etc/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminhtml.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/etc/adminhtml.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/controllers/Adminhtml/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="79" lean-forward="false" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/Block/Adminhtml/Menu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="66" lean-forward="false" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grid.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/Block/Adminhtml/Menu/Grid.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="48" column="52" lean-forward="false" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,17 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/etc/modules/Giaodien_Module.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/Giaodien/Module/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/layout/layout.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/Giaodien/Module/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/app/code/local/TestVendor/Demomodule/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/app/etc/modules/Layout_Testlayout.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/Baba/Giaodien/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/Layout/Testlayout/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Layout/Testlayout/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/helloworld/logo.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/helloworld/mainleft.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/helloworld/mainright.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/helloworld/maincontenta.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/helloworld/maincontentb.phtml" />
@@ -100,6 +155,17 @@
         <option value="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Resource/Student/Collection.php" />
         <option value="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Resource/Student.php" />
         <option value="$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/etc/modules/Ass7_Mega.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Ass7/Mega/Helper/Data.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Ass7/Mega/Model/Menu.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Ass7/Mega/Model/Resource/Menu.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Ass7/Mega/Model/Resource/Menu/Collection.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Ass7/Mega/Block/Adminhtml/Menu.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Ass7/Mega/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Ass7/Mega/Block/Adminhtml/Menu/Grid.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Ass7/Mega/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Ass7/Mega/etc/adminhtml.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Ass7/Mega/controllers/Adminhtml/AdminController.php" />
       </list>
     </option>
   </component>
@@ -133,6 +199,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,14 +229,156 @@
             <path>
               <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
               <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass6" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass6" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Sinhvien" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass7" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mega" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mega" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mega" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mega" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mega" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mega" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="etc" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mega" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Helper" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mega" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ass7" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mega" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resource" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TestVendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TestVendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Demomodule" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TestVendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Demomodule" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="etc" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fr11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fr11" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="errors" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,16 +416,17 @@
       <workItem from="1508464595975" duration="6058000" />
       <workItem from="1508477592668" duration="1676000" />
       <workItem from="1508483734644" duration="3138000" />
+      <workItem from="1508487580745" duration="9539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55286000" />
+    <option name="totallyTimeSpent" value="64825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1377" height="698" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26459438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26838514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25625473" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -246,69 +457,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/helloworld.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/helloworld/header.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="72" lean-forward="false" selection-start-line="0" selection-start-column="72" selection-end-line="0" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/helloworld/helloworld.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/TestVendor/Demomodule/Block/Hello.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/sinhvien.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/helloworld/footer.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Block/Blocksv.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/545458cb/823b49cb-7335-473a-9c74-8f78d1409abc/magento_1.ass6_sinhvien_student" />
-    <entry file="file://$PROJECT_DIR$/app/code/local/TestVendor/Demomodule/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d2034e97-cc95-4730-8e94-48e65bf140b8/console.sql" />
-    <entry file="das://table:/545458cb/d2034e97-cc95-4730-8e94-48e65bf140b8/magento_1.core_session" />
-    <entry file="das://table:/545458cb/d2034e97-cc95-4730-8e94-48e65bf140b8/magento_1.core_resource" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/63b63e2d-bf1c-4a78-bc9f-a6966f69a062/console.sql" />
-    <entry file="file://$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/sql/ass6_sinhvien_setup/upgrade-0.2.0-0.1.0.php" />
-    <entry file="das://table:/545458cb/63b63e2d-bf1c-4a78-bc9f-a6966f69a062/magento_1.catalogsearch_query" />
     <entry file="das://table:/545458cb/63b63e2d-bf1c-4a78-bc9f-a6966f69a062/magento_1.catalogrule_website" />
     <entry file="das://table:/545458cb/63b63e2d-bf1c-4a78-bc9f-a6966f69a062/magento_1.checkout_agreement" />
     <entry file="das://table:/545458cb/63b63e2d-bf1c-4a78-bc9f-a6966f69a062/magento_1.core_cache" />
@@ -340,7 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="54" lean-forward="false" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -351,57 +498,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/TestVendor/Demomodule/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/console.sql" />
-    <entry file="file://$PROJECT_DIR$/app/code/local/Day6/Student/Model/Sinhvien.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Day6/Student/Model/Resource/Sinhvien.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.core_resource">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Day6/Student/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Day6/Student/Model/Resource/Sinhvien/Collection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Day6/Student/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Day6/Student/Model/Sinhvien.php" />
+    <entry file="file://$PROJECT_DIR$/app/code/local/Day6/Student/Model/Resource/Sinhvien.php" />
+    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.core_resource" />
+    <entry file="file://$PROJECT_DIR$/app/code/local/Day6/Student/controllers/IndexController.php" />
+    <entry file="file://$PROJECT_DIR$/app/code/local/Day6/Student/Model/Resource/Sinhvien/Collection.php" />
+    <entry file="file://$PROJECT_DIR$/app/code/local/Day6/Student/etc/config.xml" />
     <entry file="file://$PROJECT_DIR$/app/etc/modules/Day6_Student.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -409,18 +512,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.teststudent">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.teststudent" />
     <entry file="file://$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/sql/ass6_sinhvien_setup/install-0.1.0.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -428,83 +524,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Resource/Student/Collection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Resource/Student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.tax_calculation_rate">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.tax_calculation_rate" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/21b9cfbf-5e45-4d12-9e01-66a9a6d035c6/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.api2_acl_rule">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.api_rule">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.catalog_category_anc_categs_index_tmp">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.api_assert">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.api2_acl_attribute">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.api2_acl_rule" />
+    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.api_rule" />
+    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.catalog_category_anc_categs_index_tmp" />
+    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.api_assert" />
+    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.api2_acl_attribute" />
+    <entry file="das://table:/545458cb/9fd87fda-bbd1-495d-bb4f-21a15e1d1abc/magento_1.student" />
     <entry file="das://table:/545458cb/be06c82f-b58d-4f03-aab9-035d6e52dfb3/magento_1.student">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -516,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -532,6 +567,150 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/etc/modules/Ass6_Sinhvien.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/etc/modules/Ass7_Mega.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Widget/Link.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1812">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/Helper/Data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/etc/adminhtml.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="129" column="55" lean-forward="false" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Resource/Student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="87" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/Model/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/Model/Resource/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass6/Sinhvien/Model/Resource/Student/Collection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/Model/Resource/Menu/Collection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/TestVendor/Demomodule/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/etc/adminhtml.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/Block/Adminhtml/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="66" lean-forward="false" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/Block/Adminhtml/Menu/Grid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="48" column="52" lean-forward="false" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Ass7/Mega/controllers/Adminhtml/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="79" lean-forward="false" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
           <folding />
         </state>
       </provider>
