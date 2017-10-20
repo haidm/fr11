@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Hungbd_Megamenu>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Hungbd_Megamenu>
+    </modules>
+</config>
