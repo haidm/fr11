@@ -262,7 +262,7 @@ class Mage_Review_Model_Resource_Review_Collection extends Mage_Core_Model_Resou
         if ($this->isLoaded()) {
             return $this;
         }
-        Mage::dispatchEvent('review_review_collection_load_before', array('collection' => $this));
+        Mage::dispatchEvent('review_review_collection_load_before', array('Collection' => $this));
         parent::load($printQuery, $logQuery);
         if ($this->_addStoreDataFlag) {
             $this->_addStoreData();

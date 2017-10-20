@@ -21,20 +21,52 @@
 -->
 <config>
     <modules>
-        <Baont_Sinhvien>
+        <Assignment6_Sinhvien>
             <version>1.6.0.0</version>
-        </Baont_Sinhvien>
+        </Assignment6_Sinhvien>
     </modules>
     <frontend>
         <routers>
-            <Sinhvien>
+            <svmodule>
                 <use>standard</use>
                 <args>
-                    <module>Baont_Sinhvien</module>
-                    <frontName>sinhvien</frontName>
+                    <module>Assignment6_Sinhvien</module>
+                    <frontName>assignment6</frontName>
                 </args>
-            </Sinhvien>
+            </svmodule>
         </routers>
-
+        <layout>
+            <updates>
+                <sinhvienmodule>
+                    <file>sinhvienmodule.xml</file>
+                </sinhvienmodule>
+                <listsvmodule>
+                    <file>listsvmodule.xml</file>
+                </listsvmodule>
+            </updates>
+        </layout>
     </frontend>
+    <global>
+        <models>
+            <assignment6_sinhvien>
+                <class>Assignment6_Sinhvien_Model</class>
+                <resourceModel>assignment6_sinhvien_resource</resourceModel>
+            </assignment6_sinhvien>
+           <assignment6_sinhvien_resource>
+               <class> Assignment6_Sinhvien_Model_Resource</class>
+               <entities>
+                   <sinhvien>
+                       <table>assignment6_sinhvien_sinhvien</table>
+                   </sinhvien>
+               </entities>
+           </assignment6_sinhvien_resource>
+        </models>
+       <resources>
+           <assignment6_sinhvien_setup>
+               <setup>
+                   <module>Assignment6_Sinhvien</module>
+               </setup>
+           </assignment6_sinhvien_setup>
+       </resources>
+    </global>
 </config>

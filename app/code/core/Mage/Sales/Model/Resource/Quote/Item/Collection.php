@@ -185,7 +185,7 @@ class Mage_Sales_Model_Resource_Quote_Item_Collection extends Mage_Core_Model_Re
             ->addTierPriceData();
 
         Mage::dispatchEvent('prepare_catalog_product_collection_prices', array(
-            'collection'            => $productCollection,
+            'Collection' => $productCollection,
             'store_id'              => $this->getStoreId(),
         ));
         Mage::dispatchEvent('sales_quote_item_collection_products_after_load', array(

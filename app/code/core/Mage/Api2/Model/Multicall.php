@@ -84,7 +84,7 @@ class Mage_Api2_Model_Multicall
         $subresourceType = (string)$subresource->type;
         $requestData = $bodyParams[$requestParamName];
         switch ($subresourceType) {
-            case 'collection':
+            case 'Collection':
                 foreach ($requestData as $subresourceData) {
                     $this->_internalCall($subresource, $subresourceData);
                 }

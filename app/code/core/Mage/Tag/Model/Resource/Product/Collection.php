@@ -414,7 +414,7 @@ class Mage_Tag_Model_Resource_Product_Collection extends Mage_Catalog_Model_Reso
 
         if (count($this) > 0) {
             Mage::dispatchEvent('tag_tag_product_collection_load_after', array(
-                'collection' => $this
+                'Collection' => $this
             ));
         }
 

@@ -113,7 +113,7 @@ class Mage_Reports_Model_Resource_Order_Collection extends Mage_Sales_Model_Reso
             ));
 
             Mage::dispatchEvent('sales_prepare_amount_expression', array(
-                'collection' => $this,
+                'Collection' => $this,
                 'expression_object' => $expressionTransferObject,
             ));
             $this->_salesAmountExpression = vsprintf(

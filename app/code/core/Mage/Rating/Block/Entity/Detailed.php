@@ -66,7 +66,7 @@ class Mage_Rating_Block_Entity_Detailed extends Mage_Core_Block_Template
             $ratingCollection->addEntitySummaryToItem($entityId, Mage::app()->getStore()->getId());
         }
 
-        $this->assign('collection', $ratingCollection);
+        $this->assign('Collection', $ratingCollection);
         return parent::_toHtml();
     }
 }

@@ -151,7 +151,7 @@ class Mage_Sales_Model_Resource_Sale_Collection extends Varien_Data_Collection_D
             $this->addFieldToFilter('state', array($condition => $this->_orderStateValue));
         }
 
-        Mage::dispatchEvent('sales_sale_collection_query_before', array('collection' => $this));
+        Mage::dispatchEvent('sales_sale_collection_query_before', array('Collection' => $this));
         return $this;
     }
 

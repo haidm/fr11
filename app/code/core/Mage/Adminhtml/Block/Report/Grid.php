@@ -184,7 +184,7 @@ class Mage_Adminhtml_Block_Report_Grid extends Mage_Adminhtml_Block_Widget_Grid
         $this->setCollection($collection);
 
         Mage::dispatchEvent('adminhtml_widget_grid_filter_collection',
-                array('collection' => $this->getCollection(), 'filter_values' => $this->_filterValues)
+                array('Collection' => $this->getCollection(), 'filter_values' => $this->_filterValues)
         );
     }
 

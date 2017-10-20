@@ -94,7 +94,7 @@ class Mage_Rss_Block_Catalog_NotifyStock extends Mage_Rss_Block_Abstract
                 array('in' => Mage::getSingleton('catalog/product_status')->getVisibleStatusIds())
             )
             ->setOrder('low_stock_date');
-        Mage::dispatchEvent('rss_catalog_notify_stock_collection_select', array('collection' => $collection));
+        Mage::dispatchEvent('rss_catalog_notify_stock_collection_select', array('Collection' => $collection));
 
         /*
         using resource iterator to load the data one by one

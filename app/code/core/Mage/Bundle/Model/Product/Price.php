@@ -92,7 +92,7 @@ class Mage_Bundle_Model_Product_Price extends Mage_Catalog_Model_Product_Type_Pr
                 $selections = $product->getTypeInstance(true)->getSelectionsByIds($selectionIds, $product);
                 $selections->addTierPriceData();
                 Mage::dispatchEvent('prepare_catalog_product_collection_prices', array(
-                    'collection' => $selections,
+                    'Collection' => $selections,
                     'store_id' => $product->getStoreId(),
                 ));
                 foreach ($selections->getItems() as $selection) {

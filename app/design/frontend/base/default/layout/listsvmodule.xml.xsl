@@ -1,6 +1,8 @@
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <listlayout>
+        <block type="core/template" name="list" template="sinhvien/list.phtml" output="toHtml">
+        </block>
+    </listlayout>
 
-    <xsl:template match="/">
-    </xsl:template>
-
-</xsl:stylesheet>
+</layout>

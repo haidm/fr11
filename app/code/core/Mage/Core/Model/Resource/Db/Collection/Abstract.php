@@ -583,7 +583,7 @@ abstract class Mage_Core_Model_Resource_Db_Collection_Abstract extends Varien_Da
     protected function _beforeLoad()
     {
         parent::_beforeLoad();
-        Mage::dispatchEvent('core_collection_abstract_load_before', array('collection' => $this));
+        Mage::dispatchEvent('core_collection_abstract_load_before', array('Collection' => $this));
         if ($this->_eventPrefix && $this->_eventObject) {
             Mage::dispatchEvent($this->_eventPrefix.'_load_before', array(
                 $this->_eventObject => $this
@@ -632,7 +632,7 @@ abstract class Mage_Core_Model_Resource_Db_Collection_Abstract extends Varien_Da
                 $item->setDataChanges(false);
             }
         }
-        Mage::dispatchEvent('core_collection_abstract_load_after', array('collection' => $this));
+        Mage::dispatchEvent('core_collection_abstract_load_after', array('Collection' => $this));
         if ($this->_eventPrefix && $this->_eventObject) {
             Mage::dispatchEvent($this->_eventPrefix.'_load_after', array(
                 $this->_eventObject => $this

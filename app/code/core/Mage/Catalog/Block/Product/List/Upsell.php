@@ -78,7 +78,7 @@ class Mage_Catalog_Block_Product_List_Upsell extends Mage_Catalog_Block_Product_
          */
         Mage::dispatchEvent('catalog_product_upsell', array(
             'product'       => $product,
-            'collection'    => $this->_itemCollection,
+            'Collection' => $this->_itemCollection,
             'limit'         => $this->getItemLimit()
         ));
 

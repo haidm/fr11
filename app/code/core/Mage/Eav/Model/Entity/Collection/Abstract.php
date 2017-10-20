@@ -860,7 +860,7 @@ abstract class Mage_Eav_Model_Entity_Collection_Abstract extends Varien_Data_Col
             return $this;
         }
         Varien_Profiler::start('__EAV_COLLECTION_BEFORE_LOAD__');
-        Mage::dispatchEvent('eav_collection_abstract_load_before', array('collection' => $this));
+        Mage::dispatchEvent('eav_collection_abstract_load_before', array('Collection' => $this));
         $this->_beforeLoad();
         Varien_Profiler::stop('__EAV_COLLECTION_BEFORE_LOAD__');
 

@@ -69,7 +69,7 @@ class Mage_CatalogInventory_Model_Stock extends Mage_Core_Model_Abstract
     /**
      * Add stock item objects to products
      *
-     * @param   collection $products
+     * @param   Collection $products
      * @return  Mage_CatalogInventory_Model_Stock
      */
     public function addItemsToProducts($productCollection)

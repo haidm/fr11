@@ -524,7 +524,7 @@ class Mage_Catalog_Model_Resource_Product_Collection extends Mage_Catalog_Model_
      */
     protected function _beforeLoad()
     {
-        Mage::dispatchEvent('catalog_product_collection_load_before', array('collection' => $this));
+        Mage::dispatchEvent('catalog_product_collection_load_before', array('Collection' => $this));
 
         return parent::_beforeLoad();
     }
@@ -542,7 +542,7 @@ class Mage_Catalog_Model_Resource_Product_Collection extends Mage_Catalog_Model_
         }
 
         if (count($this) > 0) {
-            Mage::dispatchEvent('catalog_product_collection_load_after', array('collection' => $this));
+            Mage::dispatchEvent('catalog_product_collection_load_after', array('Collection' => $this));
         }
 
         foreach ($this as $product) {
@@ -1048,7 +1048,7 @@ class Mage_Catalog_Model_Resource_Product_Collection extends Mage_Catalog_Model_
 
             Mage::dispatchEvent(
                 'catalog_product_collection_before_add_count_to_categories',
-                array('collection' => $this)
+                array('Collection' => $this)
             );
 
             if ($isAnchor) {
@@ -1839,7 +1839,7 @@ class Mage_Catalog_Model_Resource_Product_Collection extends Mage_Catalog_Model_
     protected function _applyProductLimitations()
     {
         Mage::dispatchEvent('catalog_product_collection_apply_limitations_before', array(
-            'collection'  => $this,
+            'Collection' => $this,
             'category_id' => isset($this->_productLimitationFilters['category_id'])
                 ? $this->_productLimitationFilters['category_id']
                 : null,
@@ -1888,7 +1888,7 @@ class Mage_Catalog_Model_Resource_Product_Collection extends Mage_Catalog_Model_
         $this->_productLimitationJoinStore();
 
         Mage::dispatchEvent('catalog_product_collection_apply_limitations_after', array(
-            'collection' => $this
+            'Collection' => $this
         ));
 
         return $this;

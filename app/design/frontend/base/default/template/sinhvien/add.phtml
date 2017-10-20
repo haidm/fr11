@@ -1,7 +1,37 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: baohan-baotran
- * Date: 10/19/2017
- * Time: 1:15 PM
- */
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+<style>
+    body {
+    padding-top: 0px;
+    }
+    .form-control {
+    margin-bottom: 10px;
+    }
+    .login-screen-bg {
+    background-color: #EFEFEF;
+    }
+</style>
+</head>
+<body>
+<div class="container" style="padding-top: 150px">
+
+    <div class="row ">
+        <div class="col-xs-12 col-sm-12 col-md-4 well well-sm col-md-offset-4">
+            <legend><i class="glyphicon glyphicon-globe"></i></a>Thêm sinh viên
+            </legend>
+            <form action="<?php echo Mage::getUrl('assignment6') ?>" method="get" class="form" role="form">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6"> <input class="form-control" name="name" placeholder="Họ tên" required="" autofocus="" type="text">
+                    </div>
+
+                </div> <input class="form-control" name="youremail" placeholder="Email" type="email">
+                <br>
+                <button class="btn btn-lg btn-primary btn-block" type="submit"> Thêm</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

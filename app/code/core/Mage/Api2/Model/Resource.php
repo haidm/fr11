@@ -45,7 +45,7 @@ abstract class Mage_Api2_Model_Resource
      *  Action types
      */
     const ACTION_TYPE_ENTITY = 'entity';
-    const ACTION_TYPE_COLLECTION  = 'collection';
+    const ACTION_TYPE_COLLECTION  = 'Collection';
     /**#@-*/
 
     /**#@+
