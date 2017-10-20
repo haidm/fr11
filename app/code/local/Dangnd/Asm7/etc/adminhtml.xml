@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <dangnd_asm7 translate="title" module="dangnd_asm7">
+            <title>Mega Menu</title>
+            <sort_order>999</sort_order>
+            <children>
+                <index translate="title" module="dangnd_asm7">
+                    <title>Manage mega menu</title>
+                    <action>adminhtml/asm7</action>
+                    <sort_order>0</sort_order>
+                </index>
+                <list translate="title" module="dangnd_asm7">
+                    <title>List</title>
+                    <action>adminhtml/asm7/megamenu</action>
+                    <sort_order>10</sort_order>
+                </list>
+            </children>
+        </dangnd_asm7>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <dangnd_asm7 translate="title" module="dangnd_asm7">
+                        <title>Mega Menu</title>
+                    </dangnd_asm7>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
