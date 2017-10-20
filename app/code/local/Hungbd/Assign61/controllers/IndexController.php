@@ -11,7 +11,7 @@ class Hungbd_Assign61_IndexController extends Mage_Core_Controller_Front_Action
     public function indexAction()
     {
         $sinhvien = Mage::getModel('assign61/sinhvien');
-        $data = $sinhvien->getCollection();
+        $data = $sinhvien->getCollection();;
         $this->loadLayout('assign61_list_handle');
         $this->getLayout()->getBlock('list')->assign('data',$data);
         $this->renderLayout();
