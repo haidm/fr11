@@ -1,6 +1,6 @@
 <layout version="0.1.0">
     <assignment6_layout_index>
-        <block type="core/template" name="show" as="show" output="toHtml" template="assignment6/simple.phtml"/>
+        <block type="core/template" name="show" as="show" output="toHtml" template="assignment6/show.phtml"/>
     </assignment6_layout_index>
 
     <assignment6_layout_add>
