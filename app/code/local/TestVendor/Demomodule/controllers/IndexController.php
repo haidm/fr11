@@ -10,6 +10,7 @@ class TestVendor_Demomodule_IndexController extends Mage_Core_Controller_Front_A
 
     public function indexAction()
     {
+
         $layoutObject = $this->getLayout();
 
         //Create child block
@@ -57,5 +58,12 @@ class TestVendor_Demomodule_IndexController extends Mage_Core_Controller_Front_A
             ->append($footer, 'footer');
 
         echo $block->toHtml();
+        $order = Mage::getModel('mymodel/order')
+            ->getCollection()
+            ->addFieldToFilter('name', array('like' => '%DT%'));
+        foreach ($order as $item) {
+            echo $item->getName() . "<br />";
+        }
+
     }
 }
