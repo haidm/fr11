@@ -1,32 +1,19 @@
+<?xml version="1.0"?>
 <config>
     <modules>
         <Tungtt_SinhVien>
             <version>0.1.0</version>
         </Tungtt_SinhVien>
     </modules>
-    <global>
-        <resources>
-            <tungtt_sinhvien_setup>
-                <setup>
-                    <module>Tungtt_SinhVien.xml</module>
-                </setup>
-            </tungtt_sinhvien_setup>
-        </resources>
-        <blocks>
-            <demomodule>
-                <class>Tungtt_Sinhvien_Block</class>
-            </demomodule>
-        </blocks>
-    </global>
     <frontend>
         <routers>
-            <sinhvien>
+            <Tungtt_SinhVien>
                 <use>standard</use>
                 <args>
                     <module>Tungtt_SinhVien</module>
                     <frontName>sinhvien</frontName>
                 </args>
-            </sinhvien>
+            </Tungtt_SinhVien>
         </routers>
         <layout>
             <updates>
@@ -43,27 +30,31 @@
         </layout>
     </frontend>
     <global>
-        <models>
-            <tungtt_sinhvien>
-                <class>Tungtt_SinhVien_Model</class>
-                <resourceModel>sinhvien_resource</resourceModel>
-            </tungtt_sinhvien>
-            <tungtt_sinhvien_resource>
-                <class>Tungtt_SinhVien_Model_Resource</class>
-                <entities>
-                    <sinhvien>
-                        <table>tungtt_sinhvien</table>
-                    </sinhvien>
-                </entities>
-            </tungtt_sinhvien_resource>
-        </models>
+            <blocks>
+                <demomodule>
+                    <class>Tungtt_SinhVien_Block</class>
+                </demomodule>
+            </blocks>
         <resources>
-            <tungtt_sinhvien_setup>
+            <sinhvien_setup>
                 <setup>
                     <module>Tungtt_SinhVien</module>
-                    <class>Tungtt_SinhVien_Model_Resource_Setup</class>
                 </setup>
-            </tungtt_sinhvien_setup>
+            </sinhvien_setup>
         </resources>
+        <models>
+            <sinhvien>
+                <class>Tungtt_SinhVien_Model</class>
+                <resourceModel>sinhvien_resource</resourceModel>
+            </sinhvien>
+            <sinhvien_resource>
+                <class>Tungtt_SinhVien_Model_Resource</class>
+                <entities>
+                    <student>
+                        <table>student</table>
+                    </student>
+                </entities>
+            </sinhvien_resource>
+        </models>
     </global>
 </config>
