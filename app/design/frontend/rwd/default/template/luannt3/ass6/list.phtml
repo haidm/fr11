@@ -13,14 +13,42 @@
     </thead>
     <tbody>
     <tr class="" align="center">
-        <td>{{$student->id}}</td>
-        <td>{{$student->mssv}}</td>
-        <td>{{$student->name}}</td>
-        <td>{{$student->email}}</td>
-        <td>{{$student->phone}}</td>
-        <td>{{$student->birthday}}</td>
+
+        <?php
+        if (empty($list['items'])) {
+            echo '<td colspan="6">Empty!!</td>';
+        } else {
+        foreach ($list['items'] as $key => $item) { ?>
+    <tr>
+        <td><?= $item['name'] ?></td>
+        <td><?= $item['email'] ?></td>
+        <td><?= $item['address'] ?></td>
+        <td><?= $item['phone'] ?></td>
+        <td>
+            <a href='<?= Mage::getUrl('asm61/index/edit/').'id/'.$item['id'] ?>' class='btn btn-act'>Sửa</a>
+            <a href='<?= Mage::getUrl('asm61/index/delete/').'id/'.$item['id'] ?>' class='btn btn-act'>Xóa</a>
+        </td>
+    </tr>
+    <?php }
+    }
+    ?>
+
+    <?php
+    if (empty($list['items'])) {
+        echo '<td colspan="6">Empty!!</td>';
+    } else {
+    foreach ($list['items'] as $key => $item) { ?>
+        <td>{{$item->id}}</td>
+        <td>{{$item->mssv}}</td>
+        <td>{{$item->name}}</td>
+        <td>{{$item->email}}</td>
+        <td>{{$item->phone}}</td>
+        <td>{{$item->birthday}}</td>
         <td class="center"><i class=""></i> <a href="">Edit</a></td>
         <td class="center"><i class=""></i><a href=""> Delete</a></td>
     </tr>
+    <?php }
+    }
+    ?>
     </tbody>
 </table>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <luannt3_assignment7 translate="title" module="luannt3_assignment7">
+            <title>Mega Menu</title>
+            <sort_order>100</sort_order>
+            <children>
+                <index translate="title" module="luannt3_assignment7">
+                    <title>Manage menu</title>
+                    <!--Mapped to adminhtmlModulePath/controller/action-->
+                    <action>adminhtml/test/index</action>
+                    <sort_order>0</sort_order>
+                </index>
+                <list translate="title" module="luannt3_assignment7">
+                    <title>List</title>
+                    <action>adminhtml/test/list</action>
+                    <sort_order>10</sort_order>
+                </list>
+            </children>
+        </luannt3_assignment7>
+    </menu>
+
+</config>

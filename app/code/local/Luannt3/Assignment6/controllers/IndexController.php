@@ -4,17 +4,13 @@ class Luannt3_Assignment6_IndexController extends Mage_Core_Controller_Front_Act
 
     public function indexAction()
     {
-        $student = Mage::getModel('luannt3_assignment/student')->getCollection();
+        $list = Mage::getModel('assignment6/student')->getCollection()->toArray();
 
-        $collection = $student->getCollection();
-        foreach($collection as $student){
-            print_r($student->getData());
-            print_r($student->getDateTo());
-        }
+        $this->loadLayout('ass6_list_handle');
 
-//        $this->loadLayout('ass6_list_handle');
-//        $this->getLayout()->getBlock('list')->assign('student',$student);
-//        $this->renderLayout();
+        $this->getLayout()->getBlock('content')->setData('list', $list);
+
+        $this->renderLayout();
 
     }
     public function addAction()
@@ -23,21 +19,21 @@ class Luannt3_Assignment6_IndexController extends Mage_Core_Controller_Front_Act
         $this->renderLayout();
 
     }
-    public function postAddAction(){
-        $mssv = $this->getRequest()->getParam('mssv');
-        $name = $this->getRequest()->getParam('name');
-        $email = $this->getRequest()->getParam('email');
-        $phone = $this->getRequest()->getParam('phone');
-        $birthday = $this->getRequest()->getParam('birthday');
-        $student = Mage::getModel('assignment6/student');
-        $student = setMssv($mssv);
-        $student = setName($name);
-        $student = setEmail($email);
-        $student = setPhone($phone);
-        $student = setBirthday($birthday);
-        $student->save();
+//    public function postAddAction(){
+//        $mssv = $this->getRequest()->getParam('mssv');
+//        $name = $this->getRequest()->getParam('name');
+//        $email = $this->getRequest()->getParam('email');
+//        $phone = $this->getRequest()->getParam('phone');
+//        $birthday = $this->getRequest()->getParam('birthday');
+//        $student = Mage::getModel('assignment6/student');
+//        $student = setMssv($mssv);
+//        $student = setName($name);
+//        $student = setEmail($email);
+//        $student = setPhone($phone);
+//        $student = setBirthday($birthday);
+//        $student->save();
 
-    }
+//    }
     public function editAction()
     {
         $this->loadLayout('ass6_edit_handle');
