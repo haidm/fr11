@@ -4,8 +4,8 @@ Class Ass6_Sinhvien_IndexController extends Mage_Core_Controller_Front_Action
     public function indexAction()
     {
         $layoutObject = $this->getLayout();
-        $block = $layoutObject->createBlock('core/template', 'ass6_sinhvien/student')
-            ->setTemplate('student/student.phtml');
+        $block = $layoutObject->createBlock('core/template', 'Ass6_Sinhvien/student')
+            ->setTemplate('Student/Student.phtml');
         echo $block->toHtml();
     }
     public function addAction()
@@ -17,13 +17,14 @@ Class Ass6_Sinhvien_IndexController extends Mage_Core_Controller_Front_Action
             $arr['student_address']= $this->getRequest()->getPost('address');
             $arr['student_phone']= $this->getRequest()->getPost('phone');
 
-            $data = Mage::getModel(ass6_sinhvien/student);
-            //$d = Mage::getResourceModel('catalog/product_collection')
-
+            $data = Mage::getModel('Ass6_Sinhvien/Student');
             $data->setData($arr);
-                        var_dump($data);die;
+//            var_dump($data);die;
             $data->save();
         }
+    }
+    public function readAction()
+    {
 
     }
 }

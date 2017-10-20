@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Day6_Student>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Day6_Student>
+    </modules>
+</config>

@@ -3,7 +3,7 @@
 $installer = $this;
 $installer->startSetup();
 $table = $installer->getConnection()
-    ->newTable($installer->getTable('ass6_sinhvien/student'))
+    ->newTable($installer->getTable('student'))
     ->addColumn('student_id',Varien_Db_Ddl_Table::TYPE_INTEGER,null,array(
         'identity'=> true,
         'unsigned' => true,
@@ -25,7 +25,7 @@ $table = $installer->getConnection()
 $installer->getConnection()->createTable($table);
 
 $table = $installer->getConnection()
-    ->newTable($installer->getTable('ass6_sinhvien/teststudent'))
+    ->newTable($installer->getTable('teststudent'))
     ->addColumn('teststudent_id',Varien_Db_Ddl_Table::TYPE_INTEGER,null,array(
         'identity'=> true,
         'unsigned' => true,

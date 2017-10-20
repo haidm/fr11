@@ -4,6 +4,6 @@ Class Ass6_Sinhvien_Model_Resource_Student_Collection
 {
     public function _construct()
     {
-        $this->_init('ass6_sinhvien/student');
+        $this->_init('Ass6_Sinhvien/student');
     }
 }

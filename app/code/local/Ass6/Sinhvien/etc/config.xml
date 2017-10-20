@@ -20,19 +20,19 @@
         <models>
             <Ass6_Sinhvien>
                 <class>Ass6_Sinhvien_Model</class>
-                <resourceModel>ass6_sinhvien_resource</resourceModel>
+                <resourceModel>Ass6_Sinhvien_resources</resourceModel>
             </Ass6_Sinhvien>
-            <ass6_sinhvien_resource>
+            <Ass6_Sinhvien_resources>
                 <class>Ass6_Sinhvien_Model_Resource</class>
                 <entities>
-                    <student2>
-                        <table>ass6_sinhvien_student2</table>
-                    </student2>
+                    <student>
+                        <table>student</table>
+                    </student>
                     <teststudent>
                         <table>ass6_sinhvien_teststudent</table>
                     </teststudent>
                 </entities>
-            </ass6_sinhvien_resource>
+            </Ass6_Sinhvien_resources>
         </models>
         <resources>
             <ass6_sinhvien_setup>

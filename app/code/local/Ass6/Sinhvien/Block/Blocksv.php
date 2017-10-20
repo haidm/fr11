@@ -3,7 +3,7 @@ Class Ass6_Sinhvien_Block_Blocksv extends Mage_Core_Block_Template
 {
     public function _construct()
     {
-        $this->setTemplate('student/student.phtml','student');
+        $this->setTemplate('Student/Student.phtml','Student');
     }
 
 }
