@@ -1,0 +1,112 @@
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Mega Menu Assignment 7</title>
+    <style>
+        div {
+            margin : 57px;
+            clear : both;
+        }
+        ul {
+            list-style-type:none;
+            padding:0px;
+            margin:0px;
+        }
+        .horizontal li {
+            display:inline;
+        }
+        .horizontal li a {
+            text-decoration:none;
+            width:129px;
+            float:left;
+            background:#000;
+            color:#fff;
+            font-weight:bold;
+            text-align:center;
+            line-height:35px;
+            border-left:1px solid #fff;
+        }
+        .vertical li {
+            width:129px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 1em;
+        }
+        .vertical li a {
+            text-decoration:none;
+            background:#000;
+            color:#fff;
+            font-weight:bold;
+            text-align:center;
+            line-height:35px;
+            border-left:1px solid #fff;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <?php
+    $menu = $this->getData('menu')['items'];
+    $items = $this->getData('items')['items'];
+
+    foreach ($menu as $value)
+    {
+        if($value['active'] == 1)
+        {
+        ?>
+    <div>
+        <h3>Menu <?= $value['name'] ?></h3>
+        <ul class='<?= $value['type'] ?>'>
+            <?php
+            foreach ($items as $item)
+            {
+                if($value['id'] == $item['parent'])
+                {
+                ?>
+            <li><a href='<?= $item['link'] ?>'><?= $item['title'] ?></a></li>
+                <?php
+                }
+            }
+            ?>
+        </ul>
+    </div>
+        <?php
+        }
+    }
+    ?>
+</body>
+</html>
+<?php
+/*
+ * Tạo menu đa cấp
+ *
+ * @param array $full
+ * @param int $parent
+ */
+function multiMenu($full, $parent = 0)
+{
+    $child = array();
+    foreach ($full as $key => $item)
+    {
+        if ($item['parent'] == $parent)
+        {
+            $child[] = $item;
+            unset($full[$key]);
+        }
+    }
+
+    if ($child)
+    {
+        echo "<ul class='sub-menu'>";
+        foreach ($child as $key => $item)
+        {
+
+            echo "<li><a href='{$item['link']}'>{$item['title']}</a>";
+
+            multiMenu($full, $item['id']);
+
+            echo '</li>';
+        }
+        echo '</ul>';
+    }
+}

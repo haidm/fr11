@@ -1,0 +1,34 @@
+<config>
+    <menu>
+        <megamenu>
+            <title>Mega Menu</title>
+            <sort_order>999</sort_order>
+            <children>
+                <manage>
+                    <title>Manage Menu</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/megaMenu</action>
+                </manage>
+                <item>
+                    <title>Manage Item</title>
+                    <sort_order>10</sort_order>
+                    <action>adminhtml/megaItem</action>
+                </item>
+            </children>
+        </megamenu>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <manage>
+                        <title>Manage menu</title>
+                    </manage>
+                    <item>
+                        <title>Manage Item</title>
+                    </item>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

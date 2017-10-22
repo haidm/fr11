@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout version="0.1.0">
+    <megamenu_layout_handle>
+        <block type="core/template" name="main" as="main" output="toHtml" template="megamenu/main.phtml"/>
+    </megamenu_layout_handle>
+</layout>
