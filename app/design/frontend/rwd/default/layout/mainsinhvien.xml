@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+    <tungtt_listsinhvien_handle>
+        <block type="core/template" name="mainlist"
+               template="mysinhvien/mainlist.phtml"
+               output="toHtml">
+        </block>
+    </tungtt_listsinhvien_handle>
+
+    <tungtt_addsinhvien_handle>
+        <block type="core/template" name="mainadd"
+               template="mysinhvien/mainadd.phtml"
+               output="toHtml">
+        </block>
+    </tungtt_addsinhvien_handle>
+
+    <tungtt_editsinhvien_handle>
+        <block type="core/template" name="mainedit"
+               template="mysinhvien/mainedit.phtml"
+               output="toHtml">
+        </block>
+    </tungtt_editsinhvien_handle>
+</layout>

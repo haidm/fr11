@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Thiết kế web với bootstrap</title>
-    <!-- Bootstrap CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thiết kế web với bootstrap</title>
+	<!-- Bootstrap CSS -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <style>
-    .header, .footer {
-        height: auto;
-        border: 1px solid black;
-
-    }
-    .logo {
-        width: 100px;
-        height: 50px;
-        border: 1px solid black;
-    }
-    .left, .content, .right {
-        border: 1px solid black;
-        height: 450px;
-    }
-
-    .blocka, .blockb, .blockc, .blockd {
-        width: 100px;
-        height: 80px;
-        border: 1px solid black;
-    }
+	.header, .footer {
+		height: auto;
+		border: 1px solid black;
+		
+	}
+	
+	.logo {
+		width: 100px;
+		height: 50px;
+		border: 1px solid black;
+	}
+	
+	.left, .content, .right {
+		border: 1px solid black;
+		height: 450px;
+	}
+	
+	.blocka, .blockb, .blockc, .blockd {
+		width: 100px;
+		height: 80px;
+		border: 1px solid black;
+	}
 
 </style>
 <body>
+<?php $data = $this->$edit);?>
+<?php var_dump($data); ?>
 <div class="container">
-    <?php echo $this->getChildHtml('edit'); ?>
+	<div class="container">
+		<div class="col-lg-6">
+			<div class="panel panel-primary">
+				<section class="panel">
+					<header class="panel-heading">
+						Sua Sinh vien
+					</header>
+					<div class="panel-body">
+						<form role="form" method="post"
+							  action="<?php Mage::getUrl('sinhvien/index/postInsert/') . 'id/' . $this->$edit['edit']['id'] ?>">
+							<div class="form-group">
+								<label for="name">Ten Sinh Vien</label>
+								<input type="text" class="form-control" id="name" name="name"
+									   value="<?php $this->$edit['edit']['name'] ?>">
+							</div>
+							
+							<div class="form-group">
+								<label for="lop">Lop</label>
+								<input type="text" class="form-control" id="lop" name="lop"
+									   value="<?php $this->$edit['edit']['lop'] ?>">
+							</div>
+							
+							<div class="form-group">
+								<label for="birth">Ngay sinh</label>
+								<input type="date" class="form-control" id="birth" name="birth"
+									   value="<?php $this->$edit['edit']['birth'] ?>">
+							</div>
+							<button type="submit" name="submit" class="btn btn-info">Submit</button>
+							<a class="btn btn-warning" href="http://mageosc.local/sinhvien/index/index"
+							   title="">Cancel</a>
+						</form>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>

@@ -1,51 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Thiết kế web với bootstrap</title>
-    <!-- Bootstrap CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thiết kế web với bootstrap</title>
+	<!-- Bootstrap CSS -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <style>
-    .header, .footer {
-        height: auto;
-        border: 1px solid black;
-
-    }
-    .logo {
-        width: 100px;
-        height: 50px;
-        border: 1px solid black;
-    }
-    .left, .content, .right {
-        border: 1px solid black;
-        height: 450px;
-    }
-
-    .blocka, .blockb, .blockc, .blockd {
-        width: 100px;
-        height: 80px;
-        border: 1px solid black;
-    }
+	.header, .footer {
+		height: auto;
+		border: 1px solid black;
+		
+	}
+	
+	.logo {
+		width: 100px;
+		height: 50px;
+		border: 1px solid black;
+	}
+	
+	.left, .content, .right {
+		border: 1px solid black;
+		height: 450px;
+	}
+	
+	.blocka, .blockb, .blockc, .blockd {
+		width: 100px;
+		height: 80px;
+		border: 1px solid black;
+	}
 
 </style>
 <body>
 <div class="container">
-    <?php echo $this->getChildHtml('list'); ?>
-<!--    --><?php //echo $this->getChildHtml('content'); ?>
-<!--    --><?php //echo $this->getChildHtml('content'); ?>
+	<div class="col-xs-12 col-md-12 col-lg-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading " id="my-header">Sinh Vien</div>
+			<div class="panel-body">
+				<a href="<?php echo Mage::getUrl('sinhvien/index/insert') ?>"
+				   class="btn btn-primary">Them Sinh Vien</a>
+				<div class="bootstrap-table">
+					<div class="table-responsive">
+						
+						<table class="table table-bordered" style="margin-top:20px;">
+							<thead>
+							<tr class="bg-primary">
+								<th width="4%">#</th>
+								<th width="10%">Ten SV</th>
+								<th width="10%">Lop</th>
+								<th width="10%">Ngay sinh</th>
+								<th width="10%">Tùy Chọn</th>
+							</tr>
+							</thead>
+							<tbody>
+							<?php
+							$data = $this->$list_student;
+							if (empty($data['items'])) {
+								echo "<td colspan='5'> Empty</td>";
+							} else {
+								foreach ($data['items'] as $item) { ?>
+									<tr>
+										<td id="list-p"><?php echo $item['id'] ?></td>
+										<td><?php echo $item['name']; ?></td>
+										<td><?php echo $item['lop']; ?></td>
+										<td><?php echo $item['birth']; ?></td>
+										<td>
+											<a id='width'
+											   href="<?php echo Mage::getUrl('sinhvien/index/update/id/' . $item['id']) ?>"
+											   class="btn btn-primary"><i class="fa fa-pencil"
+																		  aria-hidden="true"></i>Edit</a>
+											<a id='width'
+											   href="<?php echo Mage::getUrl('sinhvien/index/delete/id/' . $item['id']) ?>"
+											   onclick="return confirm('Are you delete this product ?')"
+											   class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i>
+												Delete</a>
+										</td>
+									</tr>
+								<?php }
+							} ?>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-
 </body>
 </html>

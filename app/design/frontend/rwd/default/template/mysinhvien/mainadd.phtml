@@ -42,7 +42,45 @@
 </style>
 <body>
 <div class="container">
-    <?php echo $this->getChildHtml('add'); ?>
+    <div class="container">
+        <div class="col-lg-6">
+            <div class="panel panel-primary">
+                <section class="panel">
+                    <header class="panel-heading">
+                        Them Sinh vien
+                    </header>
+                        <?php if (isset($this->$error)){ ?>
+                    <div class="alert alert-danger">
+                        <?php echo ($this->$error['error']); ?>
+                    </div>
+                      <?php  }  ?>
+                    <div class="panel-body">
+                        <form role="form" method="post" action="<?= Mage::getUrl('sinhvien/index/postInsert'); ?>">
+                            <div class="form-group">
+                                <label for="name">Ten Sinh Vien</label>
+                                <input required value="<?php if (isset($_POST['name'])) echo $_POST['name']; ?>"
+                                       type="text" class="form-control" id="name"  name="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lop">Lop</label>
+                                <input required value="<?php if (isset($_POST['lop'])) echo $_POST['lop'] ?>"
+                                       type="text" class="form-control" id="lop"  name="lop">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="birth">Ngay sinh</label>
+                                <input required value="<?php if (isset($_POST['birth'])) echo $_POST['birth'] ?>"
+                                       type="date" class="form-control" id="birth" name="birth">
+                            </div>
+                            <button type="submit" name="submit" class="btn btn-info">Submit</button>
+                            <a class="btn btn-warning" href="<?php echo Mage::getUrl('sinhvien/index/index'); ?>" title="">Cancel</a>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
