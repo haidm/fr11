@@ -6,6 +6,7 @@ class Ass7_Mega_Block_Adminhtml_Menu_Grid extends Mage_Adminhtml_Block_Widget_Gr
      */
     public function __construct()
     {
+//
         parent::__construct();
         $this->setDefaultSort('menu_id');
         $this->setId('menuGrid');
@@ -24,15 +25,15 @@ class Ass7_Mega_Block_Adminhtml_Menu_Grid extends Mage_Adminhtml_Block_Widget_Gr
     {
         $this->addColumn('menu_id',
             array(
-                'header' => Mage::helper('mega')->__('Menu ID'),
+                'header' => Mage::helper('ass7_mega')->__('Menu ID'),
                 'index' => 'menu_id'
             )
         );
         $this->addColumn('name',
             array(
-                'header' => Mage::helper('mega')->__('Menu Name'),
+                'header' => Mage::helper('ass7_mega')->__('Menu Name'),
                 'index' => 'name',
-                'type'    => 'text'
+                'type' => 'text'
             )
         );
 //        $this->addColumn('address',
@@ -43,10 +44,10 @@ class Ass7_Mega_Block_Adminhtml_Menu_Grid extends Mage_Adminhtml_Block_Widget_Gr
 //            )
 //        );
         return parent::_prepareColumns();
-
+    }
         public function getRowUrl($row)
     {
         return $this->getUrl('*/*/edit', array('menu_id' => $row->getId()));
     }
-    }
+
 }

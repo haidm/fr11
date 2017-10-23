@@ -11,13 +11,6 @@
                 <class>Ass7_Mega_Helper</class>
             </ass7_mega>
         </helpers>
-        <resources>
-            <ass7_mega_setup>
-                <setup>
-                    <module>Ass7_Mega</module>
-                </setup>
-            </ass7_mega_setup>
-        </resources>
         <blocks>
             <demomega>
                 <class>Ass7_Mega_Block</class>
@@ -32,11 +25,18 @@
                 <class>Ass7_Mega_Model_Resource</class>
                 <entities>
                     <menu>
-                        <table>ass7_menu</table>
+                        <table>menu</table>
                     </menu>
                 </entities>
             </mymenu_resource>
         </models>
+        <resources>
+            <ass7_mega_setup>
+                <setup>
+                    <module>Ass7_Mega</module>
+                </setup>
+            </ass7_mega_setup>
+        </resources>
     </global>
     <frontend>
         <routers>
@@ -49,4 +49,25 @@
             </megamenu>
         </routers>
     </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Ass7_Mega after="Mage_Adminhtml">Ass7_Mega_Adminhtml</Ass7_Mega>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <!--<adminhtml>-->
+        <!--&lt;!&ndash; Khai báo file layout trong admin&ndash;&gt;-->
+        <!--<layout>-->
+            <!--<updates>-->
+                <!--<mega>-->
+                    <!--<file>megamenu.xml</file>-->
+                <!--</mega>-->
+            <!--</updates>-->
+        <!--</layout>-->
+    <!--</adminhtml>-->
 </config>

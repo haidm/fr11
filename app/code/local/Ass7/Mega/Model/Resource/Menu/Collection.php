@@ -4,6 +4,6 @@ Class Ass7_Mega_Model_Resource_Menu_Collection
 {
     public function _construct()
     {
-        $this->_init('Ass7_Mega/menu');
+        $this->_init('mymenu/menu');
     }
 }
