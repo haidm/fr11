@@ -4,7 +4,7 @@ class Album_Photo_Model_Resource_Photo_Collection
 {
     protected function _construct()
     {
-        $this->_init('mymodel/album');
+        $this->_init('mymodel/photo');
 
     }
 }
