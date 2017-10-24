@@ -54,11 +54,10 @@ class Hungbd_Album_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block_
         $album  = Mage::getModel('Hungbd_Album/album')->getCollection();
         $array = array();
         $albumId = array();
-        foreach ($album as $test){
-            $array[] =  $test->name;
-            $albumId[] = $test->id;
+        foreach ($album as $key => $test){
+            $array[$key]['value'] =  $test->id;
+            $array[$key]['label'] =  $test->name;
         }
-//        var_dump($album);
         $form   = new Varien_Data_Form(array(
             'id'        => 'edit_form',
             'action'    => $this->getData('action'),
@@ -87,21 +86,21 @@ class Hungbd_Album_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block_
             )
         );
 
-//        $fieldset->addField('album_id', 'select', array(
-//            'label'     => Mage::helper('tax')->__('Album id'),
-//            'class'     => 'required-entry',
-//            'values'    => $array,
-//            'name'      => 'album_id',
-//        ));
-
-        $fieldset->addField('album_id', 'text',
-            array(
-                'name'      => 'album_id',
-                'label'     => Mage::helper('tax')->__('Album id'),
-                'class'     => 'required-entry',
-                'required'  => true,
-            )
-        );
+        $fieldset->addField('album_id', 'select', array(
+            'label'     => Mage::helper('tax')->__('Album id'),
+            'class'     => 'required-entry',
+            'values'    => $array,
+            'name'      => 'album_id',
+        ));
+//
+//        $fieldset->addField('album_id', 'text',
+//            array(
+//                'name'      => 'album_id',
+//                'label'     => Mage::helper('tax')->__('Album id'),
+//                'class'     => 'required-entry',
+//                'required'  => true,
+//            )
+//        );
 
         if ($model->getId()) {
             $fieldset->addField('id', 'hidden',
