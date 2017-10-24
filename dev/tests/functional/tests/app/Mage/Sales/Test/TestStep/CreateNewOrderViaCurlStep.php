@@ -43,7 +43,7 @@ class CreateNewOrderViaCurlStep implements TestStepInterface
     protected $fixtureFactory;
 
     /**
-     * Order dataset.
+     * Photo dataset.
      *
      * @var string
      */

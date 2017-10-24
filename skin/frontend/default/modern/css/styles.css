@@ -1522,7 +1522,7 @@ tr.summary-details-excluded { font-style:italic; }
 .addresses-list li.empty p { font-weight:bold; }
 .addresses-list .addresses-additional li.item {}
 
-/* Order View */
+/* Photo View */
 .order-info dt { display:none; }
 .order-info ul { margin-bottom:15px; border-bottom:1px solid #666; background:#f2f2f2 url(../images/bkg_tabs.gif) 0 100% repeat-x; }
 .order-info li{ float:left; border-right:1px solid #a4a4a4; border-left:1px solid #fff; font-size:1.1em; line-height:1em; }
@@ -1549,10 +1549,10 @@ tr.summary-details-excluded { font-style:italic; }
 .order-items .order-links .link-print { font-weight:bold; font-size:11px; text-transform:none; }
 
 .order-additional { margin:15px 0; }
-/* Order Gift Message */
+/* Photo Gift Message */
 .gift-message dt strong { color:#555; }
 .gift-message dd { font-size:13px; margin:5px 0 0; }
-/* Order Comments */
+/* Photo Comments */
 .order-about dt { font-weight:bold; }
 .order-about dd { font-size:13px; margin:0 0 7px; }
 
@@ -1564,7 +1564,7 @@ tr.summary-details-excluded { font-style:italic; }
 .tracking-table-popup th,
 .tracking-table-popup td { padding:1px 8px; }
 
-/* Order Print Pages */
+/* Photo Print Pages */
 .page-print .print-head { margin:0 0 15px; }
 .page-print .print-head .logo { float:left; }
 .page-print .print-head address { float:left; margin-left:15px; }

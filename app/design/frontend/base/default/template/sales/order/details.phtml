@@ -33,7 +33,7 @@
     <h1><?php echo $this->__('My Orders - Details') ?></h1>
     <button class="button"><span><span><?php echo $this->__('Print All Invoices') ?></span></span></button>
 </div>
-<h3><?php echo $this->__('Order #%s', $_order->getRealOrderId()) ?></h3>
+<h3><?php echo $this->__('Photo #%s', $_order->getRealOrderId()) ?></h3>
 <?php foreach ($this->getInvoices() as $_invoice): ?>
 <div class="page-title">
     <h3><?php echo $this->__('Invoice #%s', $_invoice->getIncrementId()) ?></h3>
@@ -107,7 +107,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <td colspan="4" class="a-right"><?php echo $this->__('Order Subtotal') ?></td>
+            <td colspan="4" class="a-right"><?php echo $this->__('Photo Subtotal') ?></td>
             <td class="a-right"><?php echo $_order->formatPrice($_invoice->getSubtotal()) ?></td>
         </tr>
     </tfoot>

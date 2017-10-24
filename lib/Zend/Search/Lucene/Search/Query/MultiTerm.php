@@ -328,7 +328,7 @@ class Zend_Search_Lucene_Search_Query_MultiTerm extends Zend_Search_Lucene_Searc
             $this->_resVector = array();
         }
 
-        // Order terms by selectivity
+        // Photo terms by selectivity
         $docFreqs = array();
         $ids      = array();
         foreach ($this->_terms as $id => $term) {

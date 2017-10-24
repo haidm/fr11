@@ -342,7 +342,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
                 'nullable'  => false,
-                'comment'   => 'Order Status'
+                'comment'   => 'Photo Status'
             ),
             'percent' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_FLOAT,
@@ -360,7 +360,7 @@ $tables = array(
                 'comment'   => 'Tax Base Amount Sum'
             )
         ),
-        'comment' => 'Tax Order Aggregation'
+        'comment' => 'Tax Photo Aggregation'
     )
 );
 

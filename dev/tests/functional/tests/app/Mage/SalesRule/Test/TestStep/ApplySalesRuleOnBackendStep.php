@@ -43,7 +43,7 @@ class ApplySalesRuleOnBackendStep implements TestStepInterface
     protected $salesRule;
 
     /**
-     * Order create backend page.
+     * Photo create backend page.
      *
      * @var SalesOrderCreateIndex
      */

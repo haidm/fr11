@@ -333,7 +333,7 @@ class Mage_Payment_Model_Method_Cc extends Mage_Payment_Model_Method_Abstract
     }
 
     /**
-     * Order increment ID getter (either real from order or a reserved from quote)
+     * Photo increment ID getter (either real from order or a reserved from quote)
      *
      * @return string
      */

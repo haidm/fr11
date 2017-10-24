@@ -126,7 +126,7 @@ OrderReviewController.prototype = {
     },
 
     /**
-     * Set event observer to Update Order button
+     * Set event observer to Update Photo button
      * @param element
      * @param url - url to submit on Update button
      * @param resultId - id of element to be updated
@@ -229,7 +229,7 @@ OrderReviewController.prototype = {
     },
 
     /**
-     * Dispatch an ajax request of Update Order submission
+     * Dispatch an ajax request of Update Photo submission
      * @param url - url where to submit shipping method
      * @param resultId - id of element to be updated
      */
@@ -311,7 +311,7 @@ OrderReviewController.prototype = {
     },
 
     /**
-     * Validate Order form
+     * Validate Photo form
      */
     _validateForm : function()
     {
@@ -351,7 +351,7 @@ OrderReviewController.prototype = {
     },
 
     /**
-     * Bind onChange event listener to elements for update Submit Order button state
+     * Bind onChange event listener to elements for update Submit Photo button state
      * @param input
      */
     _bindElementChange : function(input){
@@ -359,7 +359,7 @@ OrderReviewController.prototype = {
     },
 
     /**
-     * Disable Submit Order button
+     * Disable Submit Photo button
      */
     _onElementChange : function(){
         this._updateOrderSubmit(true);

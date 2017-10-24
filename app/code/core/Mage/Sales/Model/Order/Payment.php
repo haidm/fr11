@@ -25,7 +25,7 @@
  */
 
 /**
- * Order payment information
+ * Photo payment information
  *
  * @method Mage_Sales_Model_Resource_Order_Payment _getResource()
  * @method Mage_Sales_Model_Resource_Order_Payment getResource()
@@ -172,7 +172,7 @@ class Mage_Sales_Model_Order_Payment extends Mage_Payment_Model_Info
     const REVIEW_ACTION_UPDATE = 'update';
 
     /**
-     * Order model object
+     * Photo model object
      *
      * @var Mage_Sales_Model_Order
      */
@@ -519,7 +519,7 @@ class Mage_Sales_Model_Order_Payment extends Mage_Payment_Model_Info
             $message = Mage::helper('sales')->__('Capturing amount of %s is pending approval on gateway.', $this->_formatPrice($amount));
             $state = Mage_Sales_Model_Order::STATE_PAYMENT_REVIEW;
             if ($this->getIsFraudDetected()) {
-                $message = Mage::helper('sales')->__('Order is suspended as its capture amount %s is suspected to be fraudulent.', $this->_formatPrice($amount, $this->getCurrencyCode()));
+                $message = Mage::helper('sales')->__('Photo is suspended as its capture amount %s is suspected to be fraudulent.', $this->_formatPrice($amount, $this->getCurrencyCode()));
                 $status = Mage_Sales_Model_Order::STATUS_FRAUD;
             }
         } else {
@@ -527,7 +527,7 @@ class Mage_Sales_Model_Order_Payment extends Mage_Payment_Model_Info
             $state = Mage_Sales_Model_Order::STATE_PROCESSING;
             if ($this->getIsFraudDetected()) {
                 $state = Mage_Sales_Model_Order::STATE_PAYMENT_REVIEW;
-                $message = Mage::helper('sales')->__('Order is suspended as its capture amount %s is suspected to be fraudulent.', $this->_formatPrice($amount, $this->getCurrencyCode()));
+                $message = Mage::helper('sales')->__('Photo is suspended as its capture amount %s is suspected to be fraudulent.', $this->_formatPrice($amount, $this->getCurrencyCode()));
                 $status = Mage_Sales_Model_Order::STATUS_FRAUD;
             }
             // register capture for an existing invoice
@@ -844,7 +844,7 @@ class Mage_Sales_Model_Order_Payment extends Mage_Payment_Model_Info
     }
 
     /**
-     * Order cancellation hook for payment method instance
+     * Photo cancellation hook for payment method instance
      * Adds void transaction if needed
      * @return Mage_Sales_Model_Order_Payment
      */
@@ -1015,7 +1015,7 @@ class Mage_Sales_Model_Order_Payment extends Mage_Payment_Model_Info
     }
 
     /**
-     * Order payment either online
+     * Photo payment either online
      * Updates transactions hierarchy, if required
      * Prevents transaction double processing
      * Updates payment totals, updates order status and adds proper comments
@@ -1099,7 +1099,7 @@ class Mage_Sales_Model_Order_Payment extends Mage_Payment_Model_Info
         } else {
             if ($this->getIsFraudDetected()) {
                 $state = Mage_Sales_Model_Order::STATE_PAYMENT_REVIEW;
-                $message = Mage::helper('sales')->__('Order is suspended as its authorizing amount %s is suspected to be fraudulent.', $this->_formatPrice($amount, $this->getCurrencyCode()));
+                $message = Mage::helper('sales')->__('Photo is suspended as its authorizing amount %s is suspected to be fraudulent.', $this->_formatPrice($amount, $this->getCurrencyCode()));
                 $status = Mage_Sales_Model_Order::STATUS_FRAUD;
             } else {
                 $message = Mage::helper('sales')->__('Authorized amount of %s.', $this->_formatPrice($amount));

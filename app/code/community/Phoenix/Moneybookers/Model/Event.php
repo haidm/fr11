@@ -141,7 +141,7 @@ class Phoenix_Moneybookers_Model_Event
 
     /**
      * Processed order cancelation
-     * @param string $msg Order history message
+     * @param string $msg Photo history message
      */
     protected function _processCancel($msg)
     {
@@ -155,7 +155,7 @@ class Phoenix_Moneybookers_Model_Event
      * sends order confirmation to customer
      *
      * @param string $status
-     * @param string $msg Order history message
+     * @param string $msg Photo history message
      */
     protected function _processSale($status, $msg)
     {
@@ -215,7 +215,7 @@ class Phoenix_Moneybookers_Model_Event
         // load order for further validation
         $this->_order = Mage::getModel('sales/order')->loadByIncrementId($params['transaction_id']);
         if (!$this->_order->getId()) {
-            Mage::throwException('Order not found.');
+            Mage::throwException('Photo not found.');
         }
 
         if (0 !== strpos($this->_order->getPayment()->getMethodInstance()->getCode(), 'moneybookers_')) {

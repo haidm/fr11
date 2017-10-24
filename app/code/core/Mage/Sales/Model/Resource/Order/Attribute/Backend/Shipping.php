@@ -26,7 +26,7 @@
 
 
 /**
- * Order shipping address backend
+ * Photo shipping address backend
  *
  * @category    Mage
  * @package     Mage_Sales

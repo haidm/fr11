@@ -71,10 +71,10 @@ abstract class AbstractAssertTax extends AbstractAssertForm
      *
      * @var array
      */
-    protected $priceTypes = ['order_prices' => 'Order'];
+    protected $priceTypes = ['order_prices' => 'Photo'];
 
     /**
-     * Order view page on backend.
+     * Photo view page on backend.
      *
      * @var SalesOrderView
      */

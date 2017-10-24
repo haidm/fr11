@@ -576,7 +576,7 @@ class Mage_XmlConnect_CustomerController extends Mage_XmlConnect_Controller_Acti
 
             $orderId = (int) $this->getRequest()->getParam('order_id');
             if (!$orderId) {
-                $this->_message($this->__('Order id is not specified.'), self::MESSAGE_STATUS_ERROR);
+                $this->_message($this->__('Photo id is not specified.'), self::MESSAGE_STATUS_ERROR);
                 return;
             }
 
@@ -585,7 +585,7 @@ class Mage_XmlConnect_CustomerController extends Mage_XmlConnect_Controller_Acti
             if ($this->_canViewOrder($order)) {
                 Mage::register('current_order', $order);
             } else {
-                $this->_message($this->__('Order is not available.'), self::MESSAGE_STATUS_ERROR);
+                $this->_message($this->__('Photo is not available.'), self::MESSAGE_STATUS_ERROR);
                 return;
             }
 

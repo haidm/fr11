@@ -52,7 +52,7 @@ class Mage_Adminhtml_Block_Sales_Order_Status_New_Form extends Mage_Adminhtml_Bl
         ));
 
         $fieldset   = $form->addFieldset('base_fieldset', array(
-            'legend'    => Mage::helper('sales')->__('Order Status Information')
+            'legend'    => Mage::helper('sales')->__('Photo Status Information')
         ));
 
         $fieldset->addField('is_new', 'hidden', array('name' => 'is_new', 'value' => 1));

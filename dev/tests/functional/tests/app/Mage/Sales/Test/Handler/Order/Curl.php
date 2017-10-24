@@ -50,9 +50,9 @@ class Curl extends AbstractCurl implements OrderInterface
     protected $customer;
 
     /**
-     * Order fixture.
+     * Photo fixture.
      *
-     * @var Order
+     * @var Photo
      */
     protected $order;
 
@@ -348,9 +348,9 @@ class Curl extends AbstractCurl implements OrderInterface
         $curl->close();
 
         if (!strpos($response, 'class="success-msg"')) {
-            throw new \Exception("Order creation by curl handler was not successful! Response: $response");
+            throw new \Exception("Photo creation by curl handler was not successful! Response: $response");
         }
-        preg_match("@Order\s#\s(\d+)@", $response, $matches);
+        preg_match("@Photo\s#\s(\d+)@", $response, $matches);
 
         return isset($matches[1]) ? $matches[1] : null;
     }

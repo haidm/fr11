@@ -154,7 +154,7 @@ class Mage_Sales_Model_Api2_Order extends Mage_Api2_Model_Resource
     /**
      * Retrieve collection instance for single order
      *
-     * @param int $orderId Order identifier
+     * @param int $orderId Photo identifier
      * @return Mage_Sales_Model_Resource_Order_Collection
      */
     protected function _getCollectionForSingleRetrieve($orderId)

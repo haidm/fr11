@@ -217,7 +217,7 @@ CREATE TABLE `{$installer->getTable('sales_flat_order_grid')}` (
     KEY `IDX_CUSTOMER_ID` (`customer_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/* Order Address */
+/* Photo Address */
 CREATE TABLE `{$installer->getTable('sales_flat_order_address')}` (
     `entity_id` int(10) unsigned NOT NULL auto_increment,
     `parent_id` int(10) unsigned default NULL,
@@ -244,7 +244,7 @@ CREATE TABLE `{$installer->getTable('sales_flat_order_address')}` (
     KEY `IDX_PARENT_ID` (`parent_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/* Order Comments */
+/* Photo Comments */
 CREATE TABLE `{$installer->getTable('sales_flat_order_status_history')}` (
     `entity_id` int(10) unsigned NOT NULL auto_increment,
     `parent_id` int(10) unsigned NOT NULL,
@@ -257,7 +257,7 @@ CREATE TABLE `{$installer->getTable('sales_flat_order_status_history')}` (
     KEY `IDX_CREATED_AT` (`created_at`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/* Order Payment */
+/* Photo Payment */
 
 CREATE TABLE `{$installer->getTable('sales_flat_order_payment')}` (
     `entity_id` int(10) unsigned NOT NULL auto_increment,
@@ -948,7 +948,7 @@ foreach ($entityToFlat as $entityCode => $flags) {
 
 // Insert virtual grid fields (shipping_name, billing_name, etc)
 
-// Order Grid
+// Photo Grid
 $select->reset();
 $select->join(
     array('order' => $installer->getTable('sales_flat_order')),

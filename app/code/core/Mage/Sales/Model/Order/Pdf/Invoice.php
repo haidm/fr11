@@ -25,7 +25,7 @@
  */
 
 /**
- * Sales Order Invoice PDF model
+ * Sales Photo Invoice PDF model
  *
  * @category   Mage
  * @package    Mage_Sales

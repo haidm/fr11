@@ -26,7 +26,7 @@
 
 
 /**
- * Order Creditmemo Downloadable Pdf Items renderer
+ * Photo Creditmemo Downloadable Pdf Items renderer
  *
  * @category   Mage
  * @package    Mage_Downloadable

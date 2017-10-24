@@ -55,7 +55,7 @@ class Mage_Adminhtml_Controller_Sales_Invoice extends Mage_Adminhtml_Controller_
     }
 
     /**
-     * Order grid
+     * Photo grid
      */
     public function gridAction()
     {

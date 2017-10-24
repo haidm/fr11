@@ -1145,7 +1145,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'default'   => '0',
-                'comment'   => 'Orig Order Id'
+                'comment'   => 'Orig Photo Id'
             ),
             'store_to_base_rate' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
@@ -1277,7 +1277,7 @@ $tables = array(
             'reserved_order_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 64,
-                'comment'   => 'Reserved Order Id'
+                'comment'   => 'Reserved Photo Id'
             ),
             'password_hash' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -2594,7 +2594,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
                 'scale'     => 4,
                 'precision' => 12,
-                'comment'   => 'Base To Order Rate'
+                'comment'   => 'Base To Photo Rate'
             ),
             'base_total_canceled' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
@@ -2720,7 +2720,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
                 'scale'     => 4,
                 'precision' => 12,
-                'comment'   => 'Store To Order Rate'
+                'comment'   => 'Store To Photo Rate'
             ),
             'subtotal' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
@@ -3000,7 +3000,7 @@ $tables = array(
             'ext_order_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 255,
-                'comment'   => 'Ext Order Id'
+                'comment'   => 'Ext Photo Id'
             ),
             'global_currency_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -3020,7 +3020,7 @@ $tables = array(
             'order_currency_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 255,
-                'comment'   => 'Order Currency Code'
+                'comment'   => 'Photo Currency Code'
             ),
             'original_increment_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -3158,7 +3158,7 @@ $tables = array(
                 'comment'   => 'Base Shipping Incl Tax'
             )
         ),
-        'comment' => 'Sales Flat Order'
+        'comment' => 'Sales Flat Photo'
     ),
     $installer->getTable('sales/order_grid') => array(
         'columns' => array(
@@ -3226,7 +3226,7 @@ $tables = array(
             'order_currency_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 255,
-                'comment'   => 'Order Currency Code'
+                'comment'   => 'Photo Currency Code'
             ),
             'shipping_name' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -3247,7 +3247,7 @@ $tables = array(
                 'comment'   => 'Updated At'
             )
         ),
-        'comment' => 'Sales Flat Order Grid'
+        'comment' => 'Sales Flat Photo Grid'
     ),
     $installer->getTable('sales/order_item') => array(
         'columns' => array(
@@ -3263,7 +3263,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'nullable'  => false,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             ),
             'parent_item_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -3574,7 +3574,7 @@ $tables = array(
             'ext_order_item_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 255,
-                'comment'   => 'Ext Order Item Id'
+                'comment'   => 'Ext Photo Item Id'
             ),
             'locked_do_invoice' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_SMALLINT,
@@ -3670,7 +3670,7 @@ $tables = array(
                 'comment'   => 'Tax Refunded'
             )
         ),
-        'comment' => 'Sales Flat Order Item'
+        'comment' => 'Sales Flat Photo Item'
     ),
     $installer->getTable('sales/order_address') => array(
         'columns' => array(
@@ -3779,7 +3779,7 @@ $tables = array(
                 'comment'   => 'Company'
             )
         ),
-        'comment' => 'Sales Flat Order Address'
+        'comment' => 'Sales Flat Photo Address'
     ),
     $installer->getTable('sales/order_payment') => array(
         'columns' => array(
@@ -4080,7 +4080,7 @@ $tables = array(
                 'comment'   => 'Additional Information'
             )
         ),
-        'comment' => 'Sales Flat Order Payment'
+        'comment' => 'Sales Flat Photo Payment'
     ),
     $installer->getTable('sales/order_status_history') => array(
         'columns' => array(
@@ -4123,7 +4123,7 @@ $tables = array(
                 'comment'   => 'Created At'
             )
         ),
-        'comment' => 'Sales Flat Order Status History'
+        'comment' => 'Sales Flat Photo Status History'
     ),
     $installer->getTable('sales/order_status') => array(
         'columns' => array(
@@ -4141,7 +4141,7 @@ $tables = array(
                 'comment'   => 'Label'
             )
         ),
-        'comment' => 'Sales Order Status Table'
+        'comment' => 'Sales Photo Status Table'
     ),
     $installer->getTable('sales/order_status_state') => array(
         'columns' => array(
@@ -4166,7 +4166,7 @@ $tables = array(
                 'comment'   => 'Is Default'
             )
         ),
-        'comment' => 'Sales Order Status Table'
+        'comment' => 'Sales Photo Status Table'
     ),
     $installer->getTable('sales/order_status_label') => array(
         'columns' => array(
@@ -4191,7 +4191,7 @@ $tables = array(
                 'comment'   => 'Label'
             )
         ),
-        'comment' => 'Sales Order Status Label Table'
+        'comment' => 'Sales Photo Status Label Table'
     ),
     $installer->getTable('sales/invoice') => array(
         'columns' => array(
@@ -4236,7 +4236,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
                 'scale'     => 4,
                 'precision' => 12,
-                'comment'   => 'Store To Order Rate'
+                'comment'   => 'Store To Photo Rate'
             ),
             'base_shipping_tax_amount' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
@@ -4254,7 +4254,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
                 'scale'     => 4,
                 'precision' => 12,
-                'comment'   => 'Base To Order Rate'
+                'comment'   => 'Base To Photo Rate'
             ),
             'grand_total' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
@@ -4335,7 +4335,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'nullable'  => false,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             ),
             'email_sent' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_SMALLINT,
@@ -4368,7 +4368,7 @@ $tables = array(
             'order_currency_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 3,
-                'comment'   => 'Order Currency Code'
+                'comment'   => 'Photo Currency Code'
             ),
             'base_currency_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -4470,7 +4470,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'nullable'  => false,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             ),
             'state' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -4484,7 +4484,7 @@ $tables = array(
             'order_currency_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 3,
-                'comment'   => 'Order Currency Code'
+                'comment'   => 'Photo Currency Code'
             ),
             'base_currency_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -4504,7 +4504,7 @@ $tables = array(
             'order_increment_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
-                'comment'   => 'Order Increment Id'
+                'comment'   => 'Photo Increment Id'
             ),
             'created_at' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TIMESTAMP,
@@ -4512,7 +4512,7 @@ $tables = array(
             ),
             'order_created_at' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TIMESTAMP,
-                'comment'   => 'Order Created At'
+                'comment'   => 'Photo Created At'
             ),
             'billing_name' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -4628,7 +4628,7 @@ $tables = array(
             ),
             'order_item_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
-                'comment'   => 'Order Item Id'
+                'comment'   => 'Photo Item Id'
             ),
             'additional_data' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -4740,7 +4740,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'nullable'  => false,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             ),
             'customer_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -4798,7 +4798,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'nullable'  => false,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             ),
             'shipment_status' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -4812,7 +4812,7 @@ $tables = array(
             'order_increment_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
-                'comment'   => 'Order Increment Id'
+                'comment'   => 'Photo Increment Id'
             ),
             'created_at' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TIMESTAMP,
@@ -4820,7 +4820,7 @@ $tables = array(
             ),
             'order_created_at' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TIMESTAMP,
-                'comment'   => 'Order Created At'
+                'comment'   => 'Photo Created At'
             ),
             'shipping_name' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -4876,7 +4876,7 @@ $tables = array(
             ),
             'order_item_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
-                'comment'   => 'Order Item Id'
+                'comment'   => 'Photo Item Id'
             ),
             'additional_data' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -4971,7 +4971,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'nullable'  => false,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             ),
             'description' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -5030,7 +5030,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
                 'scale'     => 4,
                 'precision' => 12,
-                'comment'   => 'Store To Order Rate'
+                'comment'   => 'Store To Photo Rate'
             ),
             'base_discount_amount' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
@@ -5042,7 +5042,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
                 'scale'     => 4,
                 'precision' => 12,
-                'comment'   => 'Base To Order Rate'
+                'comment'   => 'Base To Photo Rate'
             ),
             'grand_total' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
@@ -5162,7 +5162,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'nullable'  => false,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             ),
             'email_sent' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_SMALLINT,
@@ -5197,7 +5197,7 @@ $tables = array(
             'order_currency_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 3,
-                'comment'   => 'Order Currency Code'
+                'comment'   => 'Photo Currency Code'
             ),
             'base_currency_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -5286,13 +5286,13 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
                 'scale'     => 4,
                 'precision' => 12,
-                'comment'   => 'Store To Order Rate'
+                'comment'   => 'Store To Photo Rate'
             ),
             'base_to_order_rate' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
                 'scale'     => 4,
                 'precision' => 12,
-                'comment'   => 'Base To Order Rate'
+                'comment'   => 'Base To Photo Rate'
             ),
             'grand_total' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_DECIMAL,
@@ -5322,7 +5322,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'nullable'  => false,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             ),
             'creditmemo_status' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -5344,7 +5344,7 @@ $tables = array(
             'order_currency_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 3,
-                'comment'   => 'Order Currency Code'
+                'comment'   => 'Photo Currency Code'
             ),
             'base_currency_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -5364,7 +5364,7 @@ $tables = array(
             'order_increment_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
-                'comment'   => 'Order Increment Id'
+                'comment'   => 'Photo Increment Id'
             ),
             'created_at' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TIMESTAMP,
@@ -5372,7 +5372,7 @@ $tables = array(
             ),
             'order_created_at' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TIMESTAMP,
-                'comment'   => 'Order Created At'
+                'comment'   => 'Photo Created At'
             ),
             'billing_name' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -5488,7 +5488,7 @@ $tables = array(
             ),
             'order_item_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
-                'comment'   => 'Order Item Id'
+                'comment'   => 'Photo Item Id'
             ),
             'additional_data' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -5720,13 +5720,13 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => '64K',
                 'nullable'  => false,
-                'comment'   => 'Order Info'
+                'comment'   => 'Photo Info'
             ),
             'order_item_info' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => '64K',
                 'nullable'  => false,
-                'comment'   => 'Order Item Info'
+                'comment'   => 'Photo Item Info'
             ),
             'billing_address_info' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -5772,10 +5772,10 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'nullable'  => false,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             )
         ),
-        'comment' => 'Sales Recurring Profile Order'
+        'comment' => 'Sales Recurring Profile Photo'
     ),
     $installer->getTable('sales/order_tax') => array(
         'columns' => array(
@@ -5791,7 +5791,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'nullable'  => false,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             ),
             'code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -5849,7 +5849,7 @@ $tables = array(
                 'comment'   => 'Hidden'
             )
         ),
-        'comment' => 'Sales Order Tax Table'
+        'comment' => 'Sales Photo Tax Table'
     ),
     $installer->getTable('sales/order_aggregated_created') => array(
         'columns' => array(
@@ -5874,7 +5874,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
                 'nullable'  => false,
-                'comment'   => 'Order Status'
+                'comment'   => 'Photo Status'
             ),
             'orders_count' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -6002,7 +6002,7 @@ $tables = array(
                 'comment'   => 'Total Discount Amount Actual'
             )
         ),
-        'comment' => 'Sales Order Aggregated Created'
+        'comment' => 'Sales Photo Aggregated Created'
     ),
     $installer->getTable('sales/shipping_aggregated') => array(
         'columns' => array(
@@ -6026,7 +6026,7 @@ $tables = array(
             'order_status' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
-                'comment'   => 'Order Status'
+                'comment'   => 'Photo Status'
             ),
             'shipping_description' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -6075,7 +6075,7 @@ $tables = array(
             'order_status' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
-                'comment'   => 'Order Status'
+                'comment'   => 'Photo Status'
             ),
             'shipping_description' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -6100,7 +6100,7 @@ $tables = array(
                 'comment'   => 'Total Shipping Actual'
             )
         ),
-        'comment' => 'Sales Shipping Aggregated Order'
+        'comment' => 'Sales Shipping Aggregated Photo'
     ),
     $installer->getTable('sales/invoiced_aggregated') => array(
         'columns' => array(
@@ -6124,7 +6124,7 @@ $tables = array(
             'order_status' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
-                'comment'   => 'Order Status'
+                'comment'   => 'Photo Status'
             ),
             'orders_count' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -6181,7 +6181,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
                 'nullable'  => false,
-                'comment'   => 'Order Status'
+                'comment'   => 'Photo Status'
             ),
             'orders_count' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -6213,7 +6213,7 @@ $tables = array(
                 'comment'   => 'Invoiced Not Captured'
             )
         ),
-        'comment' => 'Sales Invoiced Aggregated Order'
+        'comment' => 'Sales Invoiced Aggregated Photo'
     ),
     $installer->getTable('sales/refunded_aggregated') => array(
         'columns' => array(
@@ -6238,7 +6238,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
                 'nullable'  => false,
-                'comment'   => 'Order Status'
+                'comment'   => 'Photo Status'
             ),
             'orders_count' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -6288,7 +6288,7 @@ $tables = array(
             'order_status' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
-                'comment'   => 'Order Status'
+                'comment'   => 'Photo Status'
             ),
             'orders_count' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -6314,7 +6314,7 @@ $tables = array(
                 'comment'   => 'Offline Refunded'
             )
         ),
-        'comment' => 'Sales Refunded Aggregated Order'
+        'comment' => 'Sales Refunded Aggregated Photo'
     ),
     $installer->getTable('sales/payment_transaction') => array(
         'columns' => array(
@@ -6335,7 +6335,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
                 'unsigned'  => true,
                 'nullable'  => false,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             ),
             'payment_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -6609,10 +6609,10 @@ $tables = array(
                 'unsigned'  => true,
                 'nullable'  => false,
                 'primary'   => true,
-                'comment'   => 'Order Id'
+                'comment'   => 'Photo Id'
             )
         ),
-        'comment' => 'Sales Billing Agreement Order'
+        'comment' => 'Sales Billing Agreement Photo'
     )
 );
 

@@ -156,7 +156,7 @@ abstract class Zend_Pdf_Resource_Font_CidFont extends Zend_Pdf_Resource_Font
             unset($charWidths[$charCode]);
         }
 
-        // Order cheracter widths aray by character codes
+        // Photo cheracter widths aray by character codes
         ksort($charWidths, SORT_NUMERIC);
 
         /* Width array optimization. Step2: Compact character codes sequences */

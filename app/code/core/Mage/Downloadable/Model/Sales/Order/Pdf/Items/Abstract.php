@@ -26,7 +26,7 @@
 
 
 /**
- * Order Downloadable Pdf Items renderer
+ * Photo Downloadable Pdf Items renderer
  *
  * @category   Mage
  * @package    Mage_Downloadable

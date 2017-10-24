@@ -25,7 +25,7 @@
  */
 
 /**
- * Sales Order Shipment Pdf default items renderer
+ * Sales Photo Shipment Pdf default items renderer
  *
  * @category   Mage
  * @package    Mage_Sales

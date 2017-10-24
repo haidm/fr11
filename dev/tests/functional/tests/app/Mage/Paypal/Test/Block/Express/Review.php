@@ -56,7 +56,7 @@ class Review extends Block
     protected $loaderForButton = '#review-please-wait img';
 
     /**
-     * Click 'Place Order' button.
+     * Click 'Place Photo' button.
      *
      * @return void
      */

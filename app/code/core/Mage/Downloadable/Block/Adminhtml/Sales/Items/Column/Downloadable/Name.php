@@ -26,7 +26,7 @@
 
 
 /**
- * Sales Order downloadable items name column renderer
+ * Sales Photo downloadable items name column renderer
  *
  * @category   Mage
  * @package    Mage_Downloadable

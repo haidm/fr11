@@ -25,7 +25,7 @@
  */
 
 /**
- * Sales Order Creditmemo Pdf default items renderer
+ * Sales Photo Creditmemo Pdf default items renderer
  *
  * @category   Mage
  * @package    Mage_Sales

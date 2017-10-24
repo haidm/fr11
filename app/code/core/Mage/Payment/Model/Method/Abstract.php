@@ -405,7 +405,7 @@ abstract class Mage_Payment_Model_Method_Abstract extends Varien_Object
     }
 
     /**
-     * Order payment abstract method
+     * Photo payment abstract method
      *
      * @param Varien_Object $payment
      * @param float $amount
@@ -415,7 +415,7 @@ abstract class Mage_Payment_Model_Method_Abstract extends Varien_Object
     public function order(Varien_Object $payment, $amount)
     {
         if (!$this->canOrder()) {
-            Mage::throwException(Mage::helper('payment')->__('Order action is not available.'));
+            Mage::throwException(Mage::helper('payment')->__('Photo action is not available.'));
         }
         return $this;
     }

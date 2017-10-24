@@ -26,7 +26,7 @@
 
 
 /**
- * Order create model
+ * Photo create model
  *
  * @category    Mage
  * @package     Mage_Adminhtml

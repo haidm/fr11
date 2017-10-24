@@ -25,7 +25,7 @@
  */
 
 /**
- * Purchase Order Payment info xml renderer
+ * Purchase Photo Payment info xml renderer
  *
  * @category    Mage
  * @package     Mage_XmlConnect
@@ -34,7 +34,7 @@
 class Mage_XmlConnect_Block_Checkout_Payment_Method_Info_Purchaseorder extends Mage_Payment_Block_Info_Purchaseorder
 {
     /**
-     * Add Purchase Order Payment info to order XML object
+     * Add Purchase Photo Payment info to order XML object
      *
      * @param Mage_XmlConnect_Model_Simplexml_Element $orderItemXmlObj
      * @return Mage_XmlConnect_Model_Simplexml_Element
@@ -45,7 +45,7 @@ class Mage_XmlConnect_Block_Checkout_Payment_Method_Info_Purchaseorder extends M
         $orderItemXmlObj->addAttribute('title', $orderItemXmlObj->xmlAttribute($this->getMethod()->getTitle()));
 
         $orderItemXmlObj->addCustomChild('item', $this->getInfo()->getPoNumber(), array(
-            'label' => Mage::helper('sales')->__('Purchase Order Number:')
+            'label' => Mage::helper('sales')->__('Purchase Photo Number:')
         ));
     }
 }

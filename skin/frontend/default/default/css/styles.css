@@ -1587,7 +1587,7 @@ tr.summary-details-excluded { font-style:italic; }
 .addresses-list li.empty p { font-weight:bold; }
 .addresses-list .addresses-additional li.item { background:none; border:0; padding:0; }
 
-/* Order View */
+/* Photo View */
 .order-info { background:#dee5e8; border:1px solid #d0cbc1; padding:4px 8px; margin:0 0 8px; }
 .order-info dt,
 .order-info dd,
@@ -1611,10 +1611,10 @@ tr.summary-details-excluded { font-style:italic; }
 .order-items .order-links { text-align:right; }
 
 .order-additional { margin:15px 0; }
-/* Order Gift Message */
+/* Photo Gift Message */
 .gift-message dt strong { color:#666; }
 .gift-message dd { font-size:13px; margin:5px 0 0; }
-/* Order Comments */
+/* Photo Comments */
 .order-about dt { font-weight:bold; }
 .order-about dd { font-size:13px; margin:0 0 7px; }
 
@@ -1626,7 +1626,7 @@ tr.summary-details-excluded { font-style:italic; }
 .tracking-table-popup th,
 .tracking-table-popup td { padding:1px 8px; }
 
-/* Order Print Pages */
+/* Photo Print Pages */
 .page-print .print-head { margin:0 0 15px; }
 .page-print .print-head .logo { float:left; }
 .page-print .print-head address { float:left; margin-left:15px; }

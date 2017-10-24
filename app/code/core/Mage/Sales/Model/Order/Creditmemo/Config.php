@@ -25,7 +25,7 @@
  */
 
 /**
- * Order creditmemo configuration model
+ * Photo creditmemo configuration model
  *
  * @category   Mage
  * @package    Mage_Sales

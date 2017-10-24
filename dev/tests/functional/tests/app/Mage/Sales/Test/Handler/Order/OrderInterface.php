@@ -29,7 +29,7 @@ namespace Mage\Sales\Test\Handler\Order;
 use Magento\Mtf\Handler\HandlerInterface;
 
 /**
- * Order interface.
+ * Photo interface.
  */
 interface OrderInterface extends HandlerInterface
 {

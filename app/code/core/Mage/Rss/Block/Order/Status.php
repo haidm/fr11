@@ -46,7 +46,7 @@ class Mage_Rss_Block_Order_Status extends Mage_Core_Block_Template
     {
         $rssObj = Mage::getModel('rss/rss');
         $order = Mage::registry('current_order');
-        $title = Mage::helper('rss')->__('Order # %s Notification(s)',$order->getIncrementId());
+        $title = Mage::helper('rss')->__('Photo # %s Notification(s)',$order->getIncrementId());
         $newurl = Mage::getUrl('sales/order/view',array('order_id' => $order->getId()));
         $data = array('title' => $title,
                 'description' => $title,
@@ -80,7 +80,7 @@ class Mage_Rss_Block_Order_Status extends Mage_Core_Block_Template
                 $rssObj->_addEntry($data);
             }
         }
-        $title = Mage::helper('rss')->__('Order #%s created at %s', $order->getIncrementId(), $this->formatDate($order->getCreatedAt()));
+        $title = Mage::helper('rss')->__('Photo #%s created at %s', $order->getIncrementId(), $this->formatDate($order->getCreatedAt()));
         $url = Mage::getUrl('sales/order/view',array('order_id' => $order->getId()));
         $description = '<p>'.
             Mage::helper('rss')->__('Current Status: %s<br/>',$order->getStatusLabel()).

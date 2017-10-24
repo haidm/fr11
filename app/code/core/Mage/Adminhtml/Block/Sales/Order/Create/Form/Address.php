@@ -25,7 +25,7 @@
  */
 
 /**
- * Order create address form
+ * Photo create address form
  *
  * @category    Mage
  * @package     Mage_Adminhtml

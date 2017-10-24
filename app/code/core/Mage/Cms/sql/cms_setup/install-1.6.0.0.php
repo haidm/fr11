@@ -126,7 +126,7 @@ $table = $installer->getConnection()
     ->addColumn('sort_order', Varien_Db_Ddl_Table::TYPE_SMALLINT, null, array(
         'nullable'  => false,
         'default'   => '0',
-        ), 'Page Sort Order')
+        ), 'Page Sort Photo')
     ->addColumn('layout_update_xml', Varien_Db_Ddl_Table::TYPE_TEXT, '64k', array(
         'nullable'  => true,
         ), 'Page Layout Update Content')

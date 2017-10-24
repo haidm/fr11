@@ -25,7 +25,7 @@
  */
 
 /**
- * Order create errors block
+ * Photo create errors block
  *
  * @category   Mage
  * @package    Mage_Adminhtml

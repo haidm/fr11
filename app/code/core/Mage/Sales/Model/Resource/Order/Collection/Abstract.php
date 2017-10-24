@@ -35,14 +35,14 @@
 abstract class Mage_Sales_Model_Resource_Order_Collection_Abstract extends Mage_Sales_Model_Resource_Collection_Abstract
 {
     /**
-     * Order object
+     * Photo object
      *
      * @var Mage_Sales_Model_Order
      */
     protected $_salesOrder   = null;
 
     /**
-     * Order field for setOrderFilter
+     * Photo field for setOrderFilter
      *
      * @var string
      */

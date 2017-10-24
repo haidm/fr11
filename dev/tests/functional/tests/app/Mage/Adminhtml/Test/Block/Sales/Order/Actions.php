@@ -29,7 +29,7 @@ namespace Mage\Adminhtml\Test\Block\Sales\Order;
 use Magento\Mtf\Block\Block;
 
 /**
- * Order actions block.
+ * Photo actions block.
  */
 class Actions extends Block
 {
@@ -107,7 +107,7 @@ class Actions extends Block
     }
 
     /**
-     * Order credit memo.
+     * Photo credit memo.
      *
      * @return void
      */

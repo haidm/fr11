@@ -26,7 +26,7 @@
 
 
 /**
- * Downloadable Sales Order Email items renderer
+ * Downloadable Sales Photo Email items renderer
  *
  * @category   Mage
  * @package    Mage_Downloadable

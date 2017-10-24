@@ -25,7 +25,7 @@
  */
 
 /**
- * Order invoice configuration model
+ * Photo invoice configuration model
  *
  * @category   Mage
  * @package    Mage_Sales

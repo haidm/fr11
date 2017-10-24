@@ -67,7 +67,7 @@ class Mage_Sales_Block_Adminhtml_Recurring_Profile_View_Tab_Orders
     protected function _prepareColumns()
     {
         $this->addColumn('real_order_id', array(
-            'header'=> Mage::helper('sales')->__('Order #'),
+            'header'=> Mage::helper('sales')->__('Photo #'),
             'width' => '80px',
             'type'  => 'text',
             'index' => 'increment_id',

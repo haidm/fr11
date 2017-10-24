@@ -26,7 +26,7 @@
 
 
 /**
- * Order Tax Item Collection
+ * Photo Tax Item Collection
  *
  * @category    Mage
  * @package     Mage_Tax

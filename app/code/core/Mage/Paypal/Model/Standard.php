@@ -101,7 +101,7 @@ class Mage_Paypal_Model_Standard extends Mage_Payment_Model_Method_Abstract
     }
 
     /**
-     * Return Order place redirect url
+     * Return Photo place redirect url
      *
      * @return string
      */

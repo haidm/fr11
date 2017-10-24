@@ -34,7 +34,7 @@ use Mage\Checkout\Test\Page\CheckoutMultishippingOverview;
 use Magento\Mtf\TestStep\TestStepFactory;
 
 /**
- * Check that Terms and Conditions is present on the last checkout step - Order Review.
+ * Check that Terms and Conditions is present on the last checkout step - Photo Review.
  */
 class AssertTermRequireMessageOnMultishippingCheckout extends AbstractConstraint
 {

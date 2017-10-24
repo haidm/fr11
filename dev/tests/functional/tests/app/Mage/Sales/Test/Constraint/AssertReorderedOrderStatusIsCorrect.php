@@ -60,7 +60,7 @@ class AssertReorderedOrderStatusIsCorrect extends AbstractConstraint
         \PHPUnit_Framework_Assert::assertEquals(
             $previousOrderStatus,
             $salesOrderView->getOrderForm()->getTabElement('information')->getOrderInfoBlock()->getOrderStatus(),
-            'Order status is incorrect on order page in backend.'
+            'Photo status is incorrect on order page in backend.'
         );
     }
 
@@ -71,6 +71,6 @@ class AssertReorderedOrderStatusIsCorrect extends AbstractConstraint
      */
     public function toString()
     {
-        return 'Order status is correct.';
+        return 'Photo status is correct.';
     }
 }

@@ -31,7 +31,7 @@ use Magento\Mtf\Client\BrowserInterface;
 use Magento\Mtf\TestStep\TestStepInterface;
 
 /**
- * Click on "Print Order" button.
+ * Click on "Print Photo" button.
  */
 class PrintOrderOnFrontendStep implements TestStepInterface
 {
@@ -61,13 +61,13 @@ class PrintOrderOnFrontendStep implements TestStepInterface
     }
 
     /**
-     * Click on "Print Order" button.
+     * Click on "Print Photo" button.
      *
      * @return void
      */
     public function run()
     {
-        $this->salesGuestView->getActionsToolbar()->clickLink('Print Order');
+        $this->salesGuestView->getActionsToolbar()->clickLink('Print Photo');
         $this->browser->selectWindow();
     }
 }

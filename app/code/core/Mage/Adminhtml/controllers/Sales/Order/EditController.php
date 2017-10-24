@@ -66,7 +66,7 @@ class Mage_Adminhtml_Sales_Order_EditController extends Mage_Adminhtml_Sales_Ord
      */
     public function indexAction()
     {
-        $this->_title($this->__('Sales'))->_title($this->__('Orders'))->_title($this->__('Edit Order'));
+        $this->_title($this->__('Sales'))->_title($this->__('Orders'))->_title($this->__('Edit Photo'));
         $this->loadLayout();
 
         $this->_initSession()

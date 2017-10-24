@@ -25,7 +25,7 @@
  */
 
 /**
- * Order entity resource model
+ * Photo entity resource model
  *
  * @category   Mage
  * @package    Mage_Sales

@@ -25,7 +25,7 @@
  */
 
 /**
- * Search Order Model
+ * Search Photo Model
  *
  * @category    Mage
  * @package     Mage_Adminhtml
@@ -70,10 +70,10 @@ class Mage_Adminhtml_Model_Search_Order extends Varien_Object
         foreach ($collection as $order) {
             $arr[] = array(
                 'id'                => 'order/1/'.$order->getId(),
-                'type'              => Mage::helper('adminhtml')->__('Order'),
-                'name'              => Mage::helper('adminhtml')->__('Order #%s', $order->getIncrementId()),
+                'type'              => Mage::helper('adminhtml')->__('Photo'),
+                'name'              => Mage::helper('adminhtml')->__('Photo #%s', $order->getIncrementId()),
                 'description'       => $order->getBillingFirstname().' '.$order->getBillingLastname(),
-                'form_panel_title'  => Mage::helper('adminhtml')->__('Order #%s (%s)', $order->getIncrementId(), $order->getBillingFirstname().' '.$order->getBillingLastname()),
+                'form_panel_title'  => Mage::helper('adminhtml')->__('Photo #%s (%s)', $order->getIncrementId(), $order->getBillingFirstname().' '.$order->getBillingLastname()),
                 'url' => Mage::helper('adminhtml')->getUrl('*/sales_order/view', array('order_id'=>$order->getId())),
             );
         }

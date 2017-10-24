@@ -45,6 +45,6 @@ class Mage_Adminhtml_Block_Sales_Order_Status_New extends Mage_Adminhtml_Block_W
      */
     public function getHeaderText()
     {
-        return Mage::helper('sales')->__('New Order Status');
+        return Mage::helper('sales')->__('New Photo Status');
     }
 }

@@ -94,7 +94,7 @@ class Mage_Widget_Block_Adminhtml_Widget_Instance_Grid extends Mage_Adminhtml_Bl
         ));
 
         $this->addColumn('sort_order', array(
-            'header'    => Mage::helper('widget')->__('Sort Order'),
+            'header'    => Mage::helper('widget')->__('Sort Photo'),
             'width'     => '100',
             'align'     => 'center',
             'index'     => 'sort_order',

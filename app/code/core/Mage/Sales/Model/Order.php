@@ -25,7 +25,7 @@
  */
 
 /**
- * Order model
+ * Photo model
  *
  * Supported events:
  *  sales_order_load_after
@@ -338,7 +338,7 @@ class Mage_Sales_Model_Order extends Mage_Sales_Model_Abstract
     const XML_PATH_UPDATE_EMAIL_ENABLED         = 'sales_email/order_comment/enabled';
 
     /**
-     * Order states
+     * Photo states
      */
     const STATE_NEW             = 'new';
     const STATE_PENDING_PAYMENT = 'pending_payment';
@@ -350,12 +350,12 @@ class Mage_Sales_Model_Order extends Mage_Sales_Model_Abstract
     const STATE_PAYMENT_REVIEW  = 'payment_review';
 
     /**
-     * Order statuses
+     * Photo statuses
      */
     const STATUS_FRAUD  = 'fraud';
 
     /**
-     * Order flags
+     * Photo flags
      */
     const ACTION_FLAG_CANCEL                    = 'cancel';
     const ACTION_FLAG_HOLD                      = 'hold';
@@ -975,7 +975,7 @@ class Mage_Sales_Model_Order extends Mage_Sales_Model_Abstract
     }
 
     /**
-     * Order state setter.
+     * Photo state setter.
      * If status is specified, will add order status history with specified comment
      * the setData() cannot be overriden because of compatibility issues with resource model
      *
@@ -991,7 +991,7 @@ class Mage_Sales_Model_Order extends Mage_Sales_Model_Abstract
     }
 
     /**
-     * Order state protected setter.
+     * Photo state protected setter.
      * By default allows to set any state. Can also update status to default or specified value
      * Сomplete and closed states are encapsulated intentionally, see the _checkState()
      *
@@ -1009,7 +1009,7 @@ class Mage_Sales_Model_Order extends Mage_Sales_Model_Abstract
         if ($shouldProtectState) {
             if ($this->isStateProtected($state)) {
                 Mage::throwException(
-                    Mage::helper('sales')->__('The Order State "%s" must not be set manually.', $state)
+                    Mage::helper('sales')->__('The Photo State "%s" must not be set manually.', $state)
                 );
             }
         }
@@ -1200,7 +1200,7 @@ class Mage_Sales_Model_Order extends Mage_Sales_Model_Abstract
 
             $this->_setState($cancelState, true, $comment);
         } elseif (!$graceful) {
-            Mage::throwException(Mage::helper('sales')->__('Order does not allow to be canceled.'));
+            Mage::throwException(Mage::helper('sales')->__('Photo does not allow to be canceled.'));
         }
         return $this;
     }
@@ -2182,7 +2182,7 @@ class Mage_Sales_Model_Order extends Mage_Sales_Model_Abstract
                 }
             }
             /**
-             * Order can be closed just in case when we have refunded amount.
+             * Photo can be closed just in case when we have refunded amount.
              * In case of "0" grand total order checking ForcedCanCreditmemo flag
              */
             elseif (floatval($this->getTotalRefunded()) || (!$this->getTotalRefunded()

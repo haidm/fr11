@@ -39,7 +39,7 @@ class Mage_Adminhtml_Block_Sales_Order_Status extends Mage_Adminhtml_Block_Widge
     public function __construct()
     {
         $this->_controller = 'sales_order_status';
-        $this->_headerText = Mage::helper('sales')->__('Order Statuses');
+        $this->_headerText = Mage::helper('sales')->__('Photo Statuses');
         $this->_addButtonLabel = Mage::helper('sales')->__('Create New Status');
         $this->_addButton('assign', array(
             'label'     => Mage::helper('sales')->__('Assign Status to State'),

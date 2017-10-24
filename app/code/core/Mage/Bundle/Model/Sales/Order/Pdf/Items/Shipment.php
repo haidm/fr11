@@ -25,7 +25,7 @@
  */
 
 /**
- * Sales Order Shipment Pdf items renderer
+ * Sales Photo Shipment Pdf items renderer
  *
  * @category   Mage
  * @package    Mage_Bundle

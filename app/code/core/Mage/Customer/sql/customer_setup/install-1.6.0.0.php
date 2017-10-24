@@ -770,7 +770,7 @@ $table = $installer->getConnection()
         'unsigned'  => true,
         'nullable'  => false,
         'default'   => '0',
-        ), 'Sort Order')
+        ), 'Sort Photo')
     ->addColumn('data_model', Varien_Db_Ddl_Table::TYPE_TEXT, 255, array(
         ), 'Data Model')
     ->addForeignKey($installer->getFkName('customer/eav_attribute', 'attribute_id', 'eav/attribute', 'attribute_id'),

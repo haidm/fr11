@@ -159,7 +159,7 @@ class Mage_Adminhtml_Block_Tax_Rule_Grid extends Mage_Adminhtml_Block_Widget_Gri
 
         $this->addColumn('position',
             array(
-                'header' => Mage::helper('tax')->__('Sort Order'),
+                'header' => Mage::helper('tax')->__('Sort Photo'),
                 'width' => '50px',
                 'index' => 'position'
             )

@@ -43,9 +43,9 @@ class OpenOrderStep implements TestStepInterface
     protected $orderIndex;
 
     /**
-     * Order instance.
+     * Photo instance.
      *
-     * @var Order
+     * @var Photo
      */
     protected $order;
 

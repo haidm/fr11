@@ -35,14 +35,14 @@ namespace Mage\Sales\Test\TestCase;
  * 1. Open Backend.
  * 2. Go to Customers -> Manage Customers.
  * 3. Select customer created in preconditions.
- * 4. Click Create Order button.
+ * 4. Click Create Photo button.
  * 5. Add Products according to dataset.
  * 6. Fill data according dataset.
  * 7. Click Update Product qty.
  * 8. Fill data according dataset.
  * 9. Click Get Shipping Method and rates.
  * 10. Fill data according dataset.
- * 11. Submit Order.
+ * 11. Submit Photo.
  * 12. Perform all assertions.
  *
  * @group Order_Management_(CS)

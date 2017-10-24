@@ -63,14 +63,14 @@ class Mage_Reports_Model_Resource_Customer_Collection extends Mage_Customer_Mode
     protected $_customerIdFieldName;
 
     /**
-     * Order entity table name
+     * Photo entity table name
      *
      * @var string
      */
     protected $_orderEntityTableName;
 
     /**
-     * Order entity field name
+     * Photo entity field name
      *
      * @var string
      */
@@ -112,7 +112,7 @@ class Mage_Reports_Model_Resource_Customer_Collection extends Mage_Customer_Mode
     }
 
     /**
-     * Order for each customer
+     * Photo for each customer
      *
      * @param string $from
      * @param string $to
@@ -150,7 +150,7 @@ class Mage_Reports_Model_Resource_Customer_Collection extends Mage_Customer_Mode
     }
 
     /**
-     * Order summary info for each customer
+     * Photo summary info for each customer
      * such as orders_count, orders_avg_amount, orders_total_amount
      *
      * @param int $storeId
@@ -177,7 +177,7 @@ class Mage_Reports_Model_Resource_Customer_Collection extends Mage_Customer_Mode
     }
 
     /**
-     * Order by total amount
+     * Photo by total amount
      *
      * @param string $dir
      * @return Mage_Reports_Model_Resource_Customer_Collection
@@ -255,7 +255,7 @@ class Mage_Reports_Model_Resource_Customer_Collection extends Mage_Customer_Mode
     }
 
     /**
-     * Order by customer registration
+     * Photo by customer registration
      *
      * @param string $dir
      * @return Mage_Reports_Model_Resource_Customer_Collection

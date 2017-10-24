@@ -25,7 +25,7 @@
  */
 
 /**
- * Order view tabs
+ * Photo view tabs
  *
  * @category   Mage
  * @package    Mage_Adminhtml
@@ -57,7 +57,7 @@ class Mage_Adminhtml_Block_Sales_Order_View_Tabs extends Mage_Adminhtml_Block_Wi
         parent::__construct();
         $this->setId('sales_order_view_tabs');
         $this->setDestElementId('sales_order_view');
-        $this->setTitle(Mage::helper('sales')->__('Order View'));
+        $this->setTitle(Mage::helper('sales')->__('Photo View'));
     }
 
 }

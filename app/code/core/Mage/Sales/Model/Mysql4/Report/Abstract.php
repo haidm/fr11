@@ -26,7 +26,7 @@
 
 
 /**
- * Order report resource model
+ * Photo report resource model
  *
  * @category    Mage
  * @package     Mage_Sales

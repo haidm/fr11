@@ -58,7 +58,7 @@ class Mage_Sales_Model_Service_Quote
     protected $_recurringPaymentProfiles = array();
 
     /**
-     * Order that may be created during submission
+     * Photo that may be created during submission
      *
      * @var Mage_Sales_Model_Order
      */

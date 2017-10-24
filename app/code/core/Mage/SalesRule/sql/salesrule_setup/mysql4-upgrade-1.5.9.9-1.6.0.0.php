@@ -288,7 +288,7 @@ $tables = array(
                 'unsigned'  => true,
                 'nullable'  => false,
                 'default'   => '0',
-                'comment'   => 'Sort Order'
+                'comment'   => 'Sort Photo'
             ),
             'simple_action' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -521,7 +521,7 @@ $tables = array(
             'order_status' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
-                'comment'   => 'Order Status'
+                'comment'   => 'Photo Status'
             ),
             'coupon_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -608,7 +608,7 @@ $tables = array(
             'order_status' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
                 'length'    => 50,
-                'comment'   => 'Order Status'
+                'comment'   => 'Photo Status'
             ),
             'coupon_code' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
@@ -646,7 +646,7 @@ $tables = array(
                 'comment'   => 'Total Amount'
             )
         ),
-        'comment' => 'Coupon Aggregated Order'
+        'comment' => 'Coupon Aggregated Photo'
     ),
     $installer->getTable('salesrule/product_attribute') => array(
         'columns' => array(

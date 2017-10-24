@@ -143,7 +143,7 @@ class Mage_Log_Model_Resource_Log extends Mage_Core_Model_Resource_Db_Abstract
             return $this;
         }
 
-        // Order by desc log_id before grouping (within-group aggregates query pattern)
+        // Photo by desc log_id before grouping (within-group aggregates query pattern)
         $select = $readAdapter->select()
             ->from(
                 array('log_customer_main' => $this->getTable('log/customer')),

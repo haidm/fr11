@@ -25,7 +25,7 @@
  */
 
 /**
- * Order Shipments grid
+ * Photo Shipments grid
  *
  * @category   Mage
  * @package    Mage_Adminhtml
@@ -128,7 +128,7 @@ class Mage_Adminhtml_Block_Sales_Order_View_Tab_Shipments
 
     public function getTabTitle()
     {
-        return Mage::helper('sales')->__('Order Shipments');
+        return Mage::helper('sales')->__('Photo Shipments');
     }
 
     public function canShowTab()

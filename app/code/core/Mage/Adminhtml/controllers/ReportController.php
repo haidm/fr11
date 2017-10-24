@@ -124,7 +124,7 @@ class Mage_Adminhtml_ReportController extends Mage_Adminhtml_Controller_Action
     {
         $this->_initAction()
             ->_setActiveMenu('report/totals')
-            ->_addBreadcrumb(Mage::helper('adminhtml')->__('Order Totals'), Mage::helper('adminhtml')->__('Order Totals'))
+            ->_addBreadcrumb(Mage::helper('adminhtml')->__('Photo Totals'), Mage::helper('adminhtml')->__('Photo Totals'))
             ->renderLayout();
     }
 */

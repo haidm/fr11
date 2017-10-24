@@ -110,7 +110,7 @@ class Mage_Paypal_Model_Config
      * @var string
      */
     const PAYMENT_ACTION_SALE  = 'Sale';
-    const PAYMENT_ACTION_ORDER = 'Order';
+    const PAYMENT_ACTION_ORDER = 'Photo';
     const PAYMENT_ACTION_AUTH  = 'Authorization';
 
     /**
@@ -970,7 +970,7 @@ class Mage_Paypal_Model_Config
             self::PAYMENT_ACTION_SALE => Mage::helper('paypal')->__('Sale')
         );
         if (!is_null($this->_methodCode) && $this->_methodCode == self::METHOD_WPP_EXPRESS) {
-            $paymentActions[self::PAYMENT_ACTION_ORDER] = Mage::helper('paypal')->__('Order');
+            $paymentActions[self::PAYMENT_ACTION_ORDER] = Mage::helper('paypal')->__('Photo');
         }
         return $paymentActions;
     }

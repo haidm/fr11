@@ -656,7 +656,7 @@ class Mage_Reports_Model_Resource_Order_Collection extends Mage_Sales_Model_Reso
     }
 
     /**
-     * Add Order count field to select
+     * Add Photo count field to select
      *
      * @return Mage_Reports_Model_Resource_Order_Collection
      */
@@ -733,7 +733,7 @@ class Mage_Reports_Model_Resource_Order_Collection extends Mage_Sales_Model_Reso
     }
 
     /**
-     * Order by orders count
+     * Photo by orders count
      *
      * @param unknown_type $dir
      * @return Mage_Reports_Model_Resource_Order_Collection
@@ -745,7 +745,7 @@ class Mage_Reports_Model_Resource_Order_Collection extends Mage_Sales_Model_Reso
     }
 
     /**
-     * Order by customer registration
+     * Photo by customer registration
      *
      * @param unknown_type $dir
      * @return Mage_Reports_Model_Resource_Order_Collection

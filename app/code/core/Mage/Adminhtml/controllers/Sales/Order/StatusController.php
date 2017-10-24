@@ -25,7 +25,7 @@
  */
 
 /**
- * Order status management controller
+ * Photo status management controller
  *
  * @category    Mage
  * @package     Mage_Adminhtml
@@ -63,7 +63,7 @@ class Mage_Adminhtml_Sales_Order_StatusController extends Mage_Adminhtml_Control
      */
     public function indexAction()
     {
-        $this->_title($this->__('Sales'))->_title($this->__('Order Statuses'));
+        $this->_title($this->__('Sales'))->_title($this->__('Photo Statuses'));
         $this->loadLayout()->_setActiveMenu('system')->renderLayout();
     }
 
@@ -78,7 +78,7 @@ class Mage_Adminhtml_Sales_Order_StatusController extends Mage_Adminhtml_Control
                 ->setData($data);
             Mage::register('current_status', $status);
         }
-        $this->_title($this->__('Sales'))->_title($this->__('Create New Order Status'));
+        $this->_title($this->__('Sales'))->_title($this->__('Create New Photo Status'));
         $this->loadLayout()
             ->renderLayout();
     }
@@ -91,12 +91,12 @@ class Mage_Adminhtml_Sales_Order_StatusController extends Mage_Adminhtml_Control
         $status = $this->_initStatus();
         if ($status) {
             Mage::register('current_status', $status);
-            $this->_title($this->__('Sales'))->_title($this->__('Edit Order Status'));
+            $this->_title($this->__('Sales'))->_title($this->__('Edit Photo Status'));
             $this->loadLayout()
                 ->renderLayout();
         } else {
             $this->_getSession()->addError(
-                Mage::helper('sales')->__('Order status does not exist.')
+                Mage::helper('sales')->__('Photo status does not exist.')
             );
             $this->_redirect('*/');
         }
@@ -129,7 +129,7 @@ class Mage_Adminhtml_Sales_Order_StatusController extends Mage_Adminhtml_Control
             // check if status exist
             if ($isNew && $status->getStatus()) {
                 $this->_getSession()->addError(
-                    Mage::helper('sales')->__('Order status with the same status code already exist.')
+                    Mage::helper('sales')->__('Photo status with the same status code already exist.')
                 );
                 $this->_getSession()->setFormData($data);
                 $this->_redirect('*/*/new');
@@ -167,7 +167,7 @@ class Mage_Adminhtml_Sales_Order_StatusController extends Mage_Adminhtml_Control
      */
     public function assignAction()
     {
-        $this->_title($this->__('Sales'))->_title($this->__('Assign Order Status to State'));
+        $this->_title($this->__('Sales'))->_title($this->__('Assign Photo Status to State'));
         $this->loadLayout()
             ->renderLayout();
     }
@@ -197,7 +197,7 @@ class Mage_Adminhtml_Sales_Order_StatusController extends Mage_Adminhtml_Control
                     );
                 }
             } else {
-                $this->_getSession()->addError(Mage::helper('sales')->__('Order status does not exist.'));
+                $this->_getSession()->addError(Mage::helper('sales')->__('Photo status does not exist.'));
             }
             $this->_redirect('*/*/assign');
             return;
@@ -229,7 +229,7 @@ class Mage_Adminhtml_Sales_Order_StatusController extends Mage_Adminhtml_Control
                 );
             }
         } else {
-            $this->_getSession()->addError(Mage::helper('sales')->__('Order status does not exist.'));
+            $this->_getSession()->addError(Mage::helper('sales')->__('Photo status does not exist.'));
         }
         $this->_redirect('*/*/');
     }

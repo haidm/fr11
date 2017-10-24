@@ -62,7 +62,7 @@ abstract class AbstractCreateSalesEntityStep implements TestStepInterface
     protected $orderIndex;
 
     /**
-     * Order view page.
+     * Photo view page.
      *
      * @var SalesOrderView
      */
@@ -76,14 +76,14 @@ abstract class AbstractCreateSalesEntityStep implements TestStepInterface
     protected $orderSalesEntityNew;
 
     /**
-     * Order fixture.
+     * Photo fixture.
      *
-     * @var Order|null
+     * @var Photo|null
      */
     protected $order;
 
     /**
-     * Order id.
+     * Photo id.
      *
      * @var string|null
      */

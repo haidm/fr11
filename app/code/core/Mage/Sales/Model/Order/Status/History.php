@@ -25,7 +25,7 @@
  */
 
 /**
- * Order status history comments
+ * Photo status history comments
  *
  * @method Mage_Sales_Model_Resource_Order_Status_History _getResource()
  * @method Mage_Sales_Model_Resource_Order_Status_History getResource()
@@ -50,7 +50,7 @@ class Mage_Sales_Model_Order_Status_History extends Mage_Sales_Model_Abstract
     const CUSTOMER_NOTIFICATION_NOT_APPLICABLE = 2;
 
     /**
-     * Order instance
+     * Photo instance
      *
      * @var Mage_Sales_Model_Order
      */

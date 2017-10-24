@@ -26,7 +26,7 @@
 
 
 /**
- * Order Tax Model
+ * Photo Tax Model
  *
  * @category    Mage
  * @package     Mage_Sales

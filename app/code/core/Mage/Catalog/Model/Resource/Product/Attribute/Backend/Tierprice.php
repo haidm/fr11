@@ -58,7 +58,7 @@ class Mage_Catalog_Model_Resource_Product_Attribute_Backend_Tierprice
     }
 
     /**
-     * Order by qty
+     * Photo by qty
      *
      * @param Varien_Db_Select $select
      * @return Varien_Db_Select

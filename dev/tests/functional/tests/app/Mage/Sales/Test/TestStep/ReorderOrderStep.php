@@ -35,7 +35,7 @@ use Magento\Mtf\TestStep\TestStepInterface;
 class ReorderOrderStep implements TestStepInterface
 {
     /**
-     * Order View Page.
+     * Photo View Page.
      *
      * @var SalesOrderView
      */

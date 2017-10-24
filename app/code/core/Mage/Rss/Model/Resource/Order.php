@@ -26,7 +26,7 @@
 
 
 /**
- * Order Rss Resource Model
+ * Photo Rss Resource Model
  *
  * @category    Mage
  * @package     Mage_Rss

@@ -17,7 +17,7 @@ $table = $installer->getConnection()
         'unsigned'  => true,
         'nullable'  => false,
         'primary'   => true,
-    ), 'Order ID')
+    ), 'Photo ID')
     ->addColumn('name', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
         'unsigned'  => true,
         'nullable'  => false,

@@ -129,14 +129,14 @@ $table = $installer->getConnection()
     ->addColumn('order_id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
         'unsigned'  => true,
         'default'   => '0',
-        ), 'Order ID')
+        ), 'Photo ID')
     ->addColumn('order_increment_id', Varien_Db_Ddl_Table::TYPE_TEXT, 50, array(
-        ), 'Order Increment ID')
+        ), 'Photo Increment ID')
     ->addColumn('order_item_id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
         'unsigned'  => true,
         'nullable'  => false,
         'default'   => '0',
-        ), 'Order Item ID')
+        ), 'Photo Item ID')
     ->addColumn('created_at', Varien_Db_Ddl_Table::TYPE_TIMESTAMP, null, array(
         'nullable'  => false,
         ), 'Date of creation')
@@ -185,7 +185,7 @@ $table = $installer->getConnection()
     ->addColumn('order_item_id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
         'unsigned'  => true,
         'default'   => '0',
-        ), 'Order Item ID')
+        ), 'Photo Item ID')
     ->addColumn('product_id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
         'unsigned'  => true,
         'nullable'  => true,
@@ -321,7 +321,7 @@ $table = $installer->getConnection()
         'unsigned'  => true,
         'nullable'  => false,
         'default'   => '0',
-        ), 'Sort Order')
+        ), 'Sort Photo')
     ->addIndex($installer->getIdxName('downloadable/sample', 'product_id'), 'product_id')
     ->addForeignKey($installer->getFkName('downloadable/sample', 'product_id', 'catalog/product', 'entity_id'),
         'product_id', $installer->getTable('catalog/product'), 'entity_id',

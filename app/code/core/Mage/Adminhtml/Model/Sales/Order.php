@@ -25,7 +25,7 @@
  */
 
 /**
- * Order control model
+ * Photo control model
  *
  * @category   Mage
  * @package    Mage_Adminhtml

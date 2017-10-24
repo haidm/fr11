@@ -161,11 +161,11 @@ class Mage_Widget_Block_Adminhtml_Widget_Instance_Edit_Tab_Main
 
         $fieldset->addField('sort_order', 'text', array(
             'name'  => 'sort_order',
-            'label' => Mage::helper('widget')->__('Sort Order'),
-            'title' => Mage::helper('widget')->__('Sort Order'),
+            'label' => Mage::helper('widget')->__('Sort Photo'),
+            'title' => Mage::helper('widget')->__('Sort Photo'),
             'class' => '',
             'required' => false,
-            'note' => Mage::helper('widget')->__('Sort Order of widget instances in the same block reference')
+            'note' => Mage::helper('widget')->__('Sort Photo of widget instances in the same block reference')
         ));
 
         /* @var $layoutBlock Mage_Widget_Block_Adminhtml_Widget_Instance_Edit_Tab_Main_Layout */

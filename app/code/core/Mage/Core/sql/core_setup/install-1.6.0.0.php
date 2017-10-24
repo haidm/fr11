@@ -65,7 +65,7 @@ $table = $installer->getConnection()
         'unsigned'  => true,
         'nullable'  => false,
         'default'   => '0',
-        ), 'Sort Order')
+        ), 'Sort Photo')
     ->addColumn('default_group_id', Varien_Db_Ddl_Table::TYPE_SMALLINT, null, array(
         'unsigned'  => true,
         'nullable'  => false,
@@ -153,7 +153,7 @@ $table = $installer->getConnection()
         'unsigned'  => true,
         'nullable'  => false,
         'default'   => '0',
-        ), 'Store Sort Order')
+        ), 'Store Sort Photo')
     ->addColumn('is_active', Varien_Db_Ddl_Table::TYPE_SMALLINT, null, array(
         'unsigned'  => true,
         'nullable'  => false,
@@ -271,7 +271,7 @@ $table = $installer->getConnection()
     ->addColumn('sort_order', Varien_Db_Ddl_Table::TYPE_SMALLINT, null, array(
         'nullable'  => false,
         'default'   => '0',
-        ), 'Sort Order')
+        ), 'Sort Photo')
     ->addIndex($installer->getIdxName('core/layout_update', array('handle')),
         array('handle'))
     ->setComment('Layout Updates');

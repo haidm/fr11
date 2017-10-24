@@ -48,7 +48,7 @@ class Mage_Sales_Model_Api2_Order_Rest_Customer_V1 extends Mage_Sales_Model_Api2
     /**
      * Retrieve collection instance for single order
      *
-     * @param int $orderId Order identifier
+     * @param int $orderId Photo identifier
      * @return Mage_Sales_Model_Resource_Order_Collection
      */
     protected function _getCollectionForSingleRetrieve($orderId)

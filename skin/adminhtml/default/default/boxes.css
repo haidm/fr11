@@ -517,7 +517,7 @@ td.divider              { font-size:1px; line-height:0; }
 .entry-edit .fieldset { border:1px solid #d6d6d6; background:#fafafa; }
 
 
-/* SCOLLER */ /* Used primarily in Sales -> Order -> Create Order */ /*
+/* SCOLLER */ /* Used primarily in Sales -> Photo -> Create Photo */ /*
 *******************************************************************************/
 .scroll-cont {
     position:absolute;
@@ -628,8 +628,8 @@ div.autocomplete ul li { padding:.5em .7em; min-height:32px; cursor:pointer; tex
 
 .catalog-categories .side-col   { width:25em; padding-right:25px; }  /* Catalog/Categories */
 .catalog-categories .main-col   { padding-left:25px; margin-left:25em; }              /* Catalog/Categories */
-.order-summary .side-col        { padding-right:25px; }             /* Order/Create */
-.order-summary .main-col        { padding-left:25px; }              /* Order/Create */
+.order-summary .side-col        { padding-right:25px; }             /* Photo/Create */
+.order-summary .main-col        { padding-left:25px; }              /* Photo/Create */
 
 
 /* HEADINGS
@@ -796,7 +796,7 @@ dl.item-options dd { padding-left:10px; }
 ul.item-options li { padding-left:.7em; }
 
 
-/* Create Order */
+/* Create Photo */
 .page-create-order .side-col            { width:260px; background:none; padding:0; }
 .page-create-order .main-col            { padding-left:28px; }
 .page-create-order .switcher            { margin-bottom:25px; }
@@ -887,7 +887,7 @@ ul.item-options li { padding-left:.7em; }
 .bundle-product-options dt { color:#111; }
 .bundle-product-options dd { color:#5b5b5b; margin-bottom:10px; }
 
-/* Order Totals */
+/* Photo Totals */
 .order-totals                           { margin-left:auto; border:1px solid #d7c699 !important; padding:12px 0; background:#fcfac9; text-align:right; }
 .order-totals table                     { border:none; background:none; margin-left:auto; }
 .order-totals table td                  { padding:3px 20px 3px 10px; }
@@ -906,7 +906,7 @@ ul.item-options li { padding-left:.7em; }
 .summary-details td { font-size:11px; background-color:#fdfcdf; }
 .summary-details-first td { border-top:1px solid #eae1b2; }
 
-/* Order Constants */
+/* Photo Constants */
 .payment-methods dt                     { margin-bottom:3px; }
 .payment-methods dd                     { margin-left:20px; }
 .payment-methods .validation-advice     { margin-left:2px; }
@@ -1381,7 +1381,7 @@ td.label label.enabled { background:url(images/icon-enabled.png) no-repeat 100% 
 /* PopUp Calendar */
 .calendar { z-index:105; }
 
-/** Order view **/
+/** Photo view **/
 .order-history { width:70%; margin-right:27px; }
 
 ul.super-product-attributes { padding-left:15px; }

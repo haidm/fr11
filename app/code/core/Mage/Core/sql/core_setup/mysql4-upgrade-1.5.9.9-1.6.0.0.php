@@ -387,7 +387,7 @@ $tables = array(
                 'unsigned'  => true,
                 'nullable'  => false,
                 'default'   => '0',
-                'comment'   => 'Sort Order'
+                'comment'   => 'Sort Photo'
             ),
             'default_group_id' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_SMALLINT,
@@ -445,7 +445,7 @@ $tables = array(
                 'unsigned'  => true,
                 'nullable'  => false,
                 'default'   => '0',
-                'comment'   => 'Store Sort Order'
+                'comment'   => 'Store Sort Photo'
             ),
             'is_active' => array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_SMALLINT,
@@ -800,7 +800,7 @@ $tables = array(
                 'type'      => Varien_Db_Ddl_Table::TYPE_SMALLINT,
                 'nullable'  => false,
                 'default'   => '0',
-                'comment'   => 'Sort Order'
+                'comment'   => 'Sort Photo'
             )
         ),
         'comment' => 'Layout Updates'

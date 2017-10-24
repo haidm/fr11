@@ -25,7 +25,7 @@
  */
 
 /**
- * Sales Order Invoice Pdf default items renderer
+ * Sales Photo Invoice Pdf default items renderer
  *
  * @category   Mage
  * @package    Mage_Sales

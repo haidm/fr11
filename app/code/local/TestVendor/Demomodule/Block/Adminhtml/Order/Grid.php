@@ -36,7 +36,7 @@ class TestVendor_Demomodule_Block_Adminhtml_Order_Grid extends Mage_Adminhtml_Bl
     {
         $this->addColumn('order_id',
             array(
-                'header' => Mage::helper('tax')->__('Order ID'),
+                'header' => Mage::helper('tax')->__('Photo ID'),
                 'index' => 'order_id'
             )
         );
