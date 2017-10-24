@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <Hungbd_Album translate="title" module="Hungbd_Album">
+            <title>Album Manager</title>
+            <sort_order>100</sort_order>
+            <children>
+                <index translate="title" module="Hungbd_Album">
+                    <title>Album</title>
+                    <!--Mapped to adminhtmlModulePath/controller/action-->
+                    <action>adminhtml/album/index</action>
+                    <sort_order>0</sort_order>
+                </index>
+                <image translate="title" module="Hungbd_Album">
+                    <title>Image</title>
+                    <!--Mapped to adminhtmlModulePath/controller/action-->
+                    <action>adminhtml/image/index</action>
+                    <sort_order>1</sort_order>
+                </image>
+            </children>
+        </Hungbd_Album>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <testmenu translate="title" module="hungbd_album ">
+                                <title>Album</title>
+                            </testmenu>
+                        </children>
+                    </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
