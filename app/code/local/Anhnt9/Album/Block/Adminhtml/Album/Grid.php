@@ -28,7 +28,10 @@ class Anhnt9_Album_Block_Adminhtml_Album_Grid extends Mage_Adminhtml_Block_Widge
     {
         $collection = Mage::getModel('finalmodel/album')
             ->getCollection();
+        print_r($collection);
+        die('xxxx');
         $this->setCollection($collection);
+
         parent::_prepareCollection();
         return $this;
     }
@@ -42,14 +45,14 @@ class Anhnt9_Album_Block_Adminhtml_Album_Grid extends Mage_Adminhtml_Block_Widge
     {
         $this->addColumn('album_id',
             array(
-                'header' => Mage::helper('tax')->__('Album ID'),
+                'header' => Mage::helper('anhnt9_album')->__('Album ID'),
                 'index' => 'order_id'
             )
         );
 
         $this->addColumn('name_album',
             array(
-                'header' => Mage::helper('tax')->__('Customer Name'),
+                'header' => Mage::helper('anhnt9_album')->__('Customer Name'),
                 'index' => 'name',
                 'type'    => 'text'
             )
