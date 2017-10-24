@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+    <config>
+        <menu>
+            <luannt3_album translate="title" module="luannt3_album">
+                <title>Album Manager</title>
+                <sort_order>100</sort_order>
+                <children>
+                    <index translate="title" module="luannt3_album">
+                        <title>Album</title>
+    <!--Mapped to adminhtmlModulePath/controller/action-->
+                        <action>adminhtml/album/test</action>
+                        <sort_order>0</sort_order>
+                    </index>
+                    <list translate="title" module="luannt3_album">
+                        <title>Image</title>
+                        <action></action>
+                        <sort_order>10</sort_order>
+                    </list>
+                </children>
+            </luannt3_album>
+        </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <testmenu translate="title" module="luannt3_album">
+                        <title>Album</title>
+                    </testmenu>
+                    <testmenu translate="title" module="luannt3_album">
+                        <title>Image</title>
+                    </testmenu>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    </config>
