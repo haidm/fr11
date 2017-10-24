@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Anhnt9_Album>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Anhnt9_Album>
+    </modules>
+</config>

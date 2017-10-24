@@ -11,7 +11,7 @@
                 <use>standard</use>
                 <args>
                     <module>Anhnt9_Assignment6</module>
-                    <frontName>student-sm6</frontName>
+                    <frontName>test</frontName>
                 </args>
             </Anhnt9_Assignment6>
         </routers>
@@ -33,7 +33,7 @@
             <assignment6_setup>
                 <setup>
                     <module>Anhnt9_Assignment6</module>
-                </setup>
+                </setup>M
             </assignment6_setup>
         </resources>
         <models>
