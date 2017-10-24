@@ -44,74 +44,85 @@ class Hungbd_Megamenu_Block_Adminhtml_Menuitem_Edit_Form extends Mage_Adminhtml_
         $this->setTitle(Mage::helper('tax')->__('Menu Item'));
     }
 
+    protected function _prepareLayout()
+    {
+        $return = parent::_prepareLayout();
+        if (Mage::getSingleton('cms/wysiwyg_config')->isEnabled()) {
+            $this->getLayout()->getBlock('head')->setCanLoadTinyMce(true);
+        }
+        return $return;
+    }
+
     /**
      *
      * return Mage_Adminhtml_Block_Widget_Form
      */
     protected function _prepareForm()
     {
-        $model  = Mage::registry('testmodel');
-        $form   = new Varien_Data_Form(array(
-            'id'        => 'edit_form',
-            'action'    => $this->getData('action'),
-            'method'    => 'post'
+        $model = Mage::registry('testmodel');
+        $form = new Varien_Data_Form(array(
+            'id' => 'edit_form',
+            'action' => $this->getData('action'),
+            'method' => 'post'
         ));
 
-        $fieldset   = $form->addFieldset('base_fieldset', array(
-            'legend'    => Mage::helper('tax')->__('Menu Item')
+        $fieldset = $form->addFieldset('base_fieldset', array(
+            'legend' => Mage::helper('tax')->__('Menu Item')
         ));
 
 
         $fieldset->addField('title', 'text',
             array(
-                'name'      => 'title',
-                'label'     => Mage::helper('tax')->__('Title'),
-                'class'     => 'required-entry',
-                'required'  => false,
+                'name' => 'title',
+                'label' => Mage::helper('tax')->__('Title'),
+                'class' => 'required-entry',
+                'required' => false,
             )
         );
 
         $fieldset->addField('class', 'text',
             array(
-                'name'      => 'class',
-                'label'     => Mage::helper('tax')->__('Class'),
-                'class'     => 'required-entry',
-                'required'  => true,
+                'name' => 'class',
+                'label' => Mage::helper('tax')->__('Class'),
+                'class' => 'required-entry',
+                'required' => true,
             )
         );
 
         $fieldset->addField('link', 'text',
             array(
-                'name'      => 'link',
-                'label'     => Mage::helper('tax')->__('Link'),
-                'class'     => 'required-entry',
-                'required'  => true,
+                'name' => 'link',
+                'label' => Mage::helper('tax')->__('Link'),
+                'class' => 'required-entry',
+                'required' => true,
             )
         );
 
-        $fieldset->addField('content', 'text',
+        $fieldset->addField('content', 'editor',
             array(
-                'name'      => 'content',
-                'label'     => Mage::helper('tax')->__('Content'),
-                'class'     => 'required-entry',
-                'required'  => true,
+                'name' => 'content',
+                'label' => Mage::helper('tax')->__('Content'),
+                'required' => false,
+                'config' => Mage::getSingleton('cms/wysiwyg_config'),
+                'wysiwyg' => true,
+                'style' => 'height:36em; width:36em;',
             )
         );
 
         $fieldset->addField('parent', 'text',
             array(
-                'name'      => 'parent',
-                'label'     => Mage::helper('tax')->__('Parent'),
-                'class'     => 'required-entry',
-                'required'  => true,
+                'name' => 'parent',
+                'label' => Mage::helper('tax')->__('Parent'),
+                'class' => 'required-entry',
+                'required' => true,
             )
         );
 
         if ($model->getId()) {
             $fieldset->addField('id', 'hidden',
                 array(
-                    'name'      => 'id',
-                    'label'     => Mage::helper('tax')->__('Id')
+                    'name' => 'id',
+                    'label' => Mage::helper('tax')->__('Id')
                 )
             );
         }

@@ -2,18 +2,58 @@
 <config>
     <modules>
         <Hungbd_Demoproduct>
-            <version>0.1.0</version>
+            <version>0.1</version>
         </Hungbd_Demoproduct>
     </modules>
     <frontend>
         <routers>
-            <Demoproduct>
+            <DemoProduct>
                 <use>standard</use>
                 <args>
                     <module>Hungbd_Demoproduct</module>
-                    <frontName>demoproduct</frontName>
+                    <frontName>prd</frontName>
                 </args>
-            </Demoproduct>
+            </DemoProduct>
         </routers>
     </frontend>
+    <global>
+        <resources>
+            <Hungbd_Demoproduct>
+                <setup>
+                    <module>Hungbd_Demoproduct</module>
+                </setup>
+            </Hungbd_Demoproduct>
+        </resources>
+        <models>
+            <demoproduct>
+                <class>Hungbd_Demoproduct_Model</class>
+            </demoproduct>
+        </models>
+        <events>
+            <catalog_product_collection_load_after>
+                <observers>
+                    <changelistprice>
+                        <class>demoproduct/observer</class>
+                        <method>changeListPrice</method>
+                    </changelistprice>
+                </observers>
+            </catalog_product_collection_load_after>
+            <catalog_controller_product_view>
+                <observers>
+                    <changeviewprice>
+                        <class>demoproduct/observer</class>
+                        <method>changeViewPrice</method>
+                    </changeviewprice>
+                </observers>
+            </catalog_controller_product_view>
+            <checkout_cart_product_add_after>
+                <observers>
+                    <changecartprice>
+                        <class>demoproduct/observer</class>
+                        <method>changeCartPrice</method>
+                    </changecartprice>
+                </observers>
+            </checkout_cart_product_add_after>
+        </events>
+    </global>
 </config>

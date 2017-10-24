@@ -18,7 +18,7 @@ class Hungbd_Megamenu_Block_Adminhtml_Menuitem_Edit extends Mage_Adminhtml_Block
         $this->_updateButton('save', 'label', Mage::helper('tax')->__('Save Menu Item'));
         $this->_addButton('delete', array(
             'label'     => Mage::helper('tax')->__('Delete Menu Item'),
-            'onclick'   => "window.location.href = '" . $this->getUrl("*/*/delete", array("id" => $model->getId())) . "'",
+            'onclick'   => "window.location.href = '" . $this->getUrl("*/*/ delete", array("id" => $model->getId())) . "'",
             'class' => 'delete'
         ), 10);
 

@@ -7,7 +7,7 @@
  */
 class Hungbd_Demoproduct_IndexController extends Mage_Core_Controller_Front_Action
 {
-    function IndexAction()
+    function indexAction()
     {
         $collection = Mage::getModel('catalog/product')->getCollection()->addAttributeToSelect('*');
 // we iterate through the list of products to get attribute values
