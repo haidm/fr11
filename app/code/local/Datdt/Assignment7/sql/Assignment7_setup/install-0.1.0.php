@@ -7,7 +7,7 @@ $installer->startSetup();
 
 $table = $installer->getConnection()
     ->newTable($installer->getTable('menu_item'))
-    ->addColumn('id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
+    ->addColumn('id', Varien_Db_Ddl_Table::TYPE_INTEGER,null, array(
         'identity'  => true,
         'unsigned'  => true,
         'nullable'  => false,
@@ -20,16 +20,16 @@ $table = $installer->getConnection()
         'nullable'  => false,
         'unique'    => true
     ), 'class')
-    ->addColumn('link', Varien_Db_Ddl_Table::TYPE_VARCHAR, 15, array(
+    ->addColumn('link', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
         'nullable'  => false,
         'unique'    => true
     ), 'link')
 
-    ->addColumn('parent', Varien_Db_Ddl_Table::TYPE_VARCHAR, 15, array(
+    ->addColumn('parent', Varien_Db_Ddl_Table::TYPE_INTEGER, 15, array(
         'nullable'  => false,
         'unique'    => true
     ), 'parent')
-    ->addColumn('content', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
+    ->addColumn('content', Varien_Db_Ddl_Table::TYPE_TEXT, array(
         'nullable'  => false,
     ), 'content');
 

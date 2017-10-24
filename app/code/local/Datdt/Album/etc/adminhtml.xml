@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <datdt_album translate="title" module="datdt_album">
+            <title>Mega Menu</title>
+            <sort_order>100</sort_order>
+            <children>
+                <index translate="title" module="datdt_album">
+                    <title>Album</title>
+                    <action>adminhtml/test/index</action>
+                    <sort_order>0</sort_order>
+                </index>
+                <img translate="title" module="datdt_album">
+                    <title>img</title>
+                    <action>adminhtml/test/imgt</action>
+                    <sort_order>10</sort_order>
+                </img>
+            </children>
+        </datdt_album>
+    </menu>
+</config>

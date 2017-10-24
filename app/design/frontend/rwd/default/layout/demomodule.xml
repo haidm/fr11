@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <testroute_index_index>
+        <reference name="content">
+            <block type="core/template" name="mainblock" template="mytemplate/mainblock.phtml">
+                <block type="core/template" name="header" as="header" template="mytemplate/header.phtml">
+                    <block type="core/template" name="logo" as="logo" template="mytemplate/logo.phtml"/>
+                </block>
+
+                <block type="core/text_list" name="left" as="left">
+                    <block type="core/template" name="blockc" as="blockc" template="mytemplate/blockc.phtml"/>
+                </block>
+
+                <block type="core/text_list" name="content" as="content">
+                    <block type="core/template" name="blocka" as="blocka" template="mytemplate/blocka.phtml"/>
+                    <block type="core/template" name="blockb" as="blockb" template="mytemplate/blockb.phtml"/>
+                </block>
+
+                <block type="core/text_list" name="right" as="right">
+                    <block type="core/template" name="blockd" as="blockd" template="mytemplate/blockd.phtml"/>
+                </block>
+
+                <block type="core/template" name="footer" as="footer" template="mytemplate/footer.phtml"/>
+            </block>
+        </reference>
+    </testroute_index_index>
+</layout>

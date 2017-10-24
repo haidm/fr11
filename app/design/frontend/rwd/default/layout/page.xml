@@ -90,6 +90,7 @@
             <block type="page/html_notices" name="global_notices" as="global_notices" template="page/html/notices.phtml" />
 
             <block type="page/html_header" name="header" as="header">
+
                 <block type="page/template_links" name="top.links" as="topLinks"/>
                 <block type="page/switch" name="store_language" as="store_language" template="page/switch/languages.phtml"/>
                 <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
@@ -103,7 +104,11 @@
                     <action method="setElementClass"><value>top-container</value></action>
                 </block>
                 <block type="page/html_welcome" name="welcome" as="welcome"/>
+<<<<<<< HEAD
                 <block type="core/template" name="banner" as="banner" template="mylayout/banner.phtml"></block>
+=======
+                <block type="core/template" name="banner" as="banner" template="luannt3/banner.phtml"/>
+>>>>>>> 928a0d9a6236af818a1d0cd567b5c86eff259477
             </block>
 
             <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>

@@ -1,0 +1,21 @@
+<layout version="0.1.0">
+    <ass5_layout_handle>
+        <block type="core/template" name="hello" template="luannt3/hello.phtml" output="toHtml">
+            <block type="core/text_list" name="header" as="header">
+                <!--<block type="core/template" name="banner" as="banner" template="luannt3/banner.phtml"/>-->
+                <block type="core/template" name="logo" as="logo" template="luannt3/logo.phtml"/>
+            </block>
+            <block type="core/text_list" name="left" as="left" >
+                <block type="core/template" name="c" as="c"  template="luannt3/c.phtml"/>
+            </block>
+            <block type="core/text_list" name="content" as="content">
+                <block type="core/template" name="a" as="a"  template="luannt3/a.phtml"/>
+                <block type="core/template" name="b" as="b" template="luannt3/b.phtml"/>
+            </block>
+            <block type="core/text_list" name="right" as="right">
+                <block type="core/template" name="d" as="d" template="luannt3/d.phtml"/>
+            </block>
+            <block type="core/template" name="footer" as="footer" template="luannt3/footer.phtml"></block>
+        </block>
+    </ass5_layout_handle>
+</layout>

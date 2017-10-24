@@ -1,0 +1,35 @@
+<layout version="0.1.0">
+    <ass6_list_handle>
+        <block type="core/template" name="hello" template="luannt3/ass6/hello.phtml" output="toHtml">
+            <block type="core/template" name="header" as="header" template="luannt3/ass6/header.phtml">
+                <!--<block type="core/template" name="banner" as="banner" template="luannt3/banner.phtml"/>-->
+                <!--<block type="core/template" name="logo" as="logo" template="luannt3/logo.phtml"/>-->
+            </block>
+            <block type="core/template" name="content" as="content" template="luannt3/ass6/list.phtml">
+            </block>
+            <block type="core/template" name="footer" as="footer" template="luannt3/ass6/footer.phtml"></block>
+        </block>
+    </ass6_list_handle>
+    <ass6_add_handle>
+        <block type="core/template" name="hello" template="luannt3/ass6/hello.phtml" output="toHtml">
+            <block type="core/template" name="header" as="header" template="luannt3/ass6/header.phtml">
+                <!--<block type="core/template" name="banner" as="banner" template="luannt3/banner.phtml"/>-->
+                <!--<block type="core/template" name="logo" as="logo" template="luannt3/logo.phtml"/>-->
+            </block>
+            <block type="core/template" name="content" as="content" template="luannt3/ass6/add.phtml">
+            </block>
+            <block type="core/template" name="footer" as="footer" template="luannt3/ass6/footer.phtml"></block>
+        </block>
+    </ass6_add_handle>
+    <ass6_edit_handle>
+        <block type="core/template" name="hello" template="luannt3/ass6/hello.phtml" output="toHtml">
+            <block type="core/template" name="header" as="header" template="luannt3/ass6/header.phtml">
+                <!--<block type="core/template" name="banner" as="banner" template="luannt3/banner.phtml"/>-->
+                <!--<block type="core/template" name="logo" as="logo" template="luannt3/logo.phtml"/>-->
+            </block>
+            <block type="core/template" name="content" as="content" template="luannt3/ass6/edit.phtml">
+            </block>
+            <block type="core/template" name="footer" as="footer" template="luannt3/ass6/footer.phtml"></block>
+        </block>
+    </ass6_edit_handle>
+</layout>
