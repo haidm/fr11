@@ -12,7 +12,7 @@ class Album_Photo_Adminhtml_TestController extends Mage_Adminhtml_Controller_Act
             ->_addBreadcrumb(Mage::helper('tax')->__('Album Manager'), Mage::helper('tax')->__('Album Manager'))
         ;
 
-        $this->_addContent($this->getLayout()->createBlock('demomodule/adminhtml_order'))
+        $this->_addContent($this->getLayout()->createBlock('demomodule/adminhtml_photo'))
             ->renderLayout();
         return $this;
     }

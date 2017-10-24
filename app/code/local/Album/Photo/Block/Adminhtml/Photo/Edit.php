@@ -1,5 +1,5 @@
 <?php
-class Album_Photo_Block_Adminhtml_Order_Edit extends Mage_Adminhtml_Block_Widget_Form_Container
+class Album_Photo_Block_Adminhtml_Photo_Edit extends Mage_Adminhtml_Block_Widget_Form_Container
 {
     /**
      * Init class
@@ -7,8 +7,8 @@ class Album_Photo_Block_Adminhtml_Order_Edit extends Mage_Adminhtml_Block_Widget
      */
     public function __construct()
     {
-        $this->_objectId = 'order';
-        $this->_controller = 'adminhtml_order';
+        $this->_objectId = 'photo';
+        $this->_controller = 'adminhtml_photo';
         $this->_blockGroup = 'demomodule';
 
         parent::__construct();
