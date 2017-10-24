@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <dangnd_album>
+            <title>Album Manager</title>
+            <sort_order>1000</sort_order>
+            <children>
+                <album>
+                    <title>Manage album</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/album</action>
+                </album>
+                <image>
+                    <title>Manage Images</title>
+                    <sort_order>10</sort_order>
+                    <action>adminhtml/image</action>
+                </image>
+            </children>
+        </dangnd_album>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <album>
+                        <title>Manage album</title>
+                    </album>
+                    <image>
+                        <title>Manage Images</title>
+                    </image>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
